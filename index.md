@@ -17,3 +17,8 @@ It works with almost all markdown flavours (the below blank line matters).
 
 
 test
+
+
+!!!NOTE
+
+Test note please ignore
