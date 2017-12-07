@@ -1,6 +1,6 @@
 site_name: AxonMobile SimCard API
 
-theme: yeti
+theme: material
 
 markdown_extensions:
   - admonition
