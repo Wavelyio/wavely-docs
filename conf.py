@@ -2,6 +2,6 @@ import os
 
 on_rtd = os.environ.get('READTHEDOCS') == 'True'
 if on_rtd:
-    html_theme = 'material'
+    html_theme = 'yeti'
 else:
-    html_theme = 'nature'
+    html_theme = 'yeti'
