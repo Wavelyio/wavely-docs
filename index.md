@@ -22,3 +22,10 @@ test
 !!!NOTE
 
 Test note please ignore
+
+
+
+
+
+!!! danger "Danger"
+    This is a note
