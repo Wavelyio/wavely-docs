@@ -1,7 +1,8 @@
 site_name: AxonMobile SimCard API
 
 theme:
-  name: 'material'
+  name: null
+  custom_dir: 'mkdocs-material/material'
   language: 'en'
   palette:
     primary: 'indigo'
