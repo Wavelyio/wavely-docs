@@ -1,3 +1,5 @@
 site_name: AxonMobile SimCard API
 markdown_extensions:
   - admonition
+theme:
+  name: 'material'
