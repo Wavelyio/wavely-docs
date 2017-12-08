@@ -36,6 +36,14 @@ plainText | String | The SMS itself
 }
 ```
 
+<h3>Error Responses</h3>
+
+HTTP Status Code        | Reason(s)        |
+----------------------- | ---------------- |
+401 | Invalid API key.
+403 | You are using a sender you are not permitted to use.
+500 | The server encountered an unhandled error!
+
 <h3>Response Payload</h3>
 
 Field        | Type          | Description
