@@ -20,4 +20,8 @@ Let's imagine that:
 * API key: `7defeb3b-f03a-4cd8-a3c2-fea45a25abe4`
 * API secret: `toyqdCALFai19uWofIDlxb6hp7ZhOlaf9sx5hTEK1GIOJKUR3y4wAkPTrzvSyHJz`
 
-**Basic Auth:** `Authorization: Basic N2RlZmViM2ItZjAzYS00Y2Q4LWEzYzItZmVhNDVhMjVhYmU0OnRveXFkQ0FMRmFpMTl1V29mSURseGI2aHA3WmhPbGFmOXN4NWhURUsxR0lPSktVUjN5NHdBa1BUcnp2U3lISno=`
+**Basic Auth:**
+
+```
+Authorization: Basic N2RlZmViM2ItZjAzYS00Y2Q4LWEzYzItZmVhNDVhMjVhYmU0OnRveXFkQ0FMRmFpMTl1V29mSURseGI2aHA3WmhPbGFmOXN4NWhURUsxR0lPSktVUjN5NHdBa1BUcnp2U3lISno=
+```
