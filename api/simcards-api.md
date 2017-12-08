@@ -33,7 +33,7 @@ operatorNameFilter  | String | Filter for operator name | No
 Field        | Type          | Description
 ------------ | ------------- | ------------
 totalCount | Long | How many sim cards are available in total  
-simcards | List([SimCardDTO](/user-guide/data-types/#simcarddto)) | The sim card collection
+simcards | List([SimCard](/user-guide/data-types/#simcarddto)) | The sim card collection
 
 <h3>Error Responses</h3>
 
