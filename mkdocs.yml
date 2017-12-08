@@ -2,3 +2,8 @@ site_name: AxonMobile SimCard API
 
 markdown_extensions:
   - admonition
+
+pages:
+- Home: 'index.md'
+- User Guide:
+    - 'About': 'user-guide/index.md'
