@@ -45,7 +45,3 @@ smsCount | Integer | How many SMS were sent
 !!! tip
     The `smsCount` is determined by the number of characters sent divided by 160, rounded up.
     This is because the telecommunications network sends that number of SMS behind-the-scenes.
-
-!!! warning
-    The `smsCount` variable always returns -1.
-    We are working on improving this.
