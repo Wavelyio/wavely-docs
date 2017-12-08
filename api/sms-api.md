@@ -14,7 +14,7 @@ Sends an SMS to the specified receiver, from the specified sender.
 
 **Endpoint:** `POST /sms`
 
-**Request Payload**
+<h3>Request Payload</h3>
 
 Field        | Type          | Description
 ------------ | ------------- | ------------
@@ -32,7 +32,7 @@ plainText | String | The SMS itself
 }
 ```
 
-#### Response Payload
+<h3>Response Payload</h3>
 
 Field        | Type          | Description
 ------------ | ------------- | ------------
