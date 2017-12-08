@@ -41,4 +41,4 @@ smsCount | Integer | How many SMS were sent
     This is because the telecommunications network sends that number of SMS behind-the-scenes.
 
 !!! bug
-    The `smsCount` variable always returns -1 until the data is properly transferred.
+    The `smsCount` variable always returns -1 — We are working on improving this.
