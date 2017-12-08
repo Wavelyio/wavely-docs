@@ -10,7 +10,7 @@ This is the API for sim card management. We currently expose the following actio
 
 **Description**
 
-Get sim cards on account with multiple optional filters.
+Get sim cards on account, with pagination, and with multiple optional filters.
 
 **Endpoint**
 
@@ -18,31 +18,15 @@ Get sim cards on account with multiple optional filters.
 GET /simcards
 ```
 
-<h3>Request Payload</h3>
-
-Field        | Type          | Description
------------- | ------------- | ------------
-sendTo | String | The destination to send to
-sendFrom | String | The sender
-plainText | String | The SMS itself
-
 <h3>Request Query Parameters</h3>
 
 Field        | Type          | Description  | Required
 ------------ | ------------- | ------------ | ------------
+page | Integer | Page number for pagination | Yes
+limit | Integer | Page size | Yes
 iccFilter | String | Filter for ICC | No
 msisdnFilter | String | Filter for MSISDN | No
 operatorNameFilter  | String | Filter for operator name | No
-
-**Example**
-
-```
-{
-	"sendTo": "4523960001",
-	"sendFrom": "AxonMobile",
-	"plainText": "Hello! This is an important message from AxonMobile!"
-}
-```
 
 <h3>Response Payload</h3>
 
