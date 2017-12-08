@@ -33,7 +33,7 @@ operatorNameFilter  | String | Filter for operator name | No
 Field        | Type          | Description
 ------------ | ------------- | ------------
 totalCount | Long | How many sim cards are available in total  
-simcards | List<SimCardDTO> | The sim card collection
+simcards | List(SimCardDTO) | The sim card collection
 
 <h3>Error Responses</h3>
 
@@ -43,4 +43,4 @@ HTTP Status Code        | Reason(s)        |
 500 | The server encountered an unhandled error!
 
 
-[SimCardDTO](user-guide/data-types/#simcarddto)
+[SimCardDTO](/user-guide/data-types/#simcarddto)
