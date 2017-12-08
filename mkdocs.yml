@@ -5,7 +5,9 @@ markdown_extensions:
 
 pages:
 - Home: 'index.md'
-- User Guide: 'user-guide/index.md'
+- User Guide:
+  - 'About': 'user-guide/index.md'
+  - 'Terminology': 'user-guide/terminology.md'
 - API Specification:
-  - 'Introduction': 'api/index.md'
   - 'SMS API': 'api/sms-api.md'
+  - 'SimCards API': 'api/simcards-api.md'
