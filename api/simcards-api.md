@@ -32,17 +32,15 @@ operatorNameFilter  | String | Filter for operator name | No
 
 Field        | Type          | Description
 ------------ | ------------- | ------------
-operatorMessageId | String | The generated unique ID of the SMS
-smsCount | Integer | How many SMS were sent
-
-!!! tip
-    The `smsCount` is determined by the number of characters sent divided by 160, rounded up.
-    This is because the telecommunications network sends that number of SMS behind-the-scenes.
+totalCount | Long | How many sim cards are available in total  
+simcards | List<SimCardDTO> | The sim card collection
 
 <h3>Error Responses</h3>
 
 HTTP Status Code        | Reason(s)        |
 ----------------------- | ---------------- |
-401 | Invalid API key.
-403 | You are using a sender you are not permitted to use.
+401 | Invalid API key.  
 500 | The server encountered an unhandled error!
+
+
+[SimCardDTO](lol)
