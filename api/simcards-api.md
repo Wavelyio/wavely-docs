@@ -43,4 +43,4 @@ HTTP Status Code        | Reason(s)        |
 500 | The server encountered an unhandled error!
 
 
-[SimCardDTO](lol)
+[SimCardDTO](user-guide/data-types/#simcarddto)
