@@ -7,4 +7,4 @@ pages:
 - Home: 'index.md'
 - User Guide: 'user-guide/index.md'
 - API Specification: 'api/index.md'
-    - SMS API: 'api/sms-api.md'
+    - 'SMS API': 'api/sms-api.md'
