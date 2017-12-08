@@ -27,7 +27,13 @@ plainText | String | The SMS itself
 
 **Example**
 
-TODO
+```
+{
+	"sendTo": "4523960001",
+	"sendFrom": "AxonMobile",
+	"plainText": "Hello! This is an important message from AxonMobile!"
+}
+```
 
 ### Response Payload
 
