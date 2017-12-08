@@ -36,14 +36,6 @@ plainText | String | The SMS itself
 }
 ```
 
-<h3>Error Responses</h3>
-
-HTTP Status Code        | Reason(s)        |
------------------------ | ---------------- |
-401 | Invalid API key.
-403 | You are using a sender you are not permitted to use.
-500 | The server encountered an unhandled error!
-
 <h3>Response Payload</h3>
 
 Field        | Type          | Description
@@ -54,3 +46,11 @@ smsCount | Integer | How many SMS were sent
 !!! tip
     The `smsCount` is determined by the number of characters sent divided by 160, rounded up.
     This is because the telecommunications network sends that number of SMS behind-the-scenes.
+
+<h3>Error Responses</h3>
+
+HTTP Status Code        | Reason(s)        |
+----------------------- | ---------------- |
+401 | Invalid API key.
+403 | You are using a sender you are not permitted to use.
+500 | The server encountered an unhandled error!
