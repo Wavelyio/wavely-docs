@@ -17,9 +17,28 @@ Sends an SMS to the specified receiver, from the specified sender.
 
 **Endpoint:** `POST /sms`
 
-**Payload:**
+### Request Payload
 
 Field        | Type          | Description
 ------------ | ------------- | ------------
-Content Cell | Content Cell  | Content Cell
-Content Cell | Content Cell  | Content Cell
+sendTo | String | The destination to send to
+sendFrom | String | The sender
+plainText | String | The SMS itself
+
+**Example**
+
+TODO
+
+### Response Payload
+
+Field        | Type          | Description
+------------ | ------------- | ------------
+operatorMessageId | String | The generated unique ID of the SMS
+smsCount | Integer | How many SMS were sent
+
+!!! tip
+    The `smsCount` is determined by the number of characters sent divided by 160, rounded up.
+    This is because the telecommunications network sends that number of SMS behind-the-scenes.
+
+!!! bug
+    The `smsCount` variable always returns -1 until the data is properly transferred.
