@@ -1,5 +1,5 @@
 # About
-This is the (evolving) documentation for the AxonMobile SimCard API for integration purposes.
+This is the (evolving) documentation for the **AxonMobile SimCard API** for integration purposes.
 
 The API is continuously being developed and once it reaches a certain feature state, versioning will be introduced.
 
@@ -11,11 +11,12 @@ The API is available at: `https://preprod.axonmobileiot.com/simcardexternalapi`
 
 # Authentication
 
-The API uses HTTP basic auth and expects your API key and secret.
+The API simply uses HTTP basic auth and expects your API key and secret.
 
 ### Example
 
-Let's imagine that: 
+Let's imagine that:
+
 * API key: `7defeb3b-f03a-4cd8-a3c2-fea45a25abe4`
 * API secret: `toyqdCALFai19uWofIDlxb6hp7ZhOlaf9sx5hTEK1GIOJKUR3y4wAkPTrzvSyHJz`
 
