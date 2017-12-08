@@ -9,10 +9,10 @@ We support both numeric and alphanumeric senders. Some basic rules apply:
 # Endpoint: Send SMS
 
 **Description**
-
 Sends an SMS to the specified receiver, from the specified sender.
 
-**Endpoint:** `POST /sms`
+**Endpoint**
+`POST /sms`
 
 <h3>Request Payload</h3>
 
