@@ -5,6 +5,10 @@ The API is continuously being developed and once it reaches a certain feature st
 
 To access this API, you need to have your designated API key and secret at the ready.
 
+## Technical Details
+
+The API expects JSON requests with the `Content-Type` header set to `application/json`.
+
 # URL
 
 The API is available at: `https://preprod.axonmobileiot.com/simcardexternalapi`

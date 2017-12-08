@@ -7,12 +7,19 @@ We support both numeric and alphanumeric senders. Some basic rules apply:
 * For alphanumeric senders: Maximum 11 characters. Your request will also be checked against a blacklist to combat simple fraud attempts.
 
 # API
-
-First Header | Second Header
------------- | -------------
-Content Cell | Content Cell
-Content Cell | Content Cell
-
-
+Below you will find a collection of endpoints for this API.
 
 ## Send SMS
+
+**Description**
+
+Sends an SMS to the specified receiver, from the specified sender.
+
+**Endpoint:** `POST /sms`
+
+**Payload:**
+
+Field        | Type          | Description
+------------ | ------------- | ------------
+Content Cell | Content Cell  | Content Cell
+Content Cell | Content Cell  | Content Cell
