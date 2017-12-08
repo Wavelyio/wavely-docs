@@ -6,5 +6,6 @@ markdown_extensions:
 pages:
 - Home: 'index.md'
 - User Guide: 'user-guide/index.md'
-- API Specification: 'api/index.md'
-    - 'SMS API': 'api/sms-api.md'
+- API Specification:
+  - 'Introduction': 'api/index.md'
+  - 'SMS API': 'api/sms-api.md'
