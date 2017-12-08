@@ -13,6 +13,8 @@ The API is available at: `https://preprod.axonmobileiot.com/simcardexternalapi`
 
 The API simply uses HTTP basic auth and expects your API key and secret.
 
+Every request against the API expects the HTTP basic auth header to be set. Otherwise the API will return `401 – Unauthorized`.
+
 ## Authentication Example
 
 Let's imagine that you have the following:
