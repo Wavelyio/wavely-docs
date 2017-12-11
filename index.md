@@ -1,33 +1,19 @@
-Hello this ia a test
+# Hello this ia a test
 
 *Test* **Test** ***Test***
-
-
-
-
-
----
-**NOTE**
-
-It works with almost all markdown flavours (the below blank line matters).
-
----
-
-
-
 
 test
 
 
 !!! note
-    Test note please ignore
+    Test note
 
 
 
 
 
 !!! danger "Danger"
-    This is a note
+    This is a dangerous note
 
 
 
