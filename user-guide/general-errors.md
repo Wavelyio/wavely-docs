@@ -5,4 +5,4 @@
 HTTP Status Code        | Reason(s)        |
 ----------------------- | ---------------- |
 401 | Invalid API key
-500 | The server encountered an unhandled error!
+500 | The server encountered an unhandled error :-(

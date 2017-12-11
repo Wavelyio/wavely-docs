@@ -33,4 +33,4 @@ Authorization: Basic N2RlZmViM2ItZjAzYS00Y2Q4LWEzYzItZmVhNDVhMjVhYmU0OnRveXFkQ0F
 
 # Contact
 
-If you need some technical assistance, please e-mail **someone@greenwavesystems.com**
+If you need some technical assistance, please e-mail **martin.graversen@greenwavesystems.com**

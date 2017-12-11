@@ -51,4 +51,4 @@ smsCount | Integer | How many SMS were sent
 
 HTTP Status Code        | Reason(s)        |
 ----------------------- | ---------------- |
-403 | You are using a sender you are not permitted to use.
+403 | You are using a sender you are not permitted to use
