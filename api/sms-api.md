@@ -51,6 +51,4 @@ smsCount | Integer | How many SMS were sent
 
 HTTP Status Code        | Reason(s)        |
 ----------------------- | ---------------- |
-401 | Invalid API key.
 403 | You are using a sender you are not permitted to use.
-500 | The server encountered an unhandled error!
