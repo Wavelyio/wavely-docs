@@ -31,13 +31,6 @@ Field        | Type          | Description
 totalCount | Long | How many sim cards are available in total  
 simcards | List([SimCard](/user-guide/data-types/#simcarddto)) | The sim card collection
 
-<h3>Error Responses</h3>
-
-HTTP Status Code        | Reason(s)        |
------------------------ | ---------------- |
-401 | Invalid API key.  
-500 | The server encountered an unhandled error!
-
 # Endpoint: Get status of single sim card
 
 **Description**
@@ -53,10 +46,3 @@ Field        | Type          | Description
 icc | String | The ICC of the sim card
 msisdn | String | The phone number of the sim, if it has any
 state | [SimCardState](/user-guide/data-types/#simcardstate) | The current state of the sim card
-
-<h3>Error Responses</h3>
-
-HTTP Status Code        | Reason(s)        |
------------------------ | ---------------- |
-401 | Invalid API key.  
-500 | The server encountered an unhandled error!
