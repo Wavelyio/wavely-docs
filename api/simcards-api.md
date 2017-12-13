@@ -72,7 +72,7 @@ state | [SimCardState](/user-guide/data-types/#simcardstate) | The current state
 
 **Description**
 
-Apply an action to the specified sim card, for example "activate" or "block".
+Apply an action to the specified sim card, for example "activate sim card" or "suspend sim card".
 
 **Endpoint:** `GET /simcard/{icc}/action`
 
