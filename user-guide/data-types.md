@@ -28,3 +28,12 @@ Enumeration, may have the following values:
 * CONNECTED
 * NOT_CONNECTED
 * HEARTBEAT
+
+## SimCardActions
+
+Enumeration, may have the following values:
+
+* SUSPEND
+* ACTIVATE
+* TERMINATE
+* RESET

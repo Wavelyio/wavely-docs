@@ -67,3 +67,33 @@ Field        | Type          | Description
 icc | String | The ICC of the sim card
 msisdn | String | The phone number of the sim, if it has any
 state | [SimCardState](/user-guide/data-types/#simcardstate) | The current state of the sim card
+
+# Endpoint: Apply action to sim card
+
+**Description**
+
+Apply an action to the specified sim card, for example "activate" or "block".
+
+**Endpoint:** `GET /simcard/{icc}/action`
+
+<h3>Request Payload</h3>
+
+Field        | Type          | Description
+------------ | ------------- | ------------
+action | [SimCardActions](/user-guide/data-types/#simcardactions) | The action to apply to the sim card
+
+**Example**
+
+```
+{
+	"action": "ACTIVATE"
+}
+```
+
+<h3>Response Payload</h3>
+
+Field        | Type          | Description
+------------ | ------------- | ------------
+icc | String | The ICC of the sim card
+msisdn | String | The phone number of the sim, if it has any
+state | [SimCardState](/user-guide/data-types/#simcardstate) | The current state of the sim card
