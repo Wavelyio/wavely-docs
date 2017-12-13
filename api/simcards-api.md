@@ -31,6 +31,27 @@ Field        | Type          | Description
 totalCount | Long | How many sim cards are available in total  
 simcards | List([SimCard](/user-guide/data-types/#simcarddto)) | The sim card collection
 
+# Endpoint: Get single sim card
+
+**Description**
+
+Queries the system for one sim card, by ICC.
+
+**Endpoint:** `GET /simcard/{icc}`
+
+<h3>Response Payload</h3>
+
+Field        | Type          | Description
+------------ | ------------- | ------------
+icc | String | The ICC of the sim card
+msisdn | String | The phone number of the sim, if it has any
+state | [SimCardState](/user-guide/data-types/#simcardstate) | The current state of the sim card
+operatorName | String | The name of the underlying telco operator
+pin1 | String |
+pin2 | String |  
+puk1 | String |  
+puk2 | String |  
+
 # Endpoint: Get status of single sim card
 
 **Description**
