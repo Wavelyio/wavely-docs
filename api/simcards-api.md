@@ -47,10 +47,10 @@ icc | String | The ICC of the sim card
 msisdn | String | The phone number of the sim, if it has any
 state | [SimCardState](/user-guide/data-types/#simcardstate) | The current state of the sim card
 operatorName | String | The name of the underlying telco operator
-pin1 | String |
-pin2 | String |  
-puk1 | String |  
-puk2 | String |  
+pin1 | String | 
+pin2 | String |
+puk1 | String |
+puk2 | String |
 
 # Endpoint: Get status of single sim card
 
