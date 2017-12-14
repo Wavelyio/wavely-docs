@@ -1,4 +1,4 @@
-# About
+# AxonMobile SimCard API
 This is the (evolving) documentation for the **AxonMobile SimCard API** for integration purposes.
 
 The API is continuously being developed and once it reaches a certain feature state, versioning will be introduced.

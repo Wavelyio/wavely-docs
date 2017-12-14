@@ -4,7 +4,7 @@ markdown_extensions:
   - admonition
 
 pages:
-- Home: 'index.md'
+- Home: 'user-guide/index.md'
 - User Guide:
   - 'About': 'user-guide/index.md'
   - 'Terminology': 'user-guide/terminology.md'
