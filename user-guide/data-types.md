@@ -2,7 +2,7 @@
 
 ## SimCard
 
-Represents a single sim card in our system.
+Simple representation of a single sim card in our system.
 
 | Field            | Type             |
 | :--------------- | :--------------- |

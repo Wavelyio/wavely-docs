@@ -4,5 +4,5 @@
 
 HTTP Status Code        | Reason(s)        |
 ----------------------- | ---------------- |
-401 | Invalid API key/secret, or unauthorised access
+401 | Invalid API key/secret, or otherwise unauthorised access
 500 | The server encountered an unhandled error :-(
