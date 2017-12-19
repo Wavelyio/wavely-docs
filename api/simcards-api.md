@@ -47,7 +47,7 @@ icc | String | The ICC of the sim card
 msisdn | String | The phone number of the sim, if it has any
 state | [SimCardState](/user-guide/data-types/#simcardstate) | The current state of the sim card
 operatorName | String | The name of the underlying telco operator
-pin1 | String | 
+pin1 | String |
 pin2 | String |
 puk1 | String |
 puk2 | String |
@@ -74,7 +74,7 @@ state | [SimCardState](/user-guide/data-types/#simcardstate) | The current state
 
 Apply an action to the specified sim card, for example "activate sim card" or "suspend sim card".
 
-**Endpoint:** `GET /simcard/{icc}/action`
+**Endpoint:** `POST /simcard/{icc}/action`
 
 <h3>Request Payload</h3>
 
