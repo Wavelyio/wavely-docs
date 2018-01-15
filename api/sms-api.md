@@ -31,8 +31,8 @@ plainText | String | The SMS itself
 ```
 {
 	"sendTo": "4523960001",
-	"sendFrom": "AxonMobile",
-	"plainText": "Hello! This is an important message from AxonMobile!"
+	"sendFrom": "Wavely",
+	"plainText": "Hello! This is an important message from Wavely!"
 }
 ```
 

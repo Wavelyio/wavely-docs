@@ -1,4 +1,4 @@
-site_name: AxonMobile SimCard API
+site_name: Wavely SimCard API
 
 markdown_extensions:
   - admonition

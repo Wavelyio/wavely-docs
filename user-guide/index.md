@@ -1,5 +1,5 @@
-# AxonMobile SimCard API
-This is the (evolving) documentation for the **AxonMobile SimCard API** for integration purposes.
+# Wavely SimCard API
+This is the (evolving) documentation for the **Wavely SimCard API** for integration purposes.
 
 The API is continuously being developed and once it reaches a certain feature state, versioning will be introduced.
 
@@ -11,7 +11,7 @@ The API expects JSON requests with the `Content-Type` header set to `application
 
 # URL
 
-The API is available at: `https://preprod.axonmobileiot.com/simcardexternalapi`
+The API is available at: `https://preprod.wavely.io/simcardexternalapi`
 
 # Authentication
 
