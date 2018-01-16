@@ -11,7 +11,7 @@ The API expects JSON requests with the `Content-Type` header set to `application
 
 # URL
 
-The API is available at: `https://platform.wavely.io/simcardexternalapi`
+The API is available at: `https://platform.wavely.io/externalsimcardapi`
 
 # Authentication
 
