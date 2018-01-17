@@ -36,6 +36,5 @@ Enumeration, may have the following values:
 * SUSPEND
 * ACTIVATE
 * TERMINATE
-* RESET *(deprecated)*
 * RESET_SOFT
 * RESET_HARD
