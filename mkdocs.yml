@@ -13,3 +13,4 @@ pages:
 - API Specification:
   - 'SMS API': 'api/sms-api.md'
   - 'SimCards API': 'api/simcards-api.md'
+  - 'Call Forwarding API': 'api/call-forwarding.md'
