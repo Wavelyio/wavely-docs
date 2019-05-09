@@ -1,4 +1,4 @@
-site_name: Wavely SimCard API
+site_name: Wavely Documentation
 
 markdown_extensions:
   - admonition

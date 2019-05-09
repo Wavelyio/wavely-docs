@@ -1,5 +1,5 @@
-# Wavely SimCard API
-This is the (evolving) documentation for the **Wavely SimCard API** for integration purposes.
+# Wavely API Docs
+This is the (evolving) documentation for the **Wavely API** for integration purposes.
 
 The API is continuously being developed and once it reaches a certain feature state, versioning will be introduced.
 
@@ -33,4 +33,4 @@ Authorization: Basic N2RlZmViM2ItZjAzYS00Y2Q4LWEzYzItZmVhNDVhMjVhYmU0OnRveXFkQ0F
 
 # Contact
 
-If you need some technical assistance, please e-mail **martin.graversen@greenwavesystems.com**
+If you need some technical assistance, please e-mail **support@wavely.io**
