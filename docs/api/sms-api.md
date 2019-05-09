@@ -1,4 +1,4 @@
-# About
+# SMS API
 Using this API, you are able to send SMS directly through our SMSC.
 
 We support both numeric and alphanumeric senders. Some basic rules apply:

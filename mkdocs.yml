@@ -16,10 +16,10 @@ markdown_extensions:
 nav:
   - Home: 'index.md'
   - User Guide:
-    - Terminology: 'docs/user-guide/terminology.md'
-    - Data Types: 'docs/user-guide/data-types.md'
-    - General Errors: 'docs/user-guide/general-errors.md'
+    - Terminology: 'user-guide/terminology.md'
+    - Data Types: 'user-guide/data-types.md'
+    - General Errors: 'user-guide/general-errors.md'
   - API Specification:
-    - SMS API: 'docs/api/sms-api.md'
-    - SimCards API: 'docs/api/simcards-api.md'
-    - Call Forwarding API: 'docs/api/call-forwarding.md'
+    - SMS API: 'api/sms-api.md'
+    - SimCards API: 'api/simcards-api.md'
+    - Call Forwarding API: 'api/call-forwarding.md'
