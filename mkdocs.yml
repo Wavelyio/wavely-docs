@@ -14,13 +14,13 @@ markdown_extensions:
   - admonition
 
 nav:
-  - Home: 'index.md'
-  - User Guide:
-      - Wavely API Docs: 'user-guide/index.md'
-      - Terminology: 'user-guide/terminology.md'
-      - Data Types: 'user-guide/data-types.md'
-      - General Errors: 'user-guide/general-errors.md'
-  - API Specification:
-      - SMS API: 'api/sms-api.md'
-      - SimCards API: 'api/simcards-api.md'
-      - Call Forwarding API: 'api/call-forwarding.md'
+  - 'Home': 'index.md'
+  - 'User Guide':
+      - 'Wavely API Docs': 'user-guide/index.md'
+      - 'Terminology': 'user-guide/terminology.md'
+      - 'Data Types': 'user-guide/data-types.md'
+      - 'General Errors': 'user-guide/general-errors.md'
+  - 'API Specification':
+      - 'SMS API': 'api/sms-api.md'
+      - 'SimCards API': 'api/simcards-api.md'
+      - 'Call Forwarding API': 'api/call-forwarding.md'
