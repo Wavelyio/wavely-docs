@@ -12,7 +12,7 @@ markdown_extensions:
   - admonition
   - def_list
 
-nav:
+pages:
   - Home: 'index.md'
   - User Guide:
       - About: 'user-guide/wavely-api-docs.md'
