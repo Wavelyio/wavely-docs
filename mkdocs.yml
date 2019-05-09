@@ -1,7 +1,14 @@
-site_name: MkDocs
+site_name: Wavely Docs
 site_url: https://platform.wavely.io
 site_description: The Wavely Platform
 site_author: Wavely Team
+
+theme:
+  name: mkdocs
+  highlightjs: true
+  hljs_languages:
+    - json
+    - java
 
 markdown_extensions:
   - admonition
