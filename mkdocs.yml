@@ -16,7 +16,6 @@ markdown_extensions:
 nav:
   - Home: 'index.md'
   - User Guide:
-    - 'About': 'user-guide/index.md'
     - 'Terminology': 'user-guide/terminology.md'
     - 'Data Types': 'user-guide/data-types.md'
     - 'General Errors': 'user-guide/general-errors.md'
