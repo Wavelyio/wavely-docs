@@ -4,7 +4,7 @@ site_description: The Wavely Platform
 site_author: Wavely Team
 
 theme:
-#  name: readthedocs
+  name: mkdocs
   highlightjs: true
   hljs_languages:
     - json
