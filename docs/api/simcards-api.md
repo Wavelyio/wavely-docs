@@ -6,7 +6,7 @@ This is the API for sim card management. We currently expose the following actio
 * Get status of single sim card
 * Perform action on single sim card
 
-# Endpoint: Get sim cards
+## Endpoint: Get sim cards
 
 **Description**
 
@@ -31,7 +31,7 @@ Field        | Type          | Description
 totalCount | Long | How many sim cards are available in total  
 simcards | List([SimCard](/docs/user-guide/data-types/#simcarddto)) | The sim card collection
 
-# Endpoint: Get single sim card
+## Endpoint: Get single sim card
 
 **Description**
 
@@ -52,7 +52,7 @@ pin2 | String |
 puk1 | String |
 puk2 | String |
 
-# Endpoint: Get status of single sim card
+## Endpoint: Get status of single sim card
 
 **Description**
 
@@ -68,7 +68,7 @@ icc | String | The ICC of the sim card
 msisdn | String | The phone number of the sim, if it has any
 state | [SimCardState](/docs/user-guide/data-types/#simcardstate) | The current state of the sim card
 
-# Endpoint: Apply action to sim card
+## Endpoint: Apply action to sim card
 
 **Description**
 

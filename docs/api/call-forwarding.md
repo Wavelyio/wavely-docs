@@ -4,7 +4,7 @@ Using the endpoints described in this section, you are able to create, modify, a
 !!! warning
     Call Forwarding is not enabled by default. Please contact Wavely about this.
 
-# Endpoint: Get All Call Forwarding Rule
+## Endpoint: Get All Call Forwarding Rule
 
 **Description**
 
@@ -12,7 +12,7 @@ Retrieve status and details for all call forwarding rules.
 
 **Endpoint:** `GET /callforwardingrules`
 
-# Endpoint: Get (Single) Call Forwarding Rule
+## Endpoint: Get (Single) Call Forwarding Rule
 
 **Description**
 
@@ -20,7 +20,7 @@ Retrieve status and details for single call forwarding rule.
 
 **Endpoint:** `GET /callforwardingrules/{id}`
 
-# Endpoint: Create Call Forwarding Rule
+## Endpoint: Create Call Forwarding Rule
 
 **Description**
 
@@ -44,7 +44,7 @@ targetMsisdn | String | "To" telephone number
 }
 ```
 
-# Endpoint: Update Call Forwarding Rule
+## Endpoint: Update Call Forwarding Rule
 
 **Description**
 
@@ -66,7 +66,7 @@ targetMsisdn | String | The new "to" telephone number
 }
 ```
 
-# Endpoint: Delete Call Forwarding Rule
+## Endpoint: Delete Call Forwarding Rule
 
 **Description**
 
