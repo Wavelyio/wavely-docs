@@ -11,7 +11,7 @@ markdown_extensions:
 
 pages:
   - Home: 'index.md'
-  - General information:
+  - General Information:
       - About: 'general-information/wavely-api-docs.md'
       - Security: 'general-information/security.md'
       - Roles: 'general-information/roles.md'
@@ -22,10 +22,12 @@ pages:
       - Call CDR: 'webhooks/call-cdr.md'
       - Data CDR: 'webhooks/data-cdr.md' 
       - Message CDR: 'webhooks/msg-cdr.md'
-      - SMS forwarding: 'webhooks/sms-forwarding.md'
-      - Sim card state change: 'webhooks/sim-card-state-change.md'
+      - SMS Forwarding: 'webhooks/sms-forwarding.md'
+      - Sim Card State Change: 'webhooks/sim-card-state-change.md'
   - API Specification:
-      - General information: 'api/general-information.md'
+      - General Information: 'api/general-information.md'
       - SMS API: 'api/sms-api.md'
-      - Sim cards API: 'api/simcards-api.md'
-      - Call forwarding API: 'api/call-forwarding.md'
+      - Sim Cards API: 'api/simcards-api.md'
+      - Call Forwarding API: 'api/call-forwarding.md'
+      - Sim Card Diagnostics: 'api/sim-card-diagnostics.md'
+      - Sim Card Usage: 'api/sim-card-usage.md'
