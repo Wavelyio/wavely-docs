@@ -11,12 +11,21 @@ markdown_extensions:
 
 pages:
   - Home: 'index.md'
-  - User Guide:
-      - About: 'user-guide/wavely-api-docs.md'
-      - Terminology: 'user-guide/terminology.md'
-      - Data Types: 'user-guide/data-types.md'
-      - General Errors: 'user-guide/general-errors.md'
+  - General information:
+      - About: 'general-information/wavely-api-docs.md'
+      - Security: 'general-information/security.md'
+      - Roles: 'general-information/roles.md'
+      - Terminology: 'general-information/terminology.md'
+      - Data Types: 'general-information/data-types.md'
+      - General Errors: 'general-information/general-errors.md'
+  - Web hooks:
+      - Call CDR: 'webhooks/call-cdr.md'
+      - Data CDR: 'webhooks/data-cdr.md' 
+      - Message CDR: 'webhooks/msg-cdr.md'
+      - SMS forwarding: 'webhooks/sms-forwarding.md'
+      - Sim card state change: 'webhooks/sim-card-state-change.md'
   - API Specification:
+      - General information: 'api/general-information.md'
       - SMS API: 'api/sms-api.md'
-      - SimCards API: 'api/simcards-api.md'
-      - Call Forwarding API: 'api/call-forwarding.md'
+      - Sim cards API: 'api/simcards-api.md'
+      - Call forwarding API: 'api/call-forwarding.md'
