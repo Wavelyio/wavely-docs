@@ -1,4 +1,4 @@
-# Sim card API
+# SIM card API
 This is the API for SIM card management. We currently expose the following actions:
 
 * Get SIM cards

@@ -1,4 +1,4 @@
-# Data Types
+# Data types
 
 ## SimCard
 
@@ -87,3 +87,12 @@ QCI_75 | V2X messages
 QCI_79 | V2X messages
 QCI_8 | Video (Buffered Streaming) TCP-Based (for example, www, email, chat, ftp, p2p and the like)
 QCI_9 | Video (Buffered Streaming) TCP-Based (for example, www, email, chat, ftp, p2p and the like). Typically used as default bearer.
+
+## Directions
+
+Enumeration, may have the following values:
+Value        | Description          
+------------ | ------------- 
+INCOMING | Incoming traffic
+OUTGOING | Outgoing traffic
+DEFAULT  | This value is only used if we are unable to determine in which direction traffic is flowing. 
