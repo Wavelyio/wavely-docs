@@ -1,16 +1,22 @@
-# Sim Card Usage
-Usage for individual sim cards can be accessed using the usage api. 
-We partition usage into 4 categories, **data**, **sms**, **smpp**, and **calls**. 
-Each of these usage types have their own endpoint requiring that requests specify the **month** and **year** for which to retrieve the usage. 
+# SIM Card Usage
+Usage for individual SIM cards can be accessed using the usage API. 
 
-Parameters for **years** must be given in the ISO **year** format such as 2019.
-Months must be specified using the english names for months, such as january, march, and july.
+We partition usage into four categories:
+* Data
+* SMS
+* SMPP
+* Call
+  
+Each of these categories have their own endpoint requiring that requests specify the **month** and **year** for which to retrieve the usage. 
 
-When querying it is also required to specify which sim card the usage should be retrieved for.
-This is done using the **icc** identifier of a sim card.
+Parameters for **years** must be given in the ISO 8601 **year** format, such as 2019.  
+Months must be specified using the English names for months, such as `january`, `march`, and `july`.
 
-## Data usage for a sim card
-Data usage for a given **month** in a given **year** can be accesed by using the following URL:
+When querying it is also required to specify which SIM card the usage should be retrieved for.
+This is done using the **ICC** identifier of a SIM card.
+
+## Data usage for a SIM card
+Data usage for a given **month** in a given **year** can be accessed by using the following URL:
 
 `GET /simcards/{icc}/usage/data/{year}/{month}`
 
@@ -18,15 +24,15 @@ Data usage for a given **month** in a given **year** can be accesed by using the
 
 | Field       | Type              | Description                                                   |
 | ----------- | ----------------- | ------------------------------------------------------------- |
-| icc         | String            | The unique identifier for the sim card generating the usage.  |
-| year        | Number            | Year is given in the ISO format for example 2019.             |
+| icc         | String            | The unique identifier for the SIM card generating the usage.  |
+| year        | Number            | Year is given in the ISO 8601 format for example 2019.             |
 | month       | Number            | Month is represented as a number for example 'april = 4'      |
 | usageDate   | ISO 8601 DateTime | In UTC time.                                                  |
 | bytesIn     | Number            |                                                               |
 | bytesOut    | Number            |                                                               |
 | sessionId   | String            | Unique identifier for the session on the network.             |
-| imei        | String            | The observed Imei number for the device generating the usage. |
-| countryCode | String            | Alpha2 code                                                   |
+| imei        | String            | The observed IMEI number for the device generating the usage. |
+| countryCode | String            | Alpha-2 code                                                   |
 
 **Example response**
 ```json
@@ -60,8 +66,8 @@ Data usage for a given **month** in a given **year** can be accesed by using the
     Keep in mind that the response is given as a list of usages and not returned as a regular top level JSON object.
 
 
-## Message usage for a sim card
-Message usage for a given **month** in a given **year** can be accesed by using the following URL:
+## Message usage for a SIM card
+Message usage for a given **month** in a given **year** can be accessed by using the following URL:
 
 `GET /simcards/{icc}/usage/msg/{year}/{month}`
 
@@ -69,20 +75,20 @@ Message usage for a given **month** in a given **year** can be accesed by using 
 
 | Field           | Type              | Description                                                     |
 | --------------- | ----------------- | --------------------------------------------------------------- |
-| icc             | String            | The unique identifier for the sim card generating the usage.    |
-| year            | Number            | Year is given in the ISO format for example 2019.               |
+| icc             | String            | The unique identifier for the SIM card generating the usage.    |
+| year            | Number            | Year is given in the ISO 8601 format for example 2019.               |
 | month           | Number            | Month is represented as a number for example 'april = 4'        |
 | usageDate       | ISO 8601 DateTime | In UTC time.                                                    |
 | caller          | String            | Regular string and not necessarily a valid number.              |
 | called          | String            | E164 MSISDN, e.g. *+4523964804*                                 |
 | fromCountryCode | String            | Alpha2 code                                                     |
 | toCountryCode   | String            | Alpha2 code                                                     |
-| direction       | String            | One of the following values can be present INCOMING or OUTGOING |
+| direction       | [Directions](/general-information/data-types#Directions)            | One of the following values can be present INCOMING or OUTGOING |
 
 **Example response**
 
 !!! warning ""
-    the example is generated to express as many scenarios as possible, therefore not necessarily a possible occurance for an actual sim card.
+    The example is generated to express as many scenarios as possible, therefore not necessarily a possible occurrence for an actual SIM card.
 
 ```json
 [
@@ -125,8 +131,8 @@ Message usage for a given **month** in a given **year** can be accesed by using 
 !!! tip
     Keep in mind that the response is given as a list of usages and not returned as a regular top level JSON object.
 
-## SMPP usage for a sim card
-SMPP usage for a given **month** in a given **year** can be accesed by using the following URL:
+## SMPP usage for a SIM card
+SMPP usage for a given **month** in a given **year** can be accessed by using the following URL:
 
 `GET /simcards/{icc}/usage/smpp/{year}/{month}`
 
@@ -134,20 +140,20 @@ SMPP usage for a given **month** in a given **year** can be accesed by using the
 
 | Field           | Type              | Description                                                     |
 | --------------- | ----------------- | --------------------------------------------------------------- |
-| icc             | String            | The unique identifier for the sim card generating the usage.    |
-| year            | Number            | Year is given in the ISO format for example 2019.               |
+| icc             | String            | The unique identifier for the SIM card generating the usage.    |
+| year            | Number            | Year is given in the ISO 8601 format for example 2019.               |
 | month           | Number            | Month is represented as a number for example 'april = 4'        |
 | usageDate       | ISO 8601 DateTime | In UTC time.                                                    |
 | caller          | String            | Regular string and not necessarily a valid number.              |
 | called          | String            | Regular string and not necessarily a valid number.              |
-| fromCountryCode | String            | Alpha2 code                                                     |
-| toCountryCode   | String            | Alpha2 code                                                     |
-| direction       | String            | One of the following values can be present INCOMING or OUTGOING |
+| fromCountryCode | String            | Alpha-2 code                                                     |
+| toCountryCode   | String            | Alpha-2 code                                                     |
+| direction       | [Directions](/general-information/data-types#Directions)            | |
 
 **Example response**
 
 !!! warning ""
-    the example is generated to express as many scenarios as possible, therefore not necessarily a possible occurance for an actual sim card.
+    the example is generated to express as many scenarios as possible, therefore not necessarily a possible occurrence for an actual SIM card.
 
 ```json
 [
@@ -191,8 +197,8 @@ SMPP usage for a given **month** in a given **year** can be accesed by using the
     Keep in mind that the response is given as a list of usages and not returned as a regular top level JSON object.
 
 
-## Call usage for a sim card
-Call usage for a given **month** in a given **year** can be accesed by using the following URL:
+## Call usage for a SIM card
+Call usage for a given **month** in a given **year** can be accessed by using the following URL:
 
 `GET /simcards/{icc}/usage/call/{year}/{month}`
 
@@ -200,16 +206,16 @@ Call usage for a given **month** in a given **year** can be accesed by using the
 
 | Field           | Type              | Description                                                                                                                  |
 | --------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| icc             | String            | The unique identifier for the sim card generating the usage.                                                                 |
-| year            | Number            | Year is given in the ISO format for example 2019.                                                                            |
+| icc             | String            | The unique identifier for the SIM card generating the usage.                                                                 |
+| year            | Number            | Year is given in the ISO 8601 format for example 2019.                                                                            |
 | month           | Number            | Month is represented as a number for example 'april = 4'                                                                     |
 | usageDate       | ISO 8601 DateTime | In UTC time.                                                                                                                 |
 | caller          | String            | E164 MSISDN, e.g. *+4523964804*                                                                                              |
 | called          | String            | E164 MSISDN, e.g. *+4523964804*                                                                                              |
 | duration        | Number            | Duration of the call measured in seconds, the result disregards network connection time. i.e. Only the billed call duration. |
-| fromCountryCode | String            | Alpha2 code                                                                                                                  |
-| toCountryCode   | String            | Alpha2 code                                                                                                                  |
-| direction       | String            | One of the following values can be present INCOMING or OUTGOING                                                              |
+| fromCountryCode | String            | Alpha-2 code                                                                                                                  |
+| toCountryCode   | String            | Alpha-2 code                                                                                                                  |
+| direction       | [Directions](/general-information/data-types#Directions)            | One of the following values can be present INCOMING or OUTGOING                                                              |
 
 **Example response**
 

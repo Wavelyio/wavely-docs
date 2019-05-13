@@ -1,16 +1,16 @@
-# SimCards API
-This is the API for sim card management. We currently expose the following actions:
+# Sim card API
+This is the API for SIM card management. We currently expose the following actions:
 
-* Get sim cards
-* Get single sim card
-* Get status of single sim card
-* Perform action on single sim card
+* Get SIM cards
+* Get single SIM card
+* Get status of single SIM card
+* Perform action on single SIM card
 
-## Endpoint: Get sim cards
+## Endpoint: Get SIM cards
 
 **Description**
 
-Get sim cards on account, with pagination, and with multiple optional filters.
+Get SIM cards on account, with pagination, and with multiple optional filters.
 
 **Endpoint:** `GET /simcards`
 
@@ -28,14 +28,14 @@ operatorNameFilter  | String | Filter for operator name | No
 
 Field        | Type          | Description
 ------------ | ------------- | ------------
-totalCount | Long | How many sim cards are available in total  
-simcards | List([SimCard](/general-information/data-types/#simcarddto)) | The sim card collection
+totalCount | Long | How many SIM cards are available in total  
+simcards | List([SimCard](/general-information/data-types/#simcarddto)) | The SIM card collection
 
 ## Endpoint: Get single sim card
 
 **Description**
 
-Queries the system for one sim card, by ICC.
+Queries the system for one SIM card, by ICC.
 
 **Endpoint:** `GET /simcard/{icc}`
 
@@ -43,36 +43,36 @@ Queries the system for one sim card, by ICC.
 
 Field        | Type          | Description
 ------------ | ------------- | ------------
-icc | String | The ICC of the sim card
-msisdn | String | The phone number of the sim, if it has any
-state | [SimCardState](/general-information/data-types/#simcardstate) | The current state of the sim card
+icc | String | The ICC of the SIM card
+msisdn | String | The phone number of the SIM, if it has any
+state | [SimCardState](/general-information/data-types/#simcardstate) | The current state of the SIM card
 operatorName | String | The name of the underlying telco operator
 pin1 | String |
 pin2 | String |
 puk1 | String |
 puk2 | String |
 
-## Endpoint: Get status of single sim card
+## Endpoint: Get status of single SIM card
 
 **Description**
 
-Provides some additional details about a single sim card.
+Provides some additional details about a single SIM card.
 
 **Endpoint:** `GET /simcard/{icc}/status`
 
-<h3>Response Payload</h3>
+**Response Payload**
 
 Field        | Type          | Description
 ------------ | ------------- | ------------
-icc | String | The ICC of the sim card
-msisdn | String | The phone number of the sim, if it has any
-state | [SimCardState](/general-information/data-types/#simcardstate) | The current state of the sim card
+icc | String | The ICC of the SIM card
+msisdn | String | The phone number of the SIM, if it has any
+state | [SimCardState](/general-information/data-types/#simcardstate) | The current state of the SIM card
 
 ## Endpoint: Apply action to sim card
 
 **Description**
 
-Apply an action to the specified sim card, for example "activate sim card" or "suspend sim card".
+Apply an action to the specified SIM card, for example "activate SIM card" or "suspend SIM card".
 
 **Endpoint:** `POST /simcard/{icc}/action`
 
@@ -80,7 +80,7 @@ Apply an action to the specified sim card, for example "activate sim card" or "s
 
 Field        | Type          | Description
 ------------ | ------------- | ------------
-action | [SimCardActions](/general-information/data-types/#simcardactions) | The action to apply to the sim card
+action | [SimCardActions](/general-information/data-types/#simcardactions) | The action to apply to the SIM card
 
 **Example**
 
@@ -94,6 +94,6 @@ action | [SimCardActions](/general-information/data-types/#simcardactions) | The
 
 Field        | Type          | Description
 ------------ | ------------- | ------------
-icc | String | The ICC of the sim card
-msisdn | String | The phone number of the sim, if it has any
-state | [SimCardState](/general-information/data-types/#simcardstate) | The current state of the sim card
+icc | String | The ICC of the SIM card
+msisdn | String | The phone number of the SIM, if it has any
+state | [SimCardState](/general-information/data-types/#simcardstate) | The current state of the SIM card

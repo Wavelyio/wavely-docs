@@ -1,8 +1,8 @@
-# Sim card state change
+# SIM card state change
 
-Indicates that a sim card has changed its IMSI state.
+Indicates that a SIM card has changed its IMSI state.
 
-For example, the sim card was activated by a user.
+For example, the SIM card was activated by a user.
 
 ## Payload
 

@@ -2,13 +2,13 @@
 
 ## SimCard
 
-Simple representation of a single sim card in our system.
+Simple representation of a single SIM card in our system.
 
 | Field            | Type             |
-| :--------------- | :--------------- |
+| --------------- | --------------- |
 | icc              | String           |
 | msisdn           | String           |
-| state            | SimCardState     |
+| state            | SimCardStates     |
 | operatorName     | String           |
 | dataSessionState | DataSessionStates |
 

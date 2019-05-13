@@ -1,9 +1,9 @@
-# Sms forwarding
+# SMS forwarding
 
 Deliver SMS from MAP to HTTP/HTTPS.
 
 !!! warning
-    This webhook requires special setup, please contact support@wavely.io
+    This webhook requires special setup, please contact **support@wavely.io**
     
 ## Payload
 
