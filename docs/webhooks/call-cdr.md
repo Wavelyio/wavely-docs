@@ -11,7 +11,7 @@ caller | String | E164 MSISDN, e.g. *+4523964804*
 called | String | E164 MSISDN, e.g. *+4523964804*
 fromCountryCode | String | Any alpha-2 country code
 toCountryCode | String | Any alpha-2 country code
-usageDate | ISO 8601 |
+usageDate | ISO 8601 DateTime |
 
 **Example**
 
