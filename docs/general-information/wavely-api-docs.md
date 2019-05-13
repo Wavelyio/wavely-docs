@@ -1,11 +1,11 @@
-# Wavely API Docs
+# Wavely API docs
 This is the (evolving) documentation for the **Wavely API** for integration purposes.
 
 The API is continuously being developed and once it reaches a certain feature state, versioning will be introduced.
 
 To access this API, you need to have your designated API key and secret at the ready.
 
-# Technical Details
+# Technical details
 
 The API expects JSON requests with the `Content-Type` header set to `application/json`.
 
@@ -23,7 +23,7 @@ You have the ability to revoke specific credentials from your API management sec
 
 Only the owner and admin account types may view or modify the API credentials from your account.
 
-### Authentication Example
+### Authentication example
 
 Let's imagine that you have the following:
 

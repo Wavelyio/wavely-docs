@@ -1,4 +1,4 @@
-# Call Forwarding API
+# Call forwarding API
 Using the endpoints described in this section, you are able to create, modify, and delete call forwarding rules.
 
 !!! warning
