@@ -28,7 +28,7 @@ Create a new call forwarding rule.
 
 **Endpoint:** `POST /callforwardingrules`
 
-<h3>Request Payload</h3>
+**Request Payload**
 
 Field        | Type          | Description
 ------------ | ------------- | ------------
@@ -52,7 +52,7 @@ Update a forwarding rule with a new target MSISDN.
 
 **Endpoint:** `PUT /callforwardingrules/{id}`
 
-<h3>Request Payload</h3>
+**Request Payload**
 
 Field        | Type          | Description
 ------------ | ------------- | ------------

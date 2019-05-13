@@ -4,7 +4,8 @@ Using this API, you are able to send SMS directly through our SMSC.
 We support both numeric and alphanumeric senders. Some basic rules apply:
 
 * For numeric senders: You must own the MSISDN (telephone number) specified.
-* For alphanumeric senders: Maximum 11 characters. Your request will also be checked against a blacklist to combat simple fraud attempts.
+* For alphanumeric senders: Maximum 11 characters. Your request will also be checked against a blacklist of senders.
+* At this time, only sending to DK phone numbers is supported.
 
 ## Endpoint: Send SMS
 
@@ -18,7 +19,7 @@ Sends an SMS to the specified receiver, from the specified sender.
 POST /sms
 ```
 
-<h3>Request Payload</h3>
+**Request Payload**
 
 Field        | Type          | Description
 ------------ | ------------- | ------------
@@ -36,7 +37,7 @@ plainText | String | The SMS itself
 }
 ```
 
-<h3>Response Payload</h3>
+**Response Payload**
 
 Field        | Type          | Description
 ------------ | ------------- | ------------
@@ -47,7 +48,7 @@ smsCount | Integer | How many SMS were sent
     The `smsCount` is determined by the number of characters sent divided by 160, rounded up.
     This is because the telecommunications network sends that number of SMS behind-the-scenes.
 
-<h3>Error Responses</h3>
+**Error Responses**
 
 HTTP Status Code        | Reason(s)        |
 ----------------------- | ---------------- |
