@@ -29,7 +29,7 @@ operatorNameFilter  | String | Filter for operator name | No
 Field        | Type          | Description
 ------------ | ------------- | ------------
 totalCount | Long | How many sim cards are available in total  
-simcards | List([SimCard](/docs/general-information/data-types/#simcarddto)) | The sim card collection
+simcards | List([SimCard](/general-information/data-types/#simcarddto)) | The sim card collection
 
 ## Endpoint: Get single sim card
 
@@ -45,7 +45,7 @@ Field        | Type          | Description
 ------------ | ------------- | ------------
 icc | String | The ICC of the sim card
 msisdn | String | The phone number of the sim, if it has any
-state | [SimCardState](/docs/general-information/data-types/#simcardstate) | The current state of the sim card
+state | [SimCardState](/general-information/data-types/#simcardstate) | The current state of the sim card
 operatorName | String | The name of the underlying telco operator
 pin1 | String |
 pin2 | String |
@@ -66,7 +66,7 @@ Field        | Type          | Description
 ------------ | ------------- | ------------
 icc | String | The ICC of the sim card
 msisdn | String | The phone number of the sim, if it has any
-state | [SimCardState](/docs/general-information/data-types/#simcardstate) | The current state of the sim card
+state | [SimCardState](/general-information/data-types/#simcardstate) | The current state of the sim card
 
 ## Endpoint: Apply action to sim card
 
@@ -80,7 +80,7 @@ Apply an action to the specified sim card, for example "activate sim card" or "s
 
 Field        | Type          | Description
 ------------ | ------------- | ------------
-action | [SimCardActions](/docs/general-information/data-types/#simcardactions) | The action to apply to the sim card
+action | [SimCardActions](/general-information/data-types/#simcardactions) | The action to apply to the sim card
 
 **Example**
 
@@ -96,4 +96,4 @@ Field        | Type          | Description
 ------------ | ------------- | ------------
 icc | String | The ICC of the sim card
 msisdn | String | The phone number of the sim, if it has any
-state | [SimCardState](/docs/general-information/data-types/#simcardstate) | The current state of the sim card
+state | [SimCardState](/general-information/data-types/#simcardstate) | The current state of the sim card
