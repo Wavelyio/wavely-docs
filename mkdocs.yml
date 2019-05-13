@@ -15,7 +15,6 @@ pages:
   - Home: 'index.md'
   - General information:
       - About: 'general-information/wavely-api-docs.md'
-      - Security: 'general-information/security.md'
       - Roles: 'general-information/roles.md'
       - Data types: 'general-information/data-types.md'
       - General errors: 'general-information/general-errors.md'
