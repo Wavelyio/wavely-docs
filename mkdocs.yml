@@ -28,8 +28,8 @@ pages:
       - Sim Card State Change: 'webhooks/sim-card-state-change.md'
   - API Specification:
       - General Information: 'api/general-information.md'
-      - SMS API: 'api/sms-api.md'
-      - Sim Cards API: 'api/simcards-api.md'
-      - Call Forwarding API: 'api/call-forwarding.md'
+      - SMS: 'api/sms-api.md'
+      - Sim Cards: 'api/simcards-api.md'
+      - Call Forwarding: 'api/call-forwarding.md'
       - Sim Card Diagnostics: 'api/sim-card-diagnostics.md'
       - Sim Card Usage: 'api/sim-card-usage.md'
