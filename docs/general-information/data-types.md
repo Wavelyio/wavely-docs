@@ -12,7 +12,7 @@ Simple representation of a single sim card in our system.
 | operatorName     | String           |
 | dataSessionState | DataSessionState |
 
-## SimCardState
+## ImsiStates
 
 Enumeration, may have the following values:
 
@@ -20,6 +20,21 @@ Enumeration, may have the following values:
 * ACTIVE
 * SUSPENDED
 * TERMINATED
+* DISCARDED
+
+## ImsiStateReasons
+
+Enumeration, may have the following values:
+
+* NONE
+* DISALLOWED_IMEI
+* USER_ACTION
+* CREDIT_LIMIT_EXCEEDED
+* CREDIT_LIMIT_EXCEEDED_CEASED
+* TRIGGER
+* OTHER
+* ADMIN_USER_ACTION
+
 
 ## DataSessionState
 
@@ -36,5 +51,4 @@ Enumeration, may have the following values:
 * SUSPEND
 * ACTIVATE
 * TERMINATE
-* RESET_SOFT
-* RESET_HARD
+* RESET
