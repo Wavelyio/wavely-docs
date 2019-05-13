@@ -5,7 +5,7 @@ It allows you to subscribe to certain interesting events and be notified of thei
 
 ### Anatomy of webhook deliveries
 
-Webhooks are delivered as JSON and will always be pushed by a HTTP POST request.
+Webhooks are delivered as JSON and will always be pushed by an HTTP POST request.
 
 A successful delivery constitutes the following:
 
