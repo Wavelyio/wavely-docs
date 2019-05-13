@@ -8,6 +8,8 @@ theme:
 
 markdown_extensions:
   - admonition
+  - toc:
+      permalink: "#"
 
 pages:
   - Home: 'index.md'
@@ -20,7 +22,7 @@ pages:
   - Web hooks:
       - About Webhooks: 'webhooks/about-webhooks.md'
       - Call CDR: 'webhooks/call-cdr.md'
-      - Data CDR: 'webhooks/data-cdr.md' 
+      - Data CDR: 'webhooks/data-cdr.md'
       - Message CDR: 'webhooks/msg-cdr.md'
       - SMS Forwarding: 'webhooks/sms-forwarding.md'
       - Sim Card State Change: 'webhooks/sim-card-state-change.md'
