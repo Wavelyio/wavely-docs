@@ -8,9 +8,9 @@ Simple representation of a single SIM card in our system.
 | --------------- | --------------- |
 | icc              | String           |
 | msisdn           | String           |
-| state            | SimCardStates     |
+| state            | [ImsiStates](/general-information/data-types#imsistates)     |
 | operatorName     | String           |
-| dataSessionState | DataSessionStates |
+| dataSessionState | [DataSessionStates](/general-information/data-types#datasessionstates)  |
 
 ## ImsiStates
 
@@ -35,7 +35,6 @@ Enumeration, may have the following values:
 * OTHER
 * ADMIN_USER_ACTION
 
-
 ## DataSessionStates
 
 Enumeration, may have the following values:
@@ -50,7 +49,6 @@ Enumeration, may have the following values:
 
 * SUSPEND
 * ACTIVATE
-* TERMINATE
 * RESET
 
 ## RadioAccessTechnology
@@ -91,6 +89,7 @@ QCI_9 | Video (Buffered Streaming) TCP-Based (for example, www, email, chat, ftp
 ## Directions
 
 Enumeration, may have the following values:
+
 Value        | Description          
 ------------ | ------------- 
 INCOMING | Incoming traffic

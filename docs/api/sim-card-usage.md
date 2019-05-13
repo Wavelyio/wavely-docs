@@ -77,14 +77,14 @@ Message usage for a given **month** in a given **year** can be accessed by using
 | Field           | Type              | Description                                                     |
 | --------------- | ----------------- | --------------------------------------------------------------- |
 | icc             | String            | The unique identifier for the SIM card generating the usage.    |
-| year            | Number            | Year is given in the ISO 8601 format for example 2019.               |
+| year            | Number            | Year is given in the ISO 8601 format for example 2019.          |
 | month           | Number            | Month is represented as a number for example 'april = 4'        |
 | usageDate       | ISO 8601 DateTime | In UTC time.                                                    |
 | caller          | String            | Regular string and not necessarily a valid number.              |
-| called          | String            | E164 MSISDN, e.g. *+4523964804*                                 |
-| fromCountryCode | String            | Alpha2 code                                                     |
-| toCountryCode   | String            | Alpha2 code                                                     |
-| direction       | [Directions](/general-information/data-types#Directions)            | One of the following values can be present INCOMING or OUTGOING |
+| called          | String            | E164 MSISDN, e.g. *+4593709603*                                 |
+| fromCountryCode | String            | Alpha-2 code                                                    |
+| toCountryCode   | String            | Alpha-2 code                                                    |
+| direction       | [Directions](/general-information/data-types#directions)            |               |
 
 **Example response**
 
@@ -149,7 +149,7 @@ SMPP usage for a given **month** in a given **year** can be accessed by using th
 | called          | String            | Regular string and not necessarily a valid number.              |
 | fromCountryCode | String            | Alpha-2 code                                                     |
 | toCountryCode   | String            | Alpha-2 code                                                     |
-| direction       | [Directions](/general-information/data-types#Directions)            | |
+| direction       | [Directions](/general-information/data-types#directions)            | |
 
 **Example response**
 
@@ -211,12 +211,12 @@ Call usage for a given **month** in a given **year** can be accessed by using th
 | year            | Number            | Year is given in the ISO 8601 format for example 2019.                                                                            |
 | month           | Number            | Month is represented as a number for example 'april = 4'                                                                     |
 | usageDate       | ISO 8601 DateTime | In UTC time.                                                                                                                 |
-| caller          | String            | E164 MSISDN, e.g. *+4523964804*                                                                                              |
-| called          | String            | E164 MSISDN, e.g. *+4523964804*                                                                                              |
+| caller          | String            | E164 MSISDN, e.g. *+4593709603*                                                                                              |
+| called          | String            | E164 MSISDN, e.g. *+4593709603*                                                                                              |
 | duration        | Number            | Duration of the call measured in seconds, the result disregards network connection time. i.e. Only the billed call duration. |
 | fromCountryCode | String            | Alpha-2 code                                                                                                                  |
 | toCountryCode   | String            | Alpha-2 code                                                                                                                  |
-| direction       | [Directions](/general-information/data-types#Directions)            | One of the following values can be present INCOMING or OUTGOING                                                              |
+| direction       | [Directions](/general-information/data-types#directions)            |                                 |
 
 **Example response**
 

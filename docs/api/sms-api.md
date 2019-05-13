@@ -23,15 +23,15 @@ POST /sms
 
 Field        | Type          | Description
 ------------ | ------------- | ------------
-sendTo | String | The destination to send to
-sendFrom | String | The sender
+sendTo | String | E164 MSISDN, e.g. *+4593709603*
+sendFrom | String | An alphanumeric sender e.g. 'Wavely' or an E164 MSISDN, e.g. *+4593709603*
 plainText | String | The SMS itself
 
 **Example**
 
 ```
 {
-	"sendTo": "4523960001",
+	"sendTo": "+4523960001",
 	"sendFrom": "Wavely",
 	"plainText": "Hello! This is an important message from Wavely!"
 }

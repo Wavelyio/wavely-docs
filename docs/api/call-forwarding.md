@@ -39,8 +39,8 @@ targetMsisdn | String | "To" telephone number
 
 ```
 {
-	"sourceMsisdn": "4511111111",
-	"targetMsisdn": "4522222222"
+	"sourceMsisdn": "+4511111111",
+	"targetMsisdn": "+4522222222"
 }
 ```
 
@@ -62,7 +62,7 @@ targetMsisdn | String | The new "to" telephone number
 
 ```
 {
-	"targetMsisdn": "4533333333"
+	"targetMsisdn": "+4533333333"
 }
 ```
 

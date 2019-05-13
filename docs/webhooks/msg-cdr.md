@@ -7,7 +7,7 @@ This webhook details the SMS usage of SIM card, such as who sent the SMS and who
 Field        | Type          | Description
 ------------ | ------------- | ------------
 caller | String | E164 MSISDN, or alphanumeric sender, e.g. *Wavely*
-called | String | E164 MSISDN, e.g. *+4523964804*
+called | String | E164 MSISDN, e.g. *+4593709603*
 fromCountryCode | String | Any alpha-2 country code
 toCountryCode | String | Any alpha-2 country code
 usageDate | ISO 8601 DateTime |
@@ -17,7 +17,7 @@ usageDate | ISO 8601 DateTime |
 ```json
 {
 	"caller": "Wavely",
-	"called": "+4523964804",
+	"called": "+4593709603",
 	"fromCountryCode": "DK",
 	"toCountryCode": "DK",
 	"usageDate": "2019-05-10T12:46:32"

@@ -18,9 +18,9 @@ The information can be retrieved by following the URL:
 | icc                              | String            | The unique identifier for the SIM card generating the usage.                                                                    |
 | countryCode                      | String            | Alpha-2 code for the current country in which the SIM card generated usage.                                                      |
 | countryCodeUpdatedDate           | ISO 8601 DateTime | Last timestamp for when a change to the current country was observed.                                                           |
-| radioAccessTechnology            | [Radio Access Technology](/general-information/data-types#RadioAccessTechnology)            | Information about the latest radio technology we have observed the SIM card to use. |
+| radioAccessTechnology            | [Radio Access Technology](/general-information/data-types#radioaccesstechnology)            | Information about the latest radio technology we have observed the SIM card to use. |
 | radioAccessTechnologyUpdatedDate | ISO 8601 DateTime | Last timestamp for when we observed a change in the used radio technology.                                                      |
-| qci                              | [QCI](/general-information/data-types#QCI)            | Information about the latest quality control identifier observed for the SIM card on the network. |
+| qci                              | [QCI](/general-information/data-types#qci)            | Information about the latest quality control identifier observed for the SIM card on the network. |
 | qciUpdatedDate                   | ISO 8601 DateTime | Last timestamp for when we observed a change in the quality control indicator for the SIM card.                                 |
 | ipAddress                        | String            | IP address that was observed the SIM card on the network, this is only relevant for data traffic and package switching traffic. |
 | ipAddressUpdatedDate             | ISO 8601 DateTime | Last timestamp for when we observed a change to the SIM cards ip address.                                                       |

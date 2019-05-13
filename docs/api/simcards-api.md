@@ -16,13 +16,13 @@ Get SIM cards on account, with pagination, and with multiple optional filters.
 
 **Request Query Parameters**
 
-Field        | Type          | Description  | Required
------------- | ------------- | ------------ | ------------
-page | Integer | Page number for pagination | Yes
-limit | Integer | Page size | Yes
-iccFilter | String | Filter for ICC | No
-msisdnFilter | String | Filter for MSISDN | No
-operatorNameFilter  | String | Filter for operator name | No
+Field        		| Type          | Description  | Required
+------------------- | ------------- | ------------ | ------------
+page 		 		| Integer 		| Page number for pagination | Yes
+limit 		 		| Integer 		| Page size | Yes
+iccFilter 			| String 		| Filter for ICC | No
+msisdnFilter 		| String 		| Filter for MSISDN | No
+imsiFilter  		| String 		| Filter for the IMSI | No
 
 **Response Payload**
 
@@ -44,8 +44,8 @@ Queries the system for one SIM card, by ICC.
 Field        | Type          | Description
 ------------ | ------------- | ------------
 icc | String | The ICC of the SIM card
-msisdn | String | The phone number of the SIM, if it has any
-state | [SimCardState](/general-information/data-types/#simcardstate) | The current state of the SIM card
+msisdn | String | E164 MSISDN, e.g. *+4593709603*
+state | [ImsiStates](/general-information/data-types/#imsistates) | The current state of the SIM card
 operatorName | String | The name of the underlying telco operator
 pin1 | String |
 pin2 | String |
@@ -64,9 +64,12 @@ Provides some additional details about a single SIM card.
 
 Field        | Type          | Description
 ------------ | ------------- | ------------
-icc | String | The ICC of the SIM card
-msisdn | String | The phone number of the SIM, if it has any
-state | [SimCardState](/general-information/data-types/#simcardstate) | The current state of the SIM card
+icc 		| String | The ICC of the SIM card
+msisdn 		| String | E164 MSISDN, e.g. *+4593709603*
+state 		| [ImsiStates](/general-information/data-types/#imsistates) | The current state of the SIM card
+pendingState | [ImsiStates](/general-information/data-types/#imsistates) | The state the SIM card is about to change to
+operatorProfileName | String | Name of the operator profile assigned to the SIM card
+dataSessionState | [DataSessionStates](/general-information/data-types/#datasessionstates) | Information on the current data state of the SIM card
 
 ## Endpoint: Apply action to sim card
 
@@ -89,11 +92,3 @@ action | [SimCardActions](/general-information/data-types/#simcardactions) | The
 	"action": "ACTIVATE"
 }
 ```
-
-**Response Payload**
-
-Field        | Type          | Description
------------- | ------------- | ------------
-icc | String | The ICC of the SIM card
-msisdn | String | The phone number of the SIM, if it has any
-state | [SimCardState](/general-information/data-types/#simcardstate) | The current state of the SIM card
