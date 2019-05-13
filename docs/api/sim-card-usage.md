@@ -16,17 +16,17 @@ Data usage for a given **month** in a given **year** can be accesed by using the
 
 **Response structure and types**
 
-| Field       | Type     | Description                                                             |
-| ----------- | -------- | ----------------------------------------------------------------------- |
-| icc         | String   | The unique identifier for the sim card generating the usage.            |
-| year        | Number   | Year is given in the ISO format for example 2019.                       |
-| month       | Number   | Month is represented as a number for example 'april = 4'                |
-| usageDate   | ISO 8601 |                                                                         |
-| bytesIn     | Number   |                                                                         |
-| bytesOut    | Number   |                                                                         |
-| sessionId   | String   | Unique identifier for the session on the network.                       |
-| imei        | String   | The observed Imei number for the device generating the usage.           |
-| countryCode | String   | Alpha2 code                                                             |
+| Field       | Type              | Description                                                   |
+| ----------- | ----------------- | ------------------------------------------------------------- |
+| icc         | String            | The unique identifier for the sim card generating the usage.  |
+| year        | Number            | Year is given in the ISO format for example 2019.             |
+| month       | Number            | Month is represented as a number for example 'april = 4'      |
+| usageDate   | ISO 8601 DateTime | In UTC time.                                                  |
+| bytesIn     | Number            |                                                               |
+| bytesOut    | Number            |                                                               |
+| sessionId   | String            | Unique identifier for the session on the network.             |
+| imei        | String            | The observed Imei number for the device generating the usage. |
+| countryCode | String            | Alpha2 code                                                   |
 
 **Example response**
 ```json
@@ -35,7 +35,7 @@ Data usage for a given **month** in a given **year** can be accesed by using the
         "icc": "89454284200010500094",
         "year": 2019,
         "month": 5,
-        "usageDate": "2019-05-13T09:09:41+00:00",
+        "usageDate": "2019-05-13T09:09:41",
         "bytesIn": 5687,
         "bytesOut": 2345,
         "sessionId": "5a095ef3-pgw-c/64e1a109",
@@ -46,7 +46,7 @@ Data usage for a given **month** in a given **year** can be accesed by using the
         "icc": "89454284200010500094",
         "year": 2019,
         "month": 5,
-        "usageDate": "2019-05-13T09:14:35+00:00",
+        "usageDate": "2019-05-13T09:14:35",
         "bytesIn": 98457,
         "bytesOut": 5894,
         "sessionId": "5a095ef3-pgw-c/64e1a109",
@@ -67,17 +67,17 @@ Message usage for a given **month** in a given **year** can be accesed by using 
 
 **Response structure and types**
 
-| Field             | Type     | Description                                                             |
-| ----------------- | -------- | ----------------------------------------------------------------------- |
-| icc               | String   | The unique identifier for the sim card generating the usage.            |
-| year              | Number   | Year is given in the ISO format for example 2019.                       |
-| month             | Number   | Month is represented as a number for example 'april = 4'                |
-| usageDate         | ISO 8601 |                                                                         |
-| caller            | String   | Regular string and not necessarily a valid number.                      |
-| called            | String   | E164 MSISDN, e.g. *+4523964804*                                         |
-| fromCountryCode   | String   | Alpha2 code                                                             |
-| toCountryCode     | String   | Alpha2 code                                                             |
-| direction         | String   | One of the following values can be present INCOMING or OUTGOING         |
+| Field           | Type              | Description                                                     |
+| --------------- | ----------------- | --------------------------------------------------------------- |
+| icc             | String            | The unique identifier for the sim card generating the usage.    |
+| year            | Number            | Year is given in the ISO format for example 2019.               |
+| month           | Number            | Month is represented as a number for example 'april = 4'        |
+| usageDate       | ISO 8601 DateTime | In UTC time.                                                    |
+| caller          | String            | Regular string and not necessarily a valid number.              |
+| called          | String            | E164 MSISDN, e.g. *+4523964804*                                 |
+| fromCountryCode | String            | Alpha2 code                                                     |
+| toCountryCode   | String            | Alpha2 code                                                     |
+| direction       | String            | One of the following values can be present INCOMING or OUTGOING |
 
 **Example response**
 
@@ -90,7 +90,7 @@ Message usage for a given **month** in a given **year** can be accesed by using 
         "icc": "89454284200010500094",
         "year": 2019,
         "month": 5,
-        "usageDate": "2019-05-13T09:09:41+00:00",
+        "usageDate": "2019-05-13T09:09:41",
         "caller": "Wavely",
         "called": "+491745553079",
         "fromCountryCode": "DK",
@@ -101,7 +101,7 @@ Message usage for a given **month** in a given **year** can be accesed by using 
         "icc": "89454284200010500094",
         "year": 2019,
         "month": 5,
-        "usageDate": "2019-05-13T09:14:35+00:00",
+        "usageDate": "2019-05-13T09:14:35",
         "caller": "+491745553079",
         "called": "+4593709603",
         "fromCountryCode": "DE",
@@ -112,7 +112,7 @@ Message usage for a given **month** in a given **year** can be accesed by using 
         "icc": "89454284200010500094",
         "year": 2019,
         "month": 5,
-        "usageDate": "2019-05-13T09:14:35+00:00",
+        "usageDate": "2019-05-13T09:14:35",
         "caller": "+4593706589",
         "called": "+4525559603",
         "fromCountryCode": "DK",
@@ -132,17 +132,17 @@ SMPP usage for a given **month** in a given **year** can be accesed by using the
 
 **Response structure and types**
 
-| Field             | Type     | Description                                                             |
-| ----------------- | -------- | ----------------------------------------------------------------------- |
-| icc               | String   | The unique identifier for the sim card generating the usage.            |
-| year              | Number   | Year is given in the ISO format for example 2019.                       |
-| month             | Number   | Month is represented as a number for example 'april = 4'                |
-| usageDate         | ISO 8601 |                                                                         |
-| caller            | String   | Regular string and not necessarily a valid number.                      |
-| called            | String   | Regular string and not necessarily a valid number.                      |
-| fromCountryCode   | String   | Alpha2 code                                                             |
-| toCountryCode     | String   | Alpha2 code                                                             |
-| direction         | String   | One of the following values can be present INCOMING or OUTGOING         |
+| Field           | Type              | Description                                                     |
+| --------------- | ----------------- | --------------------------------------------------------------- |
+| icc             | String            | The unique identifier for the sim card generating the usage.    |
+| year            | Number            | Year is given in the ISO format for example 2019.               |
+| month           | Number            | Month is represented as a number for example 'april = 4'        |
+| usageDate       | ISO 8601 DateTime | In UTC time.                                                    |
+| caller          | String            | Regular string and not necessarily a valid number.              |
+| called          | String            | Regular string and not necessarily a valid number.              |
+| fromCountryCode | String            | Alpha2 code                                                     |
+| toCountryCode   | String            | Alpha2 code                                                     |
+| direction       | String            | One of the following values can be present INCOMING or OUTGOING |
 
 **Example response**
 
@@ -155,7 +155,7 @@ SMPP usage for a given **month** in a given **year** can be accesed by using the
         "icc": "89454284200010500094",
         "year": 2019,
         "month": 5,
-        "usageDate": "2019-05-13T09:09:41+00:00",
+        "usageDate": "2019-05-13T09:09:41",
         "caller": "Wavely",
         "called": "+491745553079",
         "fromCountryCode": "DK",
@@ -166,7 +166,7 @@ SMPP usage for a given **month** in a given **year** can be accesed by using the
         "icc": "89454284200010500094",
         "year": 2019,
         "month": 5,
-        "usageDate": "2019-05-13T09:14:35+00:00",
+        "usageDate": "2019-05-13T09:14:35",
         "caller": "+491745553079",
         "called": "+4593709603",
         "fromCountryCode": "DE",
@@ -177,7 +177,7 @@ SMPP usage for a given **month** in a given **year** can be accesed by using the
         "icc": "89454284200010500094",
         "year": 2019,
         "month": 5,
-        "usageDate": "2019-05-13T09:14:35+00:00",
+        "usageDate": "2019-05-13T09:14:35",
         "caller": "+4593706589",
         "called": "+4525559603",
         "fromCountryCode": "DK",
@@ -198,18 +198,18 @@ Call usage for a given **month** in a given **year** can be accesed by using the
 
 **Response structure and types**
 
-| Field             | Type     | Description                                                             |
-| ----------------- | -------- | ----------------------------------------------------------------------- |
-| icc               | String   | The unique identifier for the sim card generating the usage.            |
-| year              | Number   | Year is given in the ISO format for example 2019.                       |
-| month             | Number   | Month is represented as a number for example 'april = 4'                |
-| usageDate         | ISO 8601 |                                                                         |
-| caller            | String   | E164 MSISDN, e.g. *+4523964804*                                         |
-| called            | String   | E164 MSISDN, e.g. *+4523964804*                                         |
-| duration          | Number   | Duration of the call measured in seconds, the result disregards network connection time. i.e. Only the billed call duration.  |
-| fromCountryCode   | String   | Alpha2 code                                                             |
-| toCountryCode     | String   | Alpha2 code                                                             |
-| direction         | String   | One of the following values can be present INCOMING or OUTGOING         |
+| Field           | Type              | Description                                                                                                                  |
+| --------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| icc             | String            | The unique identifier for the sim card generating the usage.                                                                 |
+| year            | Number            | Year is given in the ISO format for example 2019.                                                                            |
+| month           | Number            | Month is represented as a number for example 'april = 4'                                                                     |
+| usageDate       | ISO 8601 DateTime | In UTC time.                                                                                                                 |
+| caller          | String            | E164 MSISDN, e.g. *+4523964804*                                                                                              |
+| called          | String            | E164 MSISDN, e.g. *+4523964804*                                                                                              |
+| duration        | Number            | Duration of the call measured in seconds, the result disregards network connection time. i.e. Only the billed call duration. |
+| fromCountryCode | String            | Alpha2 code                                                                                                                  |
+| toCountryCode   | String            | Alpha2 code                                                                                                                  |
+| direction       | String            | One of the following values can be present INCOMING or OUTGOING                                                              |
 
 **Example response**
 
@@ -219,7 +219,7 @@ Call usage for a given **month** in a given **year** can be accesed by using the
         "icc": "89454284200010500094",
         "year": 2019,
         "month": 5,
-        "usageDate": "2019-05-13T09:14:35+00:00",
+        "usageDate": "2019-05-13T09:14:35",
         "caller": "+491745553079",
         "called": "+4593709603",
         "duration": 849,
@@ -231,7 +231,7 @@ Call usage for a given **month** in a given **year** can be accesed by using the
         "icc": "89454284200010500094",
         "year": 2019,
         "month": 5,
-        "usageDate": "2019-05-13T12:18:24+00:00",
+        "usageDate": "2019-05-13T12:18:24",
         "caller": "+4593706589",
         "called": "+4525559603",
         "duration": 357,
