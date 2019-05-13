@@ -14,7 +14,7 @@ Get sim cards on account, with pagination, and with multiple optional filters.
 
 **Endpoint:** `GET /simcards`
 
-<h3>Request Query Parameters</h3>
+**Request Query Parameters**
 
 Field        | Type          | Description  | Required
 ------------ | ------------- | ------------ | ------------
@@ -24,7 +24,7 @@ iccFilter | String | Filter for ICC | No
 msisdnFilter | String | Filter for MSISDN | No
 operatorNameFilter  | String | Filter for operator name | No
 
-<h3>Response Payload</h3>
+**Response Payload**
 
 Field        | Type          | Description
 ------------ | ------------- | ------------
@@ -39,7 +39,7 @@ Queries the system for one sim card, by ICC.
 
 **Endpoint:** `GET /simcard/{icc}`
 
-<h3>Response Payload</h3>
+**Response Payload**
 
 Field        | Type          | Description
 ------------ | ------------- | ------------
@@ -76,7 +76,7 @@ Apply an action to the specified sim card, for example "activate sim card" or "s
 
 **Endpoint:** `POST /simcard/{icc}/action`
 
-<h3>Request Payload</h3>
+**Request Payload**
 
 Field        | Type          | Description
 ------------ | ------------- | ------------
@@ -90,7 +90,7 @@ action | [SimCardActions](/docs/user-guide/data-types/#simcardactions) | The act
 }
 ```
 
-<h3>Response Payload</h3>
+**Response Payload**
 
 Field        | Type          | Description
 ------------ | ------------- | ------------
