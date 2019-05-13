@@ -15,7 +15,6 @@ pages:
       - About: 'general-information/wavely-api-docs.md'
       - Security: 'general-information/security.md'
       - Roles: 'general-information/roles.md'
-      - Terminology: 'general-information/terminology.md'
       - Data Types: 'general-information/data-types.md'
       - General Errors: 'general-information/general-errors.md'
   - Web hooks:

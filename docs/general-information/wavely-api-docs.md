@@ -5,15 +5,15 @@ The API is continuously being developed and once it reaches a certain feature st
 
 To access this API, you need to have your designated API key and secret at the ready.
 
-## Technical Details
+# Technical Details
 
 The API expects JSON requests with the `Content-Type` header set to `application/json`.
 
-# URL
+## URL
 
 The API is available at: `https://platform.wavely.io/externalsimcardapi`. Only HTTPS is available.
 
-# Authentication
+## Authentication
 
 The API uses HTTP Basic Auth and expects one of your API key and secret pairs.
 
@@ -23,7 +23,7 @@ You have the ability to revoke specific credentials from your API management sec
 
 Only the owner and admin account types may view or modify the API credentials from your account.
 
-## Authentication Example
+### Authentication Example
 
 Let's imagine that you have the following:
 

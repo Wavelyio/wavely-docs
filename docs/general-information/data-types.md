@@ -10,7 +10,7 @@ Simple representation of a single sim card in our system.
 | msisdn           | String           |
 | state            | SimCardState     |
 | operatorName     | String           |
-| dataSessionState | DataSessionState |
+| dataSessionState | DataSessionStates |
 
 ## ImsiStates
 
@@ -36,7 +36,7 @@ Enumeration, may have the following values:
 * ADMIN_USER_ACTION
 
 
-## DataSessionState
+## DataSessionStates
 
 Enumeration, may have the following values:
 
