@@ -46,7 +46,6 @@ Field        | Type          | Description
 icc | String | The ICC of the SIM card
 msisdn | String | E164 MSISDN, e.g. *+4593709603*
 state | [ImsiStates](/general-information/data-types/#imsistates) | The current state of the SIM card
-operatorName | String | The name of the underlying telco operator
 pin1 | String |
 pin2 | String |
 puk1 | String |

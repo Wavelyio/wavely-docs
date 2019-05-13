@@ -9,7 +9,6 @@ Simple representation of a single SIM card in our system.
 | icc              | String           |
 | msisdn           | String           |
 | state            | [ImsiStates](/general-information/data-types#imsistates)     |
-| operatorName     | String           |
 | dataSessionState | [DataSessionStates](/general-information/data-types#datasessionstates)  |
 
 ## ImsiStates
