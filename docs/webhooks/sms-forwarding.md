@@ -9,15 +9,15 @@ Deliver SMS from MAP to HTTP/HTTPS.
 
 Field        | Type          | Description
 ------------ | ------------- | ------------
-fromMsisdn | String | E164 MSISDN, e.g. *+4523964804*
-toMsisdn | String | E164 MSISDN, e.g. *+4523964804*
+fromMsisdn | String | E164 MSISDN, e.g. *+4593709603*
+toMsisdn | String | E164 MSISDN, e.g. *+4593709603*
 messageText | String |
 
 **Example**
 
 ```json
 {
-	"fromMsisdn": "+4523964804",
+	"fromMsisdn": "+4593709603",
 	"toMsisdn": "+4523964803",
 	"messageText": "Hello. This is a message."
 }
