@@ -15,7 +15,6 @@ pages:
   - Home: 'index.md'
   - General information:
       - About: 'general-information/wavely-api-docs.md'
-      - Security: 'general-information/security.md'
       - Roles: 'general-information/roles.md'
       - Data types: 'general-information/data-types.md'
       - General errors: 'general-information/general-errors.md'
@@ -27,7 +26,6 @@ pages:
       - SMS forwarding: 'webhooks/sms-forwarding.md'
       - SIM card state change: 'webhooks/sim-card-state-change.md'
   - API specification:
-      - General information: 'api/general-information.md'
       - SMS: 'api/sms-api.md'
       - SIM cards: 'api/simcards-api.md'
       - Call forwarding: 'api/call-forwarding.md'

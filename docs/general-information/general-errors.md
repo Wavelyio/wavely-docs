@@ -1,4 +1,4 @@
-# General Errors
+# General errors
 
 **Below is a table of common error codes and statuses valid for any API request:**
 
