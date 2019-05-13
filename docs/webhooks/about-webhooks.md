@@ -25,4 +25,3 @@ Our back-ends will exchange the certificate and securely transmit the data.
 Access the Wavely Platform, navigate to the *WEBHOOKS* menu item in the left hand navigation bar, and use the *Action Button* in the top right hand corner. 
 
 ![create-webhook](../img/webhooks/create-webhook.png)
-

@@ -55,6 +55,8 @@ Enumeration, may have the following values:
 
 ## RadioAccessTechnology
 
+Enumeration, may have the following values:
+
 Value        | Description          
 ------------ | ------------- 
 UTRAN | 3G
@@ -65,6 +67,8 @@ HSPA_EVOLUTION | 3G or 4G
 E_UTRAN | LTE or 4G 
 
 ## QCI
+
+Enumeration, may have the following values:
 
 Value        | Description          
 ------------ | ------------- 
