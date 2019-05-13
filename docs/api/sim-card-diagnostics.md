@@ -9,7 +9,7 @@ The information can be retrieved by following the URL:
 `GET /simcards/{icc}/diagnostics`
 
 !!!info
-    Only sim cards that have been activated can be requested for diagnostics information
+    Only sim cards that have been activated can be requested for diagnostics information.
 
 **Response structure and types**
 
@@ -18,9 +18,9 @@ The information can be retrieved by following the URL:
 | icc                              | String            | The unique identifier for the sim card generating the usage.                                                                    |
 | countryCode                      | String            | Alpha2 code for the current country in which the sim card generated usage.                                                      |
 | countryCodeUpdatedDate           | ISO 8601 DateTime | Last timestamp for when a change to the current country was observed.                                                           |
-| radioAccessTechnology            | [Radio Access Technology](/docs/general-information/data-types#RadioAccessTechnology)            | Information about the latest radio technology we have observed the sim card to use.                   |
+| radioAccessTechnology            | [Radio Access Technology](/docs/general-information/data-types#RadioAccessTechnology)            | Information about the latest radio technology we have observed the sim card to use. |
 | radioAccessTechnologyUpdatedDate | ISO 8601 DateTime | Last timestamp for when we observed a change in the used radio technology.                                                      |
-| qci                              | [QCI](/docs/general-information/data-types#QCI)            | Informatiom about the latest quality control identificator observed for the sim card on the network.                            |
+| qci                              | [QCI](/docs/general-information/data-types#QCI)            | Informatiom about the latest quality control identificator observed for the sim card on the network. |
 | qciUpdatedDate                   | ISO 8601 DateTime | Last timestamp for when we observed a change in the quality control indicator for the sim card.                                 |
 | ipAddress                        | String            | IP address that was observed the sim card on the network, this is only relevant for data traffic and package switching traffic. |
 | ipAddressUpdatedDate             | ISO 8601 DateTime | Last timestamp for when we observed a change to the sim cards ip address.                                                       |
@@ -50,5 +50,5 @@ The information can be retrieved by following the URL:
 ```
 
 !!!info
-    Any of the properties except for the ICC may also be `null` when the diagnostic information is returned. 
+    Any of the properties except for the `icc` may also be `null` when the diagnostic information is returned. 
     If a value is `null` it simply means we have received no information about that property from the sim card.
