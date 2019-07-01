@@ -37,7 +37,7 @@ simcards | List([SimCard](/general-information/data-types/#simcarddto)) | The SI
 
 Queries the system for one SIM card, by ICC.
 
-**Endpoint:** `GET /simcard/{icc}`
+**Endpoint:** `GET /simcards/{icc}`
 
 **Response Payload**
 
@@ -57,7 +57,7 @@ puk2 | String |
 
 Provides some additional details about a single SIM card.
 
-**Endpoint:** `GET /simcard/{icc}/status`
+**Endpoint:** `GET /simcards/{icc}/status`
 
 **Response Payload**
 
@@ -76,7 +76,7 @@ dataSessionState | [DataSessionStates](/general-information/data-types/#datasess
 
 Apply an action to the specified SIM card, for example "activate SIM card" or "suspend SIM card".
 
-**Endpoint:** `POST /simcard/{icc}/action`
+**Endpoint:** `POST /simcards/{icc}/action`
 
 **Request Payload**
 
