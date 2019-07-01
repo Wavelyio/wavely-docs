@@ -11,25 +11,26 @@ This is the API for SIM card management. We currently expose the following actio
 **Description**
 
 Get SIM cards on account, with pagination, and with multiple optional filters.
+To retrieve the remaining pages simply change the page parameter of the query to the next page.
 
 **Endpoint:** `GET /simcards`
 
 **Request Query Parameters**
 
-Field        		| Type          | Description  | Required
-------------------- | ------------- | ------------ | ------------
-page 		 		| Integer 		| Page number for pagination | Yes
-limit 		 		| Integer 		| Page size | Yes
-iccFilter 			| String 		| Filter for ICC | No
-msisdnFilter 		| String 		| Filter for MSISDN | No
-imsiFilter  		| String 		| Filter for the IMSI | No
+| Field        | Type    | Description                | Required |
+| ------------ | ------- | -------------------------- | -------- |
+| page         | Integer | Page number for pagination | No       |
+| size         | Integer | Page size                  | No       |
+| iccFilter    | String  | Filter for ICC             | No       |
+| msisdnFilter | String  | Filter for MSISDN          | No       |
+| imsiFilter   | String  | Filter for the IMSI        | No       |
+
+!!! info
+	The page query parameters is 0-indexed. Such that the initial query will be `/simcards?page=0`
 
 **Response Payload**
 
-Field        | Type          | Description
------------- | ------------- | ------------
-totalCount | Long | How many SIM cards are available in total  
-simcards | List([SimCard](/general-information/data-types/#simcarddto)) | The SIM card collection
+[Page](/general-information/data-types/#Page(Type))([Simcard](/general-information/data-types/#SimCard))
 
 ## Endpoint: Get single sim card
 
@@ -82,12 +83,12 @@ Apply an action to the specified SIM card, for example "activate SIM card" or "s
 
 Field        | Type          | Description
 ------------ | ------------- | ------------
-action | [SimCardActions](/general-information/data-types/#simcardactions) | The action to apply to the SIM card
+simCardAction | [SimCardActions](/general-information/data-types/#simcardactions) | The action to apply to the SIM card
 
 **Example**
 
 ```
 {
-	"action": "ACTIVATE"
+	"simCardAction": "ACTIVATE"
 }
 ```
