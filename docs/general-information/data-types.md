@@ -1,5 +1,19 @@
 # Data types
 
+## Page(Type)
+The page response that the API will produce in case it supports pagination.
+Page types are parameterised by the returned type, this is similar to something like List(String)
+| Field            | Type                  |
+| ---------------- | --------------------- |
+| content          | List(Underlying type) |
+| totalPages       | Integer               |
+| last             | Boolean               |
+| totalElements    | Integer               |
+| size             | Integer               |
+| number           | Integer               |
+| numberOfElements | Integer               |
+| first            | Boolean               |
+
 ## SimCard
 
 Simple representation of a single SIM card in our system.
