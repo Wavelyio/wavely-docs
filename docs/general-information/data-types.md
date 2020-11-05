@@ -109,3 +109,14 @@ Value        | Description
 INCOMING | Incoming traffic
 OUTGOING | Outgoing traffic
 DEFAULT  | This value is only used if we are unable to determine in which direction traffic is flowing. 
+
+## CallForwardingRuleStatus
+
+Enumeration, may have the following values:
+
+Value           | Description          
+------------    | ------------- 
+PENDING_CREATE  | Creation is underway
+PENDING_UPDATE  | Update is underway
+CREATED         | Creation or update finalized
+FAILED          | Creation or update failed
