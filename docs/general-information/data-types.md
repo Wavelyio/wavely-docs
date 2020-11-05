@@ -109,3 +109,13 @@ Value        | Description
 INCOMING | Incoming traffic
 OUTGOING | Outgoing traffic
 DEFAULT  | This value is only used if we are unable to determine in which direction traffic is flowing. 
+
+## Network
+
+Describes as telecommunications network:
+
+| Field            | Type             |
+| --------------- | --------------- |
+| country              | Any alpha-2 country code            |
+| tadig           | String           |
+| plmn | String |
