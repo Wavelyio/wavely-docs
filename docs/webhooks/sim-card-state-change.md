@@ -9,8 +9,8 @@ For example, the SIM card was activated by a user.
 Field        | Type          | Description
 ------------ | ------------- | ------------
 icc | String |
-imsiState | ImsiStates |
-imsiStateReason | ImsiStateReasons |
+imsiState | [ImsiState](/general-information/data-types/#imsistates) |
+imsiStateReason | [ImsiStateReasons](/general-information/data-types/#imsistatereasons) |
 
 **Example**
 
