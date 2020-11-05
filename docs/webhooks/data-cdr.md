@@ -10,7 +10,7 @@ Field        | Type          | Description
 ------------ | ------------- | ------------
 bytesIn | Number |
 bytesOut | Number |
-network | [ImsiStates](/general-information/data-types/#network) | The mobile network used
+network | [Network](/general-information/data-types/#network) | The mobile network used
 sessionId | String | The mobile network data session ID
 imei | String | The IMEI number of the device using data
 usageDate | ISO 8601 DateTime |
