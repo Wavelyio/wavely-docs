@@ -66,6 +66,19 @@ Enumeration, may have the following values:
 * THROTTLE
 * UNTHROTTLE
 
+## NetworkSpeeds
+
+Enumeration, may have the following values:
+
+* KBIT_32
+* KBIT_64
+* KBIT_128
+* KBIT_256
+* KBIT_512
+* MBIT_1
+* MBIT_2
+* MBIT_5
+
 ## RadioAccessTechnology
 
 Enumeration, may have the following values:
