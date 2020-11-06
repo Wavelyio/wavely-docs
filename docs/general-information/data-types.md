@@ -19,12 +19,13 @@ Page types are parameterised by the returned type, this is similar to something 
 
 Simple representation of a single SIM card in our system.
 
-| Field            | Type             |
-| --------------- | --------------- |
-| icc              | String           |
-| msisdn           | String           |
-| state            | [ImsiStates](/general-information/data-types#imsistates)     |
-| dataSessionState | [DataSessionStates](/general-information/data-types#datasessionstates)  |
+| Field             | Type                                                                      |
+| ---------------   | ---------------                                                           |
+| icc               | String                                                                    |
+| msisdn            | String                                                                    |
+| state             | [ImsiStates](/general-information/data-types#imsistates)                  |
+| dataSessionState  | [DataSessionStates](/general-information/data-types#datasessionstates)    |
+| networkSpeed      | [NetworkSpeed](/general-information/data-types#networkspeed)              |
 
 ## ImsiStates
 
@@ -120,3 +121,19 @@ PENDING_CREATE  | Creation is underway
 PENDING_UPDATE  | Update is underway
 CREATED         | Creation or update finalized
 FAILED          | Creation or update failed
+
+## NetworkSpeed
+
+Enumeration, may have the following values:
+
+Value           | Description          
+------------    | ------------- 
+FULL            | No throttling is applied
+KBIT_32         | 32 Kbit speed maximum throughput
+KBIT_64         | 64 Kbit speed maximum throughput
+KBIT_128        | 128 Kbit speed maximum throughput
+KBIT_256        | 256 Kbit speed maximum throughput
+KBIT_512        | 512 Kbit speed maximum throughput
+MBIT_1          | 1 Mbit speed maximum throughput
+MBIT_2          | 2 Mbit speed maximum throughput
+MBIT_5          | 5 Mbit speed maximum throughput
