@@ -2,7 +2,7 @@
 
 Indicates that a SIM card has changed its IMSI state.
 
-For example, the SIM card was activated by a user.
+For example, a user activates or suspends the SIM card.
 
 ## Payload
 

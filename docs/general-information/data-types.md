@@ -41,13 +41,12 @@ Enumeration, may have the following values:
 Enumeration, may have the following values:
 
 * NONE
-* DISALLOWED_IMEI
-* USER_ACTION
-* CREDIT_LIMIT_EXCEEDED
-* CREDIT_LIMIT_EXCEEDED_CEASED
-* TRIGGER
-* OTHER
+* USER_WEB_ACTION
+* USER_API_ACTION
+* USER_TRIGGER
+* SYSTEM_TRIGGER
 * ADMIN_USER_ACTION
+* OTHER
 
 ## DataSessionStates
 
@@ -61,9 +60,11 @@ Enumeration, may have the following values:
 
 Enumeration, may have the following values:
 
-* SUSPEND
 * ACTIVATE
+* SUSPEND
 * RESET
+* THROTTLE
+* UNTHROTTLE
 
 ## RadioAccessTechnology
 
