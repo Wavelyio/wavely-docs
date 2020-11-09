@@ -8,18 +8,26 @@ Field        | Type          | Description
 ------------ | ------------- | ------------
 caller | String | E164 MSISDN, or alphanumeric sender, e.g. *Wavely*
 called | String | E164 MSISDN, e.g. *+4593709603*
-fromCountryCode | String | Any alpha-2 country code
-toCountryCode | String | Any alpha-2 country code
+fromNetwork | [Network](/general-information/data-types/#network) | The mobile-originating network
+toNetwork | [Network](/general-information/data-types/#network) | The mobile-terminating network
 usageDate | ISO 8601 DateTime |
 
 **Example**
 
 ```json
 {
-	"caller": "Wavely",
-	"called": "+4593709603",
-	"fromCountryCode": "DK",
-	"toCountryCode": "DK",
-	"usageDate": "2019-05-10T12:46:32"
+    "caller": "+4593709603",
+    "called": "+4593709604",
+    "fromNetwork": {
+        "country": "DK",
+        "tadig": "DNKHU",
+        "plmn": "23806"
+    },
+    "toNetwork": {
+        "country": "DK",
+        "tadig": "DNKHU",
+        "plmn": "23806"
+    },
+    "usageDate": "2020-11-05T13:42:41.454633"
 }
 ```

@@ -1,9 +1,7 @@
 # Wavely API docs
 This is the (evolving) documentation for the **Wavely API** for integration purposes.
 
-The API is continuously being developed and once it reaches a certain feature state, versioning will be introduced.
-
-To access this API, you need to have your designated API key and secret at the ready.
+The API is versioned for future continuous development. However, only one version is currently available.
 
 # Technical details
 
@@ -17,7 +15,7 @@ The API is available at: `https://platform.wavely.io/externalsimcardapi`. Only H
 
 The API uses HTTP Basic Auth and expects one of your API key and secret pairs.
 
-Every request against the API expects the *Authorization* header to be set. Otherwise the API will return a `401 – Unauthorized` response.
+Every request against the API expects the *Authorization* header to be set. Otherwise, the API will return a `401 – Unauthorized` response.
 
 You have the ability to revoke specific credentials from your API management section, immediately invalidating the access using the credentials.
 
@@ -34,6 +32,12 @@ Then your basic auth header should look like this:
 ```
 Authorization: Basic N2RlZmViM2ItZjAzYS00Y2Q4LWEzYzItZmVhNDVhMjVhYmU0OnRveXFkQ0FMRmFpMTl1V29mSURseGI2aHA3WmhPbGFmOXN4NWhURUsxR0lPSktVUjN5NHdBa1BUcnp2U3lISno=
 ```
+
+## Adding an API key
+
+Go to your account and go to your _Advanced_ settings, to create an API key. See below:
+
+![add-api-key](../img/webhooks/add-api-key.png)
 
 # Contact
 

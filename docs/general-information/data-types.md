@@ -42,13 +42,12 @@ Enumeration, may have the following values:
 Enumeration, may have the following values:
 
 * NONE
-* DISALLOWED_IMEI
-* USER_ACTION
-* CREDIT_LIMIT_EXCEEDED
-* CREDIT_LIMIT_EXCEEDED_CEASED
-* TRIGGER
-* OTHER
+* USER_WEB_ACTION
+* USER_API_ACTION
+* USER_TRIGGER
+* SYSTEM_TRIGGER
 * ADMIN_USER_ACTION
+* OTHER
 
 ## DataSessionStates
 
@@ -62,9 +61,11 @@ Enumeration, may have the following values:
 
 Enumeration, may have the following values:
 
-* SUSPEND
 * ACTIVATE
+* SUSPEND
 * RESET
+* THROTTLE
+* UNTHROTTLE
 
 ## RadioAccessTechnology
 
@@ -110,6 +111,16 @@ Value        | Description
 INCOMING | Incoming traffic
 OUTGOING | Outgoing traffic
 DEFAULT  | This value is only used if we are unable to determine in which direction traffic is flowing. 
+
+## Network
+
+Describes as telecommunications network:
+
+| Field            | Type             |
+| --------------- | --------------- |
+| country              | Any alpha-2 country code            |
+| tadig           | String           |
+| plmn | String |
 
 ## CallForwardingRuleStatus
 
