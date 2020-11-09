@@ -137,3 +137,25 @@ KBIT_512        | 512 Kbit speed maximum throughput
 MBIT_1          | 1 Mbit speed maximum throughput
 MBIT_2          | 2 Mbit speed maximum throughput
 MBIT_5          | 5 Mbit speed maximum throughput
+
+## CompanyOperatorProfileActionMapping
+
+Determines whether a profile is used for certain actions. E.g. when activating sim cards.
+
+Value           | Description          
+------------    | ------------- 
+ACTIVATE        | Determines the "default" operator profile used when activating sim cards
+SUSPEND         | Determines the profile used when suspend is used. This is controlled by the platform.
+
+## ConnectivityCapabilityTypes
+
+Defines what is enabled in a profile.
+
+Value           | Description          
+------------    | ------------- 
+INGOING_VOICE   | Ingoing voice service enabled
+OUTGOING_VOICE  | Outgoing voice service enabled
+INGOING_SMS     | Ingoing sms service enabled
+OUTGOING_SMS    | Outgoing sms service enabled
+DATA            | Data service enabled
+SMPP_SMS        | SMPP service enabled
