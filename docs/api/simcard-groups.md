@@ -40,6 +40,7 @@ Get sim card groups by their name.
 **Endpoint:** `GET /simcardgroups`
 
 **Query parameters**
+
 Field        	| Type          | Description
 ------------ 	| ------------- | ------------
 name 		    | String        | Name to query for
@@ -77,6 +78,7 @@ Add a collection of sim cards to a sim card group. Moving them if they already b
 **Endpoint:** `POST /simcardgroups/{simCardGroupGlobalId}/simcards`
 
 **Request Payload**
+
 Field        	| Type          | Description
 ------------ 	| ------------- | ------------
 iccList 		| List(String)  | List of icc numbers for sim cards to add to the group.

@@ -49,11 +49,14 @@ Create a new sim card tag
 **Endpoint:** `POST /simcardtags`
 
 **Request Payload**
-Field        	| Type          | Description
------------- 	| ------------- | ------------
-tag 		    | String        | Name of the new tag
+
+Field        	| Type          | Description           |
+------------ 	| ------------- | ------------          |
+tag 		    | String        | Name of the new tag   |
+
 
 **Response Payload**
+
 [SimCardTag](/api/simcard-tags/#simcardtag)
 
 ## Endpoint: Get sim card tag
@@ -100,6 +103,7 @@ Tag and untag sim cards for a specific sim card.
 **Endpoint:** `PATCH /simcardtags/{globalId}/simcards`
 
 **Request Payload**
+
 Field        	    | Type          | Description
 ------------ 	    | ------------- | ------------
 simCardsToAdd 	    | List(String)  | List of icc numbers for sim cards to tag.

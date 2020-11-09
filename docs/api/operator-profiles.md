@@ -23,12 +23,14 @@ identifier 		| String 																						| Global identifier for the operator
 actionMapping 	| [OperatorProfileActionMapping](/general-information/data-types#operatorprofileactionmapping) 	| the action mapping if any, that the operator profile is used for.
 
 ### SlimmedOperatorProfile
+
 Field        			| Type          							| Description
 ------------ 			| ------------- 							| ------------
 simcardCount 			| Long 										| The number of sim cards that use this operator profile
 companyOperatorProfile	| [Profile](/api/operator-profiles#Profile) | Profile meta data
 
 ### FullOperatorProfile
+
 Field        			| Type          																								| Description
 ------------ 			| ------------- 																								| ------------
 simcardCount 			| Long 																											| The number of sim cards that use this operator profile
@@ -80,6 +82,7 @@ Create a new operator profile
 **Endpoint:** `POST /operatorprofiles`
 
 **Request Payload**
+
 Field        	| Type          																				| Description
 ------------ 	| ------------- 																				| ------------
 name 			| String 																						| The number of sim cards that use this operator profile
@@ -100,6 +103,7 @@ Clone an existing operator profile with some changes applied at creation.
 **Endpoint:** `PATCH /operatorprofiles/{operatorProfileId}`
 
 **Request Payload**
+
 Field        	| Type          																								| Description
 ------------ 	| ------------- 																								| ------------
 name 			| String 																										| The number of sim cards that use this operator profile
@@ -120,6 +124,7 @@ Update configuration for existing profiles.
 **Endpoint:** `PATCH /operatorprofiles`
 
 **Request Payload**
+
 Field       | Type          																								| Description
 ------------| ------------- 																								| ------------
 id 			| Long 																										    | Id of the operator profile to apply the updates to
@@ -143,6 +148,7 @@ An operator profile can only be deleted if it is not currently in use by any sim
 **Endpoint:** `GET /allowedconfigs`
 
 **Response Payload**
+
 Field       | Type          																								| Description
 ------------| ------------- 																								| ------------
 configs	    | Map(String, List([ConnectivityCapabilityType](/general-information/data-types#connectivitycapabilitytypes))) 	| Available configurations for operator profiles
