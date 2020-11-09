@@ -43,7 +43,7 @@ Retrieve status and details for all call forwarding rules.
 **Response Payload** [CallForwardingRules](/api/call-forwarding#callforwardingrules)
 
 **Example**
-```
+```json
 {
 	"callforwardingRules": [
 		{
@@ -66,7 +66,7 @@ Retrieve status and details for single call forwarding rule.
 **Response Payload** [CallForwardingRule](/api/call-forwarding#callforwardingrule)
 
 **Example**
-```
+```json
 {
 	"id": 919,
 	"sourceMsisdn": "+4542895645",
@@ -87,7 +87,7 @@ Create a new call forwarding rule.
 
 **Example**
 
-```
+```json
 {
 	"sourceMsisdn": "+4511111111",
 	"targetMsisdn": "+4522222222"
@@ -96,7 +96,7 @@ Create a new call forwarding rule.
 
 **Response Payload** [CallForwardingRule](/api/call-forwarding#callforwardingrule)
 **Example**
-```
+```json
 {
 	"id": 919,
 	"sourceMsisdn": "+4511111111",
@@ -117,7 +117,7 @@ Update a forwarding rule with a new target MSISDN.
 
 **Example**
 
-```
+```json
 {
 	"targetMsisdn": "+4533333333"
 }
@@ -125,7 +125,7 @@ Update a forwarding rule with a new target MSISDN.
 
 **Response Payload** [CallForwardingRule](/api/call-forwarding#callforwardingrule)
 **Example**
-```
+```json
 {
 	"id": 919,
 	"sourceMsisdn": "+4542895645",

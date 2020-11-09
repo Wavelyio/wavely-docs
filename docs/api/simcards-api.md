@@ -88,29 +88,29 @@ simCardAction 	| [SimCardActions](/general-information/data-types/#simcardaction
 networkSpeed 	| [NetworkSpeed](/general-information/data-types/#networkspeed) 	| The network speed to apply to the sim card
 
 **Example**
-```
+```json
 {
 	"simCardAction": "ACTIVATE"
 }
 ```
-```
+```json
 {
 	"simCardAction": "THROTTLE",
 	"networkSpeed": "MBIT_1"
 }
 ```
-```
+```json
 {
 	"simCardAction": "ACTIVATE",
 	"networkSpeed": "MBIT_5"
 }
 ```
-```
+```json
 {
 	"simCardAction": "SUSPEND"
 }
 ```
-```
+```json
 {
 	"simCardAction": "UNTHROTTLE"
 }
