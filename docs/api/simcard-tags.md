@@ -2,12 +2,12 @@
 This is the API for operator sim card tag management.
 A sim card can have multiple tags at a time unlike sim card groups. 
 
-* Get sim card groups
-* get sim card grups by name
-* Get sim card group by id
-* Delete sim card group by id
-* Add sim cards to group
-* Remove sim card from group
+* Get sim card tags
+* Create sim card tag
+* Get sim card tag
+* Update sim card tag
+* Delete sim card tag
+* Update tagged sim cards for tag
 
 ## API objects
 
@@ -56,7 +56,7 @@ tag 		    | String        | Name of the new tag
 **Response Payload**
 [SimCardTag](/api/simcard-tags/#simcardtag)
 
-## Endpoint: Get sim card tag by id
+## Endpoint: Get sim card tag
 
 **Description**
 
@@ -83,7 +83,7 @@ Field        	| Type          | Description
 newName 		| String        | New name of the tag. This corresponds to the "tag" property of the tag
 
 
-## Endpoint: Delete sim card tag by id
+## Endpoint: Delete sim card tag
 
 **Description**
 
