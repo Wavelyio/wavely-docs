@@ -14,10 +14,10 @@ A sim card can be part of only one group at a time.
 ### SimCardGroup
 Field        	| Type          | Description
 ------------ 	| ------------- | ------------
-globalId 		| String        | id of the operator profile
-name 	        | String        | ISO 8601 datetime format
+globalId 		| String        | id of the sim card group
+name 	        | String        | Name of the group
 createdDate 	| String        | ISO 8601 datetime format
-simCardCount 	| String        | Name of the operator profile
+simCardCount 	| Integer       | Number of sim cards assigned to the group
 
 ## Endpoint: Get sim card groups
 
