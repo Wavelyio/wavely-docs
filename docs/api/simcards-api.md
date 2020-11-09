@@ -110,6 +110,11 @@ networkSpeed 	| [NetworkSpeed](/general-information/data-types/#networkspeed) 	|
 	"simCardAction": "SUSPEND"
 }
 ```
+```
+{
+	"simCardAction": "UNTHROTTLE"
+}
+```
 
 ## Endpoint: Update operator profile for sim card
 
