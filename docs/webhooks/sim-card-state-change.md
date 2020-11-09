@@ -2,15 +2,15 @@
 
 Indicates that a SIM card has changed its IMSI state.
 
-For example, the SIM card was activated by a user.
+For example, a user activates or suspends the SIM card.
 
 ## Payload
 
 Field        | Type          | Description
 ------------ | ------------- | ------------
 icc | String |
-imsiState | ImsiStates |
-imsiStateReason | ImsiStateReasons |
+imsiState | [ImsiState](/general-information/data-types/#imsistates) |
+imsiStateReason | [ImsiStateReasons](/general-information/data-types/#imsistatereasons) |
 
 **Example**
 
