@@ -28,7 +28,6 @@ pages:
   - API specification:
       - SMS: 'api/sms-api.md'
       - SIM cards: 'api/simcards-api.md'
-      - Call forwarding: 'api/call-forwarding.md'
       - Operator profiles: 'api/operator-profiles.md'
       - SIM card diagnostics: 'api/sim-card-diagnostics.md'
       - SIM card usage: 'api/sim-card-usage.md'
