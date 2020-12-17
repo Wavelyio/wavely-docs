@@ -11,6 +11,8 @@ caller | String | E164 MSISDN, e.g. *+4593709603*
 called | String | E164 MSISDN, e.g. *+4593709603*
 fromNetwork | [Network](/general-information/data-types/#network) | The mobile-originating network
 toNetwork | [Network](/general-information/data-types/#network) | The mobile-terminating network
+icc | String | The SIM-card identifier
+imsi | String | International mobile subscriber identity
 usageDate | ISO 8601 DateTime |
 
 **Example**
@@ -31,6 +33,8 @@ usageDate | ISO 8601 DateTime |
         "tadig": "DNKHU",
         "plmn": "23806"
     },
+    "icc": "89454284200010500045",
+    "imsi": "238420001050004",
     "usageDate": "2020-11-05T13:42:41.454633"
 }
 ```
@@ -46,6 +50,8 @@ usageDate | ISO 8601 DateTime |
         "plmn": "23806"
     },
     "toNetwork": null,
+    "icc": "89454284200010500045",
+    "imsi": "238420001050004",
     "usageDate": "2020-11-05T13:42:41.454633"
 }
 ```
