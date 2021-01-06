@@ -67,6 +67,14 @@ Enumeration, may have the following values:
 * THROTTLE
 * UNTHROTTLE
 
+## SimCardTypes
+
+Enumeration, may have the following values:
+
+* STANDALONE
+* VIRTUAL
+* ESIM
+
 ## RadioAccessTechnology
 
 Enumeration, may have the following values:

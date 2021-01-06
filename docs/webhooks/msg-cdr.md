@@ -10,6 +10,8 @@ caller | String | E164 MSISDN, or alphanumeric sender, e.g. *Wavely*
 called | String | E164 MSISDN, e.g. *+4593709603*
 fromNetwork | [Network](/general-information/data-types/#network) | The mobile-originating network
 toNetwork | [Network](/general-information/data-types/#network) | The mobile-terminating network
+icc | String | The SIM-card identifier
+imsi | String | International mobile subscriber identity
 usageDate | ISO 8601 DateTime |
 
 **Example**
@@ -28,6 +30,8 @@ usageDate | ISO 8601 DateTime |
         "tadig": "DNKHU",
         "plmn": "23806"
     },
+    "icc": "89454211095593135450",
+    "imsi": "238420001050000",
     "usageDate": "2020-11-05T13:42:41.454633"
 }
 ```

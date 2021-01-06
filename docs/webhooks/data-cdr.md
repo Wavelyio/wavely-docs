@@ -13,8 +13,9 @@ bytesOut | Number |
 network | [Network](/general-information/data-types/#network) | The mobile network used
 sessionId | String | The mobile network data session ID
 imei | String | The IMEI number of the device using data
+icc | String | The SIM-card identifier
+imsi | String | International mobile subscriber identity
 usageDate | ISO 8601 DateTime |
-icc | String | The SIM card identifier
 
 **Example**
 
@@ -29,7 +30,8 @@ icc | String | The SIM card identifier
     },
     "sessionId": "5b2244da-pgw-c/6faf764",
     "imei": "9900120101772509",
-    "usageDate": "2020-11-05T13:38:48.045093",
-    "icc": "89454211095593135450"
+    "icc": "89454211095593135450",
+    "imsi": "238420001050000",
+    "usageDate": "2020-11-05T13:38:48.045093"
 }
 ```
