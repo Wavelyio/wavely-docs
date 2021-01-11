@@ -210,6 +210,23 @@ Simple representation of an invoice line
 | description      | String |
 
 
+## DataUsageByCompany
+
+| Field             | Type                                                                      |
+| ---------------   | ---------------                                                           |
+| totalValue               | Number                                                                    |
+| year            | Number |
+| month            | String |
+
+## DataUsageBySimCardCollections
+
+| Field             | Type                                                                      |
+| ---------------   | ---------------                                                           |
+| simCardCollectionGlobalId               | UUID                                                                    |
+| totalValue               | Number                                                                    |
+| year            | Number |
+| month            | String |
+
 
 ## BillableType
 Enumeration, may have the following values:

@@ -1,140 +1,41 @@
-# SIM card API
-This is the API for SIM card management. We currently expose the following actions:
+# Data Usage API
+This is the API for querying data usage. We currently expose the following actions:
 
-* Get SIM cards
-* Get single SIM card
-* Get status of single SIM card
-* Perform action on single SIM card
+* Get data usage as a total for a company in a month
+* Get data usage for a company in a month, grouped by SIM card groups
 
-## Endpoint: Get SIM cards
+## Endpoint: Get data usage for company in month
 
 **Description**
 
-Get SIM cards on account, with pagination, and with multiple optional filters.
-To retrieve the remaining pages simply change the page parameter of the query to the next page.
+Get the data usage of a company in a month, as a total value in bytes.
 
-**Endpoint:** `GET /simcards`
+**Endpoint:** `GET /usage/data/{year}/{month}`
 
 **Request Query Parameters**
 
 | Field        | Type    | Description                | Required |
 | ------------ | ------- | -------------------------- | -------- |
-| page         | Integer | Page number for pagination | No       |
-| size         | Integer | Page size                  | No       |
-| iccFilter    | String  | Filter for ICC             | No       |
-| msisdnFilter | String  | Filter for MSISDN          | No       |
-| imsiFilter   | String  | Filter for the IMSI        | No       |
-
-!!! info
-	The page query parameters is 0-indexed. Such that the initial query will be `/simcards?page=0`
+| year         | Integer | Year to see data usage in | Yes       |
+| month        | String  | Month, in text, to see consumption for                  | Yes       |
 
 **Response Payload**
 
-[Page](/general-information/data-types/#Page(Type))([Simcard](/general-information/data-types/#SimCard))
+[DataUsageByCompany](/general-information/data-types/#DataUsageByCompany)
 
-## Endpoint: Get single sim card
+## Endpoint: Get data usage for SIM card group in month
 
 **Description**
 
-Queries the system for one SIM card, by ICC.
+QGet the data usage of a company in a month, grouped by SIM card groups.
 
-**Endpoint:** `GET /simcards/{icc}`
+**Endpoint:** `GET /usage/data/collections/{year}/{month}`
 
 **Response Payload**
 
-Field        	| Type          												| Description
------------- 	| ------------- 												| ------------
-icc 			| String 														| The ICC of the SIM card
-msisdn 			| String 														| E164 MSISDN, e.g. *+4593709603*
-state 			| [ImsiStates](/general-information/data-types/#imsistates) 	| The current state of the SIM card
-pin1 			| String 														| Primary pin code for the sim card
-pin2 			| String 														| Secondary pin code for the sim card
-puk1 			| String 														| Primary puk code for the sim card
-puk2 			| String 														| Secondary puk code for the sim card
-networkSpeed 	| [NetworkSpeed](/general-information/data-types/#networkspeed) | Network speed property of the sim card
+| Field        | Type    | Description                | Required |
+| ------------ | ------- | -------------------------- | -------- |
+| year         | Integer | Year to see data usage in | Yes       |
+| month        | String  | Month, in text, to see consumption for                  | Yes       |
 
-## Endpoint: Get status of single SIM card
-
-**Description**
-
-Provides some additional details about a single SIM card.
-
-**Endpoint:** `GET /simcards/{icc}/status`
-
-**Response Payload**
-
-Field        		| Type          															| Description
------------- 		| ------------- 															| ------------
-icc 				| String 																	| The ICC of the SIM card
-msisdn 				| String 																	| E164 MSISDN, e.g. *+4593709603*
-state 				| [ImsiStates](/general-information/data-types/#imsistates) 				| The current state of the SIM card
-pendingState 		| [ImsiStates](/general-information/data-types/#imsistates) 				| The state the SIM card is about to change to
-operatorProfileName | String 																	| Name of the operator profile assigned to the SIM card
-dataSessionState 	| [DataSessionStates](/general-information/data-types/#datasessionstates) 	| Information on the current data state of the SIM card
-
-## Endpoint: Apply action to sim card
-
-**Description**
-
-Apply an action to the specified SIM card, for example "activate SIM card" or "suspend SIM card".
-
-**Endpoint:** `POST /simcards/{icc}/action`
-
-**Request Payload**
-
-Field        	| Type          													| Description
------------- 	| ------------- 													| ------------
-simCardAction 	| [SimCardActions](/general-information/data-types/#simcardactions) | The action to apply to the SIM card
-networkSpeed 	| [NetworkSpeed](/general-information/data-types/#networkspeed) 	| The network speed to apply to the sim card
-
-**Example**
-```json
-{
-	"simCardAction": "ACTIVATE"
-}
-```
-```json
-{
-	"simCardAction": "THROTTLE",
-	"networkSpeed": "MBIT_1"
-}
-```
-```json
-{
-	"simCardAction": "ACTIVATE",
-	"networkSpeed": "MBIT_5"
-}
-```
-```json
-{
-	"simCardAction": "SUSPEND"
-}
-```
-```json
-{
-	"simCardAction": "UNTHROTTLE"
-}
-```
-
-## Endpoint: Update operator profile for sim card
-
-**Description**
-
-Update the operator profile for a single sim card
-
-**Endpoint:** `PUT /simcards/{icc}/operatorprofiles`
-
-**Request Payload**
-
-Field        		| Type          | Description
------------- 		| ------------- | ------------
-operatorProfileId 	| Long 			| The operator profile to apply
-
-
-## Endpoint: Remove sim card from its sim card group if present
-
-**Description**
-
-Remove the sim card group relation for the sim card
-
-**Endpoint:** `DELETE /simcards/{icc}/simcardgroup`
+List([DataUsageBySimCardCollections](/general-information/data-types/#DataUsageBySimCardCollections))
