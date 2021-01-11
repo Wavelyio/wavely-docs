@@ -2,7 +2,8 @@
 This is the API for querying data usage. We currently expose the following actions:
 
 * Get data usage as a total for a company in a month
-* Get data usage for a company in a month, grouped by SIM card groups
+* Get data usage for a company in a month, grouped by SIM card collections
+* Get data usage for a company in a month, for a specified SIM card collections
 
 ## Endpoint: Get data usage for company in month
 
@@ -23,11 +24,11 @@ Get the data usage of a company in a month, as a total value in bytes.
 
 [DataUsageByCompany](/general-information/data-types/#DataUsageByCompany)
 
-## Endpoint: Get data usage for SIM card group in month
+## Endpoint: Get data usage for SIM card collections in month
 
 **Description**
 
-QGet the data usage of a company in a month, grouped by SIM card groups.
+Get the data usage of a company in a month, grouped by SIM card groups.
 
 **Endpoint:** `GET /usage/data/collections/{year}/{month}`
 
@@ -39,6 +40,10 @@ QGet the data usage of a company in a month, grouped by SIM card groups.
 | month        | String  | Month, in text, to see consumption for                  | Yes       |
 
 List([DataUsageBySimCardCollections](/general-information/data-types/#DataUsageBySimCardCollections))
+
+## Endpoint: Get data usage for SIM card group in month
+
+**Description**
 
 **Endpoint:** `GET /usage/data/collections/{collectionId}/{year}/{month}`
 
