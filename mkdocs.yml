@@ -33,3 +33,4 @@ pages:
       - SIM card usage: 'api/sim-card-usage.md'
       - SIM card groups: 'api/simcard-groups.md'
       - SIM card tags: 'api/simcard-tags.md'
+      - Call forwarding: 'api/call-forward.md'
