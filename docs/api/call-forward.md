@@ -9,11 +9,11 @@ This is the API for call forwarding management.
 ## API Objects
 
 ### CallForwardingRule
-Field           | Type          | Description
-------------    | ------------  | ------------
-sourceMsisdn    | String        | Source msisdn of the call forward rule
-targetMsisdn    | String        | Target msisdn of the call forward rule
-createdDate     | LocalDateTime | Date when rule is created
+Field           | Type              | Description
+------------    | ------------      | ------------
+sourceMsisdn    | String            | Source msisdn of the call forward rule
+targetMsisdn    | String            | Target msisdn of the call forward rule
+createdDate     | ISO 8601 DateTime | Date when rule is created
 
 ## Endpoint: Get call forwarding rules
 
