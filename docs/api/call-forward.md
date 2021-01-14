@@ -9,11 +9,11 @@ This is the API for call forwarding management.
 ## API Objects
 
 ### CallForwardingRule
-Field           | Type          | Description
-------------    | ------------  | ------------
-sourceMsisdn    | String        | Source msisdn of the call forward rule
-targetMsisdn    | String        | Target msisdn of the call forward rule
-createdDate     | LocalDateTime | Date when rule is created
+Field           | Type                  | Description
+--------------- | --------------------- | --------------------------------------
+sourceMsisdn    | String                | Source msisdn of the call forward rule
+targetMsisdn    | String                | Target msisdn of the call forward rule
+createdDate     | ISO 8601 DateTime UTC | Date when rule is created
 
 ## Endpoint: Get call forwarding rules
 
@@ -26,6 +26,23 @@ Get all call forwarding rules
 **Response Payload**
 
 List([CallForwardingRule](/api/call-forward/#callforwardingrule))
+
+**Example response**
+
+```
+[
+  {
+    "sourceMsisdn": "+4522222222",
+    "targetMsisdn": "+4533333333",
+    "createdDate": "2021-01-01T22:33:44"
+  },
+  {
+    "sourceMsisdn": "+4544445566",
+    "targetMsisdn": "+4599887766",
+    "createdDate": "2020-12-12T11:22:33"
+  }
+]
+```
 
 ## Endpoint: Get callforwarding rule by msisdn
 
@@ -44,6 +61,16 @@ msisdn          | String        | Msisdn to lookup
 **Response Payload**
 
 [CallForwardingRule](/api/call-forward/#callforwardingrule)
+
+**Example response**
+
+```
+{
+  "sourceMsisdn": "+4577889900",
+  "targetMsisdn": "+4588990001",
+  "createdDate": "2020-12-12T22:33:44"
+}
+```
 
 ## Endpoint: Delete call forwarding rule by msisdn
 
@@ -67,3 +94,12 @@ Field           | Type          | Description
 ------------    | ------------  | ------------
 sourceMsisdn    | String        | The msisdn to be forwarded
 targetMsisdn    | String        | The msisdn to receive the forward
+
+**Example**
+
+```
+{
+    "sourceMsisdn": "+4522222222",
+    "targetMsisdn": "+4544444444"
+}
+```
