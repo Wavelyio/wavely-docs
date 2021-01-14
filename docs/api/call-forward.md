@@ -11,7 +11,7 @@ This is the API for call forwarding management.
 ### CallForwardingRule
 Field           | Type          | Description
 ------------    | ------------  | ------------
-sourceMsiddn    | String        | Source msisdn of the call forward rule
+sourceMsisdn    | String        | Source msisdn of the call forward rule
 targetMsisdn    | String        | Target msisdn of the call forward rule
 createdDate     | LocalDateTime | Date when rule is created
 
