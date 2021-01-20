@@ -14,10 +14,10 @@ If the month is current not-finished month, the invoice will be the most recent 
 
 **Request Query Parameters**
 
-| Field        | Type    | Description                | Required |
-| ------------ | ------- | -------------------------- | -------- |
-| year         | Integer | Year for the invoice in ISO 8601 format      | Yes       |
-| month        | String  | Month for invoice, fx "may"| Yes       |
+| Field        | Type    | Description                          | Required |
+| ------------ | ------- | ------------------------------------ | -------- |
+| year         | Integer | Year to see invoice for              | Yes       |
+| month        | String  | Month, in text, to see invoice for   | Yes       |
 
 
 **Response Payload**
