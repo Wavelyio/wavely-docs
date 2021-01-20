@@ -22,5 +22,5 @@ If the month is current not-finished month, the invoice will be the most recent 
 
 **Response Payload**
 
-[Invoice](/general-information/data-types/#BasicInvoice)
+[Invoice](/general-information/data-types/#basicinvoice)
 

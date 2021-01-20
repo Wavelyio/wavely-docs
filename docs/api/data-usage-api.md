@@ -22,7 +22,7 @@ Get the data usage of a company in a month, as a total value in bytes.
 
 **Response Payload**
 
-[DataUsageByCompany](/general-information/data-types/#DataUsageByCompany)
+[DataUsageByCompany](/general-information/data-types/#datausagebycompany)
 
 ## Endpoint: Get data usage for SIM card collections in month
 
@@ -39,7 +39,7 @@ Get the data usage of a company in a month, grouped by SIM card groups.
 | year         | Integer | Year to see data usage in                | Yes      |
 | month        | String  | Month, in text, to see consumption for   | Yes      |
 
-List([DataUsageBySimCardCollections](/general-information/data-types/#DataUsageBySimCardCollections))
+List([DataUsageBySimCardCollections](/general-information/data-types/#datausagebysimcardcollections))
 
 ## Endpoint: Get data usage for SIM card group in month
 
@@ -55,4 +55,4 @@ List([DataUsageBySimCardCollections](/general-information/data-types/#DataUsageB
 | year         | Integer | Year to see data usage in                                    | Yes      |
 | month        | String  | Month, in text, to see consumption for                       | Yes      |
 
-[DataUsageBySimCardCollections](/general-information/data-types/#DataUsageBySimCardCollections)
+[DataUsageBySimCardCollections](/general-information/data-types/#datausagebysimcardcollections)
