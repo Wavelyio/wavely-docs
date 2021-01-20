@@ -3,7 +3,7 @@ This is the API for operator sim card group management.
 A sim card can be part of only one group at a time.
 
 * Get sim card groups
-* get sim card grups by name
+* Get sim card groups by name
 * Get sim card group by id
 * Delete sim card group by id
 * Add sim cards to group
