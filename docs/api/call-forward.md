@@ -9,11 +9,12 @@ This is the API for call forwarding management.
 ## API Objects
 
 ### CallForwardingRule
-Field           | Type                  | Description
---------------- | --------------------- | --------------------------------------
-sourceMsisdn    | String                | Source msisdn of the call forward rule
-targetMsisdn    | String                | Target msisdn of the call forward rule
-createdDate     | ISO 8601 DateTime UTC | Date when rule is created
+Field               | Type                  | Description
+------------------- | --------------------- | -----------------------------------------------
+sourceMsisdn        | String                | Source msisdn of the call forward rule
+targetMsisdn        | String                | Target msisdn of the call forward rule
+anonymousCallerId   | Boolean               | Enable anonymous caller id when forwarding call
+createdDate         | ISO 8601 DateTime UTC | Date when rule is created
 
 ## Endpoint: Get call forwarding rules
 
@@ -34,11 +35,13 @@ List([CallForwardingRule](/api/call-forward/#callforwardingrule))
   {
     "sourceMsisdn": "+4522222222",
     "targetMsisdn": "+4533333333",
+    "anonymousCallerId": false,
     "createdDate": "2021-01-01T22:33:44"
   },
   {
     "sourceMsisdn": "+4544445566",
     "targetMsisdn": "+4599887766",
+    "anonymousCallerId": true,
     "createdDate": "2020-12-12T11:22:33"
   }
 ]
@@ -68,6 +71,7 @@ msisdn          | String        | Msisdn to lookup
 {
   "sourceMsisdn": "+4577889900",
   "targetMsisdn": "+4588990001",
+  "anonymousCallerId": false,
   "createdDate": "2020-12-12T22:33:44"
 }
 ```
@@ -90,16 +94,18 @@ Create new call forwarding rule.
 
 **Request Payload**
 
-Field           | Type          | Description
-------------    | ------------  | ------------
-sourceMsisdn    | String        | The msisdn to be forwarded
-targetMsisdn    | String        | The msisdn to receive the forward
+Field             | Type          | Description
+------------      | ------------  | ------------
+sourceMsisdn      | String        | The msisdn to be forwarded
+targetMsisdn      | String        | The msisdn to receive the forward
+anonymousCallerId | Boolean       | If caller id should be hidden on callee phone 
 
 **Example**
 
 ```
 {
     "sourceMsisdn": "+4522222222",
-    "targetMsisdn": "+4544444444"
+    "targetMsisdn": "+4544444444",
+    "anonymousCallerId": true
 }
 ```

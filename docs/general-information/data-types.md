@@ -178,3 +178,86 @@ INGOING_SMS     | Ingoing sms service enabled
 OUTGOING_SMS    | Outgoing sms service enabled
 DATA            | Data service enabled
 SMPP_SMS        | SMPP service enabled
+
+## BasicInvoice
+
+Simple representation of an invoice
+
+| Field             | Type                                                                      |
+| ---------------   | ---------------                                                           |
+| invoiceNumber               | Long                                                                    |
+| startDate            | ISO 8601 Date                                                                    |
+| endDate             | ISO 8601 Date                  |
+| currencyCode  | String    |
+| invoiceLines      | List([InvoiceLine](/general-information/data-types#BasicInvoiceLineDTO))   
+
+
+## BasicInvoiceLine
+
+Simple representation of an invoice line
+
+| Field             | Type                                                                      |
+| ---------------   | ---------------                                                           |
+| quantity               | Number                                                                    |
+| fromType            | [BillableType](/general-information/data-types#BillableType) |
+| toType            | [BillableType](/general-information/data-types#BillableType) |
+| fromCountry             | [CountryCode](/general-information/data-types#CountryCode) |
+| toCountry             | [CountryCode](/general-information/data-types#CountryCode) |
+| direction  | [Directions](/general-information/data-types#Directions) |
+| productName      | String |
+| chargeableName      | String |
+| chargeablePackageName      | String |
+| description      | String |
+
+
+## DataUsageByCompany
+
+| Field             | Type                                                                      |
+| ---------------   | ---------------                                                           |
+| totalValue               | Number                                                                    |
+| year            | Number |
+| month            | String |
+
+## DataUsageBySimCardCollections
+
+| Field             | Type                                                                      |
+| ---------------   | ---------------                                                           |
+| simCardCollectionGlobalId               | UUID                                                                    |
+| totalValue               | Number                                                                    |
+| year            | Number |
+| month            | String |
+
+
+## BillableType
+Enumeration, may have the following values:
+
+Value                   |
+------------            |
+VOICE                           |
+SMS                             |
+DATA                            |
+SMPP_SMS                        |
+MMS                             |
+HTTP                            |
+SUBSCRIPTION_BASE               |
+SUBSCRIPTION_ACTIVE             |
+CREDIT                          |
+DEBIT                           |
+DEBUG                           |
+DEFAULT                         |
+ALPHANUMERIC_SMS                |
+CHARGEABLE_PACKAGE              |
+SMPP_SUBSCRIPTION               |
+STATIC_IP_SUBSCRIPTION          |
+VPN_SUBSCRIPTION                |
+CLOSED_NETWORK_SUBSCRIPTION     |     
+SLA_PREMIUM_SUBSCRIPTION        |  
+SETUP_AND_ALLOCATION            |
+PHONE_NUMBER_ALLOCATION         | 
+
+## CountryCode
+
+Enumeration of country codes in ISO 3166-1 format, fx. "DK" and "FI"
+
+
+
