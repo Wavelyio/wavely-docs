@@ -15,6 +15,24 @@ Page types are parameterised by the returned type, this is similar to something 
 | numberOfElements | Integer               |
 | first            | Boolean               |
 
+## Company
+Representation of company
+
+| Field            | Type                  |
+| ---------------- | --------------------- |
+| accountManager   | List(AccountManager)  |
+| accountManagerId | Integer               |
+| alias            | String                |
+| branding         | String                |
+| createdDate      | String                |
+| globalId         | String                |
+| hasSubTenants    | Boolean               |
+| id               | Integer               |
+| name             | String                |
+| parentTenantGuid | String                |
+| updatedDate      | String                |
+| vatNumnber       | String                |
+
 ## SimCard
 
 Simple representation of a single SIM card in our system.
