@@ -277,5 +277,58 @@ PHONE_NUMBER_ALLOCATION         |
 
 Enumeration of country codes in ISO 3166-1 format, fx. "DK" and "FI"
 
+## UserAccount
+
+| Field            | Type                  |
+| ---------------- | --------------------- |
+| companyRoles     | List(String)          |
+| email            | String                |
+| firstName        | String                |
+| globalId         | String                |
+| createdDate      | String                |
+| lastLoginDate         | String                |
+| lastName    | String               |
+| phoneNumber               | String               |
+
+## Contract
+
+Fields with String and Integer values
+
+| Field      | 
+| ---------- | 
+| activationDate | 
+| approverAccountId | 
+| authorAccountId | 
+| commitmentStartDate | 
+| contractType | 
+| createdDate | 
+| description | 
+| endDate | 
+| globalId | 
+| minimumCommitmentPerMonth | 
+| name | 
+| startDate | 
+| uniqueGlobalId | 
+| updatedDate | 
+| version | 
+
+## Invite
+
+Fields with String, Integer and Arrays value
+
+| Field      | Type |
+| ---------- | ---- |
+| companyId | Integer |
+| companyRoles | Array |
+| createdDate | String |
+| email | String |
+| firstName | String |
+| id | String |
+| inviteToken | String | 
+| inviteTokenExpiryDate | String |
+| invitedByAccountGlobalId | String |
+| lastName | String |
+| phoneNumber | String |
+| resources | Array |
 
 

@@ -36,4 +36,5 @@ pages:
       - Call forwarding: 'api/call-forward.md'
       - Data Usage API: 'api/data-usage-api.md'
       - Invoice API: 'api/invoice-api.md'
+      - Invite Owner API: 'api/invite-owner.md'
       - Multi Level Tenancy: 'api/mlt.md'

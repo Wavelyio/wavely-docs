@@ -10,9 +10,11 @@ MLT has brought several unic endpoints, but in general, it uses similair endoint
 * [Operator Profiles](/api/operator-profiles/)
 * Tags (api doesn't exist)
 * [Triggers]()
+* [Invite owner](api/invite-owner/)
 
+***
 
-### /Get subtenants of company
+### Get subtenants of company
 
 **Endpoint:** `GET /tenant/companies`
 
@@ -20,13 +22,15 @@ MLT has brought several unic endpoints, but in general, it uses similair endoint
 
 Response is array of [Company](/docs/general-information/data-types#company) objects
 
+***
 
-### /Get sim cards of tenant itself and subtenants 
+### Get sim cards of tenant itself and subtenants 
 
 **Endpoint:** `GET /simcards/subtenants`
 
 **Response payload**
 
 Returns [Page](/general-information/data-types/#Page(Type))([Simcard](/general-information/data-types/#SimCard))
+
 
 
