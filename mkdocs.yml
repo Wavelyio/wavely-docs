@@ -41,3 +41,4 @@ pages:
       - Context API: 'api/context.md'
       - Customer API: 'api/sub-account.md'
       - Phone number API: 'api/phone-numbers-api.md'
+      - SIP peers API: 'api/sippeers-api.md'
