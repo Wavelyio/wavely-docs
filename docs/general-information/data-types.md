@@ -331,4 +331,16 @@ Fields with String, Integer and Arrays value
 | phoneNumber | String |
 | resources | Array |
 
+## Tag
+
+Fields with String, Integer and Arrays value
+
+| Field      | Type |
+| ---------- | ---- |
+| createdDate | String |
+| globalId | String |
+| tag | String |
+| taggedSimCardsCount | Integer |
+| updatedDate | String |
+
 

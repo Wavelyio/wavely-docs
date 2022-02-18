@@ -1,4 +1,17 @@
 #Invite owner
+Introducing API calls which exist in invite owner section
+
+* Get companies 
+* Get single company info 
+* Get simcards count of company
+* Get accounts of company
+* Get invites of company
+* Get contracts of company
+* Invite owner
+* Resend invite
+* Remove invite
+* Check if email is busy
+* Delete Owner
 
 ## Get companies 
 Getting list of companies to select 
