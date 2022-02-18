@@ -1,5 +1,5 @@
 # Customers
-This is the API to create add your sub company in Asterisk
+This is the API to add your sub company in Asterisk
 
 ## API objects
 
