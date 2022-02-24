@@ -38,7 +38,7 @@ pages:
       - Invoice API: 'api/invoice-api.md'
       # This should be refactored after external APIs will be known
       # - Invite Owner API: 'api/invite-owner.md'
-      # - Multi Level Tenancy: 'api/mlt.md'
+      - MLT - Multi Level Tenancy: 'api/mlt.md'
       - Context API: 'api/context.md'
       - Customer API: 'api/sub-account.md'
       - Phone number API: 'api/phone-numbers-api.md'
