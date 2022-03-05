@@ -49,8 +49,36 @@ List([PhoneNumber](/api/phone-numbers-api/#phonenumber))
 
 ## Endpoint: Add phone number to a company
 
-!!!danger
-    add description after WAV-2106
+**Description**
+
+Add phone number to company or sub tenant customer
+
+**Endpoint:** `POST /phonenumbers`
+
+**Request query parameters**
+
+| Field             | Type   | Description                      | Required |
+|-------------------|--------|----------------------------------|----------|
+| subTenantGlobalId | String | UUID of your sub tenant customer | No       |
+
+**Request payload**
+
+| Field       | Type   | Description                                 |
+|-------------|--------|---------------------------------------------|
+| phoneNumber | String | Phone number you want to create in Asterisk |
+
+**Response payload**
+
+[PhoneNumber](/api/phone-numbers-api/#phonenumber)
+
+**Response example**
+
+```
+{
+    "phoneNumber": "+4522222222",
+    "createdDate":  "2022-02-17T12:43:26.640417"
+}
+```
 
 ## Endpoint: Delete phone numbers from a company
 
