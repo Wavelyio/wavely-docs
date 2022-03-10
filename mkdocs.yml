@@ -39,7 +39,8 @@ pages:
       # This should be refactored after external APIs will be known
       # - Invite Owner API: 'api/invite-owner.md'
       - MLT - Multi Level Tenancy: 'api/mlt.md'
-      - Context API: 'api/context.md'
-      - Customer API: 'api/sub-account.md'
-      - Phone number API: 'api/phone-numbers-api.md'
-      - SIP peers API: 'api/sippeers-api.md'
+      - Asterisk API:
+        - Context API: 'api/context.md'
+        - Customer API: 'api/sub-account.md'
+        - Phone number API: 'api/phone-numbers-api.md'
+        - SIP peers API: 'api/sippeers-api.md'
