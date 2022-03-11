@@ -22,7 +22,7 @@ createdDate         | ISO 8601 DateTime UTC | Date when rule is created
 
 Get all call forwarding rules
 
-**Endpoint:** `GET /callforwardings`
+**Endpoint:** `GET /asterisk/callforwardings`
 
 **Response Payload**
 
@@ -53,7 +53,7 @@ List([CallForwardingRule](/api/call-forward/#callforwardingrule))
 
 Get call forwarding rule by source msisdn.
 
-**Endpoint:** `GET /callforwardings/{msisdn}`
+**Endpoint:** `GET /asterisk/callforwardings/{msisdn}`
 
 **Path parameter**
 
@@ -82,7 +82,7 @@ msisdn          | String        | Msisdn to lookup
 
 Delete call forwarding rule by source msisdn.
 
-**Endpoint:** `DELETE /callforwardings/{msisdn}`
+**Endpoint:** `DELETE /asterisk/callforwardings/{msisdn}`
 
 ## Endpoint: Create new call forwarding rule
 
@@ -90,7 +90,7 @@ Delete call forwarding rule by source msisdn.
 
 Create new call forwarding rule.
 
-**Endpoint:** `POST /callforwardings`
+**Endpoint:** `POST /asterisk/callforwardings`
 
 **Request Payload**
 

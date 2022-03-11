@@ -47,7 +47,7 @@ createdDate         | String
 
 Get all SIP peers configured for company
 
-**Endpoint** `GET /sippeers`
+**Endpoint** `GET /asterisk/sippeers`
 
 **Response Payload**
 

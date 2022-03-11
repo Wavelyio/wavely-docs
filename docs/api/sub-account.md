@@ -18,7 +18,7 @@ createdDate         | ISO 8601 DateTime UTC | Date when customer is created
 
 Create new customer in Asterisk
 
-**Endpoint** `POST /customers`
+**Endpoint** `POST /asterisk/customers`
 
 **Request Payload**
 

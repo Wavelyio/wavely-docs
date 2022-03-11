@@ -22,7 +22,7 @@ createdDate         | ISO 8601 DateTime UTC                      | Date when pho
 
 Get all phone numbers of company
 
-**Endpoint** `GET /phonenumbers`
+**Endpoint** `GET /asterisk/phonenumbers`
 
 **Response Payload**
 
@@ -53,7 +53,7 @@ List([PhoneNumber](/api/phone-numbers-api/#phonenumber))
 
 Add phone number to company or sub tenant customer
 
-**Endpoint:** `POST /phonenumbers`
+**Endpoint:** `POST /asterisk/phonenumbers`
 
 **Request query parameters**
 
@@ -86,7 +86,7 @@ Add phone number to company or sub tenant customer
 
 Remove phone number from your company
 
-**Endpoint:** `DELETE /phonenumbers`
+**Endpoint:** `DELETE /asterisk/phonenumbers`
 
 **Request Payload**
 
