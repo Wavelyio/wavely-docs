@@ -1,5 +1,5 @@
 # Phone numbers
-This is the API for phone numbers management in Asterisk
+This is the API for phone numbers management in Voice Service
 
 * Get all phone numbers
 * Add phone number to company
@@ -22,7 +22,7 @@ createdDate         | ISO 8601 DateTime UTC                      | Date when pho
 
 Get all phone numbers of company
 
-**Endpoint** `GET /asterisk/phonenumbers`
+**Endpoint** `GET /voiceservice/phonenumbers`
 
 **Response Payload**
 
@@ -53,7 +53,7 @@ List([PhoneNumber](/api/phone-numbers-api/#phonenumber))
 
 Add phone number to company or sub tenant customer
 
-**Endpoint:** `POST /asterisk/phonenumbers`
+**Endpoint:** `POST /voiceservice/phonenumbers`
 
 **Request query parameters**
 
@@ -86,7 +86,7 @@ Add phone number to company or sub tenant customer
 
 Remove phone number from your company
 
-**Endpoint:** `DELETE /asterisk/phonenumbers`
+**Endpoint:** `DELETE /voiceservice/phonenumbers`
 
 **Request Payload**
 
