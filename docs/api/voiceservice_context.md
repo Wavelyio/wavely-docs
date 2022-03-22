@@ -1,5 +1,5 @@
-# Contexts
-This is the API for contexts management.
+# Voice Service Contexts
+This is the API for voice service contexts management.
 
 * Get all contexts
 * Add phone number to context
