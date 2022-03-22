@@ -1,5 +1,5 @@
-# SIP peers
-This is the API for retrieving Asterisk SIP peers
+# Voice Service SIP peers
+This is the API for retrieving Voice Service SIP peers
 
 ## API objects
 
@@ -47,7 +47,7 @@ createdDate         | String
 
 Get all SIP peers configured for company
 
-**Endpoint** `GET /asterisk/sippeers`
+**Endpoint** `GET /voiceservice/sippeers`
 
 **Response Payload**
 
