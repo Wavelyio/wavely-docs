@@ -33,7 +33,7 @@ createdDate         | ISO 8601 DateTime UTC | Date when extension is created
 
 Get all contexts
 
-**Endpoint** `GET /asterisk/contexts`
+**Endpoint** `GET /voiceservice/contexts`
 
 **Response Payload**
 
@@ -79,7 +79,7 @@ List([Context](/api/context/#context))
 
 Add phone number to a specific context
 
-**Endpoint:** `PUT /asterisk/contexts/{contextName}/phonenumbers`
+**Endpoint:** `PUT /voiceservice/contexts/{contextName}/phonenumbers`
 
 **Path parameter**
 
@@ -101,7 +101,7 @@ phoneNumbersList  | List(String)  | List of phone numbers to add to the context
 
 Remove phone number from a specific context
 
-**Endpoint:** `DELETE /asterisk/contexts/{contextName}/phonenumbers`
+**Endpoint:** `DELETE /voiceservice/contexts/{contextName}/phonenumbers`
 
 **Path parameter**
 
