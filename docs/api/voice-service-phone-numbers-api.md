@@ -1,4 +1,4 @@
-# Phone numbers
+# Phone numbers in Voice Service
 This is the API for phone numbers management in Voice Service
 
 * Get all phone numbers
