@@ -29,7 +29,7 @@ customerName        | String                | Name of sub company
 
 **Response Payload**
 
-[Customer](/api/voiceservice/#customers)
+[Customer](/api/voiceservice-customers/#customers)
 
 **Example response**
 
