@@ -13,7 +13,7 @@ Field               | Type                                       | Description
 ------------------- | -------------------------------------------| -------------------------------
 name                | String                                     | Name of context
 createdDate         | ISO 8601 DateTime UTC                      | Date when context is created
-extensionDTOList    | List([Extension](/api/context/#extension)) | List of extensions for context
+extensionDTOList    | List([Extension](/api/voiceservice-context/#extension)) | List of extensions for context
 
 ### Extension
 
@@ -37,7 +37,7 @@ Get all contexts
 
 **Response Payload**
 
-List([Context](/api/context/#context))
+List([Context](/api/voiceservice-context/#context))
 
 **Example response**
 
