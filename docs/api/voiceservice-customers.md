@@ -18,7 +18,7 @@ createdDate         | ISO 8601 DateTime UTC | Date when customer is created
 
 Create new customer in Asterisk
 
-**Endpoint** `POST /asterisk/customers`
+**Endpoint** `POST /voiceservice/customers`
 
 **Request Payload**
 
@@ -29,7 +29,7 @@ customerName        | String                | Name of sub company
 
 **Response Payload**
 
-[Customer](/api/sub-account/#customers)
+[Customer](/api/voiceservice/#customers)
 
 **Example response**
 
