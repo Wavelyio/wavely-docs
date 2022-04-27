@@ -15,6 +15,24 @@ Page types are parameterised by the returned type, this is similar to something 
 | numberOfElements | Integer               |
 | first            | Boolean               |
 
+## Company
+Representation of company
+
+| Field            | Type                  |
+| ---------------- | --------------------- |
+| accountManager   | List(AccountManager)  |
+| accountManagerId | Integer               |
+| alias            | String                |
+| branding         | String                |
+| createdDate      | String                |
+| globalId         | String                |
+| hasSubTenants    | Boolean               |
+| id               | Integer               |
+| name             | String                |
+| parentTenantGuid | String                |
+| updatedDate      | String                |
+| vatNumnber       | String                |
+
 ## SimCard
 
 Simple representation of a single SIM card in our system.
@@ -259,5 +277,70 @@ PHONE_NUMBER_ALLOCATION         |
 
 Enumeration of country codes in ISO 3166-1 format, fx. "DK" and "FI"
 
+## UserAccount
+
+| Field            | Type                  |
+| ---------------- | --------------------- |
+| companyRoles     | List(String)          |
+| email            | String                |
+| firstName        | String                |
+| globalId         | String                |
+| createdDate      | String                |
+| lastLoginDate         | String                |
+| lastName    | String               |
+| phoneNumber               | String               |
+
+## Contract
+
+Fields with String and Integer values
+
+| Field      | 
+| ---------- | 
+| activationDate | 
+| approverAccountId | 
+| authorAccountId | 
+| commitmentStartDate | 
+| contractType | 
+| createdDate | 
+| description | 
+| endDate | 
+| globalId | 
+| minimumCommitmentPerMonth | 
+| name | 
+| startDate | 
+| uniqueGlobalId | 
+| updatedDate | 
+| version | 
+
+## Invite
+
+Fields with String, Integer and Arrays value
+
+| Field      | Type |
+| ---------- | ---- |
+| companyId | Integer |
+| companyRoles | Array |
+| createdDate | String |
+| email | String |
+| firstName | String |
+| id | String |
+| inviteToken | String | 
+| inviteTokenExpiryDate | String |
+| invitedByAccountGlobalId | String |
+| lastName | String |
+| phoneNumber | String |
+| resources | Array |
+
+## Tag
+
+Fields with String, Integer and Arrays value
+
+| Field      | Type |
+| ---------- | ---- |
+| createdDate | String |
+| globalId | String |
+| tag | String |
+| taggedSimCardsCount | Integer |
+| updatedDate | String |
 
 

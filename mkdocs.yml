@@ -36,3 +36,11 @@ pages:
       - Call forwarding: 'api/call-forward.md'
       - Data Usage API: 'api/data-usage-api.md'
       - Invoice API: 'api/invoice-api.md'
+      # This should be refactored after external APIs will be known
+      # - Invite Owner API: 'api/invite-owner.md'
+      - MLT - Multi Level Tenancy: 'api/mlt.md'
+      - Voice Service (Asterisk) API:
+        - Context API: 'api/voiceservice-context.md'
+        - Customer API: 'api/voiceservice-customers.md'
+        - Phone number API: 'api/voiceservice-phone-numbers-api.md'
+        - SIP peers API: 'api/voiceservice-sippeers-api.md'
