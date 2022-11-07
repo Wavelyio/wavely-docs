@@ -11,7 +11,7 @@ markdown_extensions:
   - toc:
       permalink: "#"
 
-pages:
+nav:
   - Home: 'index.md'
   - General information:
       - About: 'general-information/wavely-api-docs.md'
@@ -35,6 +35,7 @@ pages:
       - SIM card tags: 'api/simcard-tags.md'
       - Call forwarding: 'api/call-forward.md'
       - Data Usage API: 'api/data-usage-api.md'
+      - Geolocation API: 'api/geolocation-api.md'
       - Invoice API: 'api/invoice-api.md'
       # This should be refactored after external APIs will be known
       # - Invite Owner API: 'api/invite-owner.md'
