@@ -26,17 +26,17 @@ Data usage for a given **month** in a given **year** can be accessed by using th
 
 **Response structure and types**
 
-| Field       | Type              | Description                                                   |
-|-------------|-------------------|---------------------------------------------------------------|
-| icc         | String            | The unique identifier for the SIM card generating the usage.  |
-| year        | Number            | Year is given in the ISO 8601 format for example 2019.        |
-| month       | Number            | Month is represented as a number for example 'april = 4'      |
-| usageDate   | ISO 8601 DateTime | In UTC time.                                                  |
-| bytesIn     | Number            |                                                               |
-| bytesOut    | Number            |                                                               |
-| sessionId   | String            | Unique identifier for the session on the network.             |
-| imei        | String            | The observed IMEI number for the device generating the usage. |
-| countryCode | String            | Alpha-2 code                                                  |
+| Field       | Type              | Description                                                        |
+|-------------|-------------------|--------------------------------------------------------------------|
+| icc         | String            | The unique identifier for the SIM card <br> generating the usage.  |
+| year        | Number            | Year is given in the ISO 8601 format for example 2019.             |
+| month       | Number            | Month is represented as a number for example 'april = 4'           |
+| usageDate   | ISO 8601 DateTime | In UTC time.                                                       |
+| bytesIn     | Number            |                                                                    |
+| bytesOut    | Number            |                                                                    |
+| sessionId   | String            | Unique identifier for the session on the network.                  |
+| imei        | String            | The observed IMEI number for the device <br> generating the usage. |
+| countryCode | String            | Alpha-2 code                                                       |
 
 **Example response**
 
