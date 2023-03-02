@@ -13,34 +13,34 @@ markdown_extensions:
 
 nav:
   - Home: 'index.md'
-  - General information:
+  - 'General information':
       - About: 'general-information/wavely-api-docs.md'
       - Roles: 'general-information/roles.md'
-      - Data types: 'general-information/data-types.md'
-      - General errors: 'general-information/general-errors.md'
-  - Web hooks:
-      - About webhooks: 'webhooks/about-webhooks.md'
-      - Call CDR: 'webhooks/call-cdr.md'
-      - Data CDR: 'webhooks/data-cdr.md'
-      - Message CDR: 'webhooks/msg-cdr.md'
-      - SMS forwarding: 'webhooks/sms-forwarding.md'
-      - SIM card state change: 'webhooks/sim-card-state-change.md'
-  - API specification:
+      - 'Data types': 'general-information/data-types.md'
+      - 'General errors': 'general-information/general-errors.md'
+  - 'Web hooks':
+      - 'About webhooks': 'webhooks/about-webhooks.md'
+      - 'Call CDR': 'webhooks/call-cdr.md'
+      - 'Data CDR': 'webhooks/data-cdr.md'
+      - 'Message CDR': 'webhooks/msg-cdr.md'
+      - 'SMS forwarding': 'webhooks/sms-forwarding.md'
+      - 'SIM card state change': 'webhooks/sim-card-state-change.md'
+  - 'API specification':
       - SMS: 'api/sms-api.md'
-      - SIM cards: 'api/simcards-api.md'
-      - Operator profiles: 'api/operator-profiles.md'
-      - SIM card diagnostics: 'api/sim-card-diagnostics.md'
-      - SIM card usage: 'api/sim-card-usage.md'
-      - SIM card groups: 'api/simcard-groups.md'
-      - SIM card tags: 'api/simcard-tags.md'
-      - Call forwarding: 'api/call-forward.md'
-      - Data Usage API: 'api/data-usage-api.md'
-      - Geolocation API: 'api/geolocation-api.md'
+      - 'SIM cards': 'api/simcards-api.md'
+      - 'Operator profiles': 'api/operator-profiles.md'
+      - 'SIM card diagnostics': 'api/sim-card-diagnostics.md'
+      - 'SIM card usage': 'api/sim-card-usage.md'
+      - 'SIM card groups': 'api/simcard-groups.md'
+      - 'SIM card tags': 'api/simcard-tags.md'
+      - 'Call forwarding': 'api/call-forward.md'
+      - 'Data Usage API': 'api/data-usage-api.md'
+      - 'Geolocation API': 'api/geolocation-api.md'
       # This should be refactored after external APIs will be known
       # - Invite Owner API: 'api/invite-owner.md'
-      - MLT - Multi Level Tenancy: 'api/mlt.md'
-      - Voice Service (Asterisk) API:
-        - Context API: 'api/voiceservice-context.md'
-        - Customer API: 'api/voiceservice-customers.md'
-        - Phone number API: 'api/voiceservice-phone-numbers-api.md'
-        - SIP peers API: 'api/voiceservice-sippeers-api.md'
+      - 'MLT - Multi Level Tenancy': 'api/mlt.md'
+      - 'Voice Service (Asterisk) API':
+        - 'Context API': 'api/voiceservice-context.md'
+        - 'Customer API': 'api/voiceservice-customers.md'
+        - 'Phone number API': 'api/voiceservice-phone-numbers-api.md'
+        - 'SIP peers API': 'api/voiceservice-sippeers-api.md'
