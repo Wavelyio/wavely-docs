@@ -36,7 +36,6 @@ nav:
       - Call forwarding: 'api/call-forward.md'
       - Data Usage API: 'api/data-usage-api.md'
       - Geolocation API: 'api/geolocation-api.md'
-      - Invoice API: 'api/invoice-api.md'
       # This should be refactored after external APIs will be known
       # - Invite Owner API: 'api/invite-owner.md'
       - MLT - Multi Level Tenancy: 'api/mlt.md'
