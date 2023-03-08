@@ -51,7 +51,7 @@ Returns number of simcards:Integer
 ***
 
 ## Get accounts of company
-Gets account for find owner one and load his data to form
+Get account for find owner one and load his data to form
 
 **Endpoint:** `GET /admin/companies/${companyGlobalId}/accounts`
 <br>
@@ -77,7 +77,7 @@ returns Array of ([Invite](/general-information/data-types/#invite))
 ***
 
 ## Get contracts of company
-Gets account for find owner one and load his data to form
+Get account for find owner one and load his data to form
 
 **Endpoint:** `GET /admin/companies/${companyGlobalId}/contracts`
 <br>

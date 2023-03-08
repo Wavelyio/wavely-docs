@@ -5,7 +5,7 @@ Using this API, you are able to get geographical location of SIM cards.
 
 **Description**
 
-Gets the latest location of the company SIM card.
+Get the latest location of the company SIM card.
 
 **Endpoint**
 
@@ -44,7 +44,7 @@ GET /geolocations/latest
 
 **Description**
 
-Gets all SIM card locations of the company.
+Get all SIM card locations of the company.
 
 **Endpoint**
 
