@@ -12,32 +12,6 @@ This is the API for operator profile management.
 ## API objects
 
 ### Profile
-<<<<<<< HEAD
-| Field         | Type                                                                                         | Description                                                                   |
-|---------------|----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| id            | Long                                                                                         | id of the operator profile                                                    |
-| createdDate   | String                                                                                       | ISO 8601 datetime format                                                      |
-| updatedDate   | String                                                                                       | ISO 8601 datetime format                                                      |
-| name          | String                                                                                       | Name of the operator profile                                                  |
-| description   | String                                                                                       | Accompanying description for the operator profile                             |
-| identifier    | String                                                                                       | Global identifier for the operator profile, usefull for troubleshooting cases |
-| actionMapping | [OperatorProfileActionMapping](/general-information/data-types#operatorprofileactionmapping) | the action mapping if any, that the operator profile is used for.             |
-
-### SlimmedOperatorProfile
-
-| Field                  | Type                                      | Description                                            |
-|------------------------|-------------------------------------------|--------------------------------------------------------|
-| simcardCount           | Long                                      | The number of sim cards that use this operator profile |
-| companyOperatorProfile | [Profile](/api/operator-profiles#Profile) | Profile meta data                                      |
-
-### FullOperatorProfile
-
-| Field                  | Type                                                                                                         | Description                                                                                 |
-|------------------------|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| simcardCount           | Long                                                                                                         | The number of sim cards that use this operator profile                                      |
-| companyOperatorProfile | [Profile](/api/operator-profiles#Profile)                                                                    | Profile meta data                                                                           |
-| config                 | Map(String, List([ConnectivityCapabilityType](/general-information/data-types#connectivitycapabilitytypes))) | The "String" key represents the alpha2 country code where the list of services are enabled. |
-=======
 | Field         | Type                                                                                              | Description                                                                   |
 |---------------|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
 | id            | Long                                                                                              | id of the operator profile                                                    |
@@ -62,7 +36,6 @@ This is the API for operator profile management.
 | simcardCount           | Long                                                                                                              | The number of sim cards that use this operator profile                                      |
 | companyOperatorProfile | [Profile](../operator-profiles#Profile)                                                                           | Profile meta data                                                                           |
 | config                 | Map(String, List([ConnectivityCapabilityType](../../general-information/data-types#connectivitycapabilitytypes))) | The "String" key represents the alpha2 country code where the list of services are enabled. |
->>>>>>> release/2023.5.1
 
 ## Endpoint: Get Operator profiles
 
@@ -110,21 +83,12 @@ Create a new operator profile
 
 **Request Payload**
 
-<<<<<<< HEAD
-| Field         | Type                                                                                                         | Description                                                                                 |
-|---------------|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| name          | String                                                                                                       | The number of sim cards that use this operator profile                                      |
-| description   | String                                                                                                       | Profile meta data                                                                           |
-| actionMapping | [OperatorProfileActionMapping](/general-information/data-types#operatorprofileactionmapping)                 | The "String" key represents the alpha2 country code where the list of services are enabled. |
-| config        | Map(String, List([ConnectivityCapabilityType](/general-information/data-types#connectivitycapabilitytypes))) | The "String" key represents the alpha2 country code where the list of services are enabled. |
-=======
 | Field         | Type                                                                                                              | Description                                                                                 |
 |---------------|-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | name          | String                                                                                                            | The number of sim cards that use this operator profile                                      |
 | description   | String                                                                                                            | Profile meta data                                                                           |
 | actionMapping | [OperatorProfileActionMapping](../../general-information/data-types#operatorprofileactionmapping)                 | The "String" key represents the alpha2 country code where the list of services are enabled. |
 | config        | Map(String, List([ConnectivityCapabilityType](../../general-information/data-types#connectivitycapabilitytypes))) | The "String" key represents the alpha2 country code where the list of services are enabled. |
->>>>>>> release/2023.5.1
 
 **Response Payload**
 
