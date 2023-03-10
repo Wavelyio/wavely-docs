@@ -7,7 +7,7 @@ To call API for subtnenant, you should add query parameter: <br>
 
 **Where MLT was implemented:**
 
-* [Sim cards](/api/simcards-api/)
+* [Sim cards](../simcards-api/)
 * [Sim cards groups](/api/simcard-groups/)
 * [Sim cards diagnostics](/api/sim-card-diagnostics/)
 * [Operator Profiles](/api/operator-profiles/)
