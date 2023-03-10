@@ -12,12 +12,12 @@ A sim card can be part of only one group at a time.
 ## API objects
 
 ### SimCardGroup
-Field        	| Type          | Description
------------- 	| ------------- | ------------
-globalId 		| String        | id of the sim card group
-name 	        | String        | Name of the group
-createdDate 	| String        | ISO 8601 datetime format
-simCardCount 	| Integer       | Number of sim cards assigned to the group
+| Field        | Type    | Description                               |
+|--------------|---------|-------------------------------------------|
+| globalId     | String  | id of the sim card group                  |
+| name         | String  | Name of the group                         |
+| createdDate  | String  | ISO 8601 datetime format                  |
+| simCardCount | Integer | Number of sim cards assigned to the group |
 
 ## Endpoint: Get sim card groups
 
@@ -41,9 +41,9 @@ Get sim card groups by their name.
 
 **Query parameters**
 
-Field        	| Type          | Description
------------- 	| ------------- | ------------
-name 		    | String        | Name to query for
+| Field | Type   | Description       |
+|-------|--------|-------------------|
+| name  | String | Name to query for |
 
 **Response Payload**
 
@@ -79,9 +79,9 @@ Add a collection of sim cards to a sim card group. Moving them if they already b
 
 **Request Payload**
 
-Field        	| Type          | Description
------------- 	| ------------- | ------------
-iccList 		| List(String)  | List of icc numbers for sim cards to add to the group.
+| Field   | Type         | Description                                            |
+|---------|--------------|--------------------------------------------------------|
+| iccList | List(String) | List of icc numbers for sim cards to add to the group. |
 
 ## Endpoint: Remove sim card from group
 

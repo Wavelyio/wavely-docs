@@ -5,12 +5,11 @@ This is the API to add your sub company in Asterisk
 
 ### Customer
 
-Field               | Type                  | Description
-------------------- | ----------------------|-------------------------------
-globalId            | String                | UUID of customer
-customerName        | String                | Name of customer
-createdDate         | ISO 8601 DateTime UTC | Date when customer is created
-
+| Field        | Type                  | Description                   |
+|--------------|-----------------------|-------------------------------|
+| globalId     | String                | UUID of customer              |
+| customerName | String                | Name of customer              |
+| createdDate  | ISO 8601 DateTime UTC | Date when customer is created |
 
 ## Endpoint: Create new customer
 
@@ -22,10 +21,10 @@ Create new customer in Asterisk
 
 **Request Payload**
 
-Field               | Type                  | Description
-------------------- | ----------------------|-------------------------------
-globalId            | String                | UUID of sub company
-customerName        | String                | Name of sub company
+| Field        | Type   | Description         |
+|--------------|--------|---------------------|
+| globalId     | String | UUID of sub company |
+| customerName | String | Name of sub company |
 
 **Response Payload**
 

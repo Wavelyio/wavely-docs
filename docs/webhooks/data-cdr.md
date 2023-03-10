@@ -6,16 +6,16 @@ Data usage is incremental; it will detail how much data was transmitted since th
 
 ## Payload
 
-Field        | Type          | Description
------------- | ------------- | ------------
-bytesIn | Number |
-bytesOut | Number |
-network | [Network](/general-information/data-types/#network) | The mobile network used
-sessionId | String | The mobile network data session ID
-imei | String | The IMEI number of the device using data
-icc | String | The SIM-card identifier
-imsi | String | International mobile subscriber identity
-usageDate | ISO 8601 DateTime |
+| Field     | Type                                                | Description                              |
+|-----------|-----------------------------------------------------|------------------------------------------|
+| bytesIn   | Number                                              |                                          |
+| bytesOut  | Number                                              |                                          |
+| network   | [Network](/general-information/data-types/#network) | The mobile network used                  |
+| sessionId | String                                              | The mobile network data session ID       |
+| imei      | String                                              | The IMEI number of the device using data |
+| icc       | String                                              | The SIM-card identifier                  |
+| imsi      | String                                              | International mobile subscriber identity |
+| usageDate | ISO 8601 DateTime                                   |                                          |
 
 **Example**
 

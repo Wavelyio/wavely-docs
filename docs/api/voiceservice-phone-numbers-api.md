@@ -10,11 +10,10 @@ This is the API for phone numbers management in Voice Service
 
 ### PhoneNumber
 
-Field               | Type                                       | Description
-------------------- | -------------------------------------------| -------------------------------
-phoneNumber         | String                                     | Phone number value
-createdDate         | ISO 8601 DateTime UTC                      | Date when phone number is created
-
+| Field       | Type                  | Description                       |
+|-------------|-----------------------|-----------------------------------|
+| phoneNumber | String                | Phone number value                |
+| createdDate | ISO 8601 DateTime UTC | Date when phone number is created |
 
 ## Endpoint: Get phone numbers
 
@@ -90,7 +89,7 @@ Remove phone number from your company
 
 **Request Payload**
 
-Field             | Type          | Description
-------------      | ------------  | ------------
-msisdn            | String        | Value of phone number which is going to be removed
+| Field  | Type   | Description                                        |
+|--------|--------|----------------------------------------------------|
+| msisdn | String | Value of phone number which is going to be removed |
 
