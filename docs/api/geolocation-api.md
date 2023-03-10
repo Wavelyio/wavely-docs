@@ -1,11 +1,11 @@
-# GEOLOCATION API
-Using this API, you are able to get geographical location of sim cards.
+# Geolocation API
+Using this API, you are able to get geographical location of SIM cards.
 
 ## Endpoint: Get latest company location
 
 **Description**
 
-Gets the latest location of the company simcard.
+Get the latest location of the company SIM card.
 
 **Endpoint**
 
@@ -17,7 +17,7 @@ GET /geolocations/latest
 
 | Field                    | Type   | Description                                       |
 |--------------------------|--------|---------------------------------------------------|
-| imsi                     | String | The simcard IMSI                                  |
+| imsi                     | String | The SIM card IMSI                                 |
 | subTenantCompanyGlobalId | String | Optionally find activity for a sub-tenant company |
 
 **Example**
@@ -33,11 +33,7 @@ GET /geolocations/latest
 
 | Field      | Type          | Description                                                 |
 |------------|---------------|-------------------------------------------------------------|
-| imsi       | String        | The simcard IMSI                                            |
-| mcc        | String        | Mobile country code                                         |
-| mnc        | String        | Mobile network code                                         |
-| lac        | String        | Location area code                                          |
-| cellId     | String        | Unique number of base transceiver station (cell identifier) |
+| imsi       | String        | The SIM card IMSI                                           |
 | lat        | Double        | Latitude                                                    |
 | lon        | Double        | Longitude                                                   |
 | range      | Integer       | Range                                                       |
@@ -48,7 +44,7 @@ GET /geolocations/latest
 
 **Description**
 
-Gets all simcard locations of the company.
+Get all SIM card locations of the company.
 
 **Endpoint**
 
@@ -60,7 +56,7 @@ GET /geolocations
 
 | Field                    | Type   | Description                                                              |
 |--------------------------|--------|--------------------------------------------------------------------------|
-| imsi                     | String | The simcard IMSI                                                         |
+| imsi                     | String | The SIM card IMSI                                                        |
 | startUtcTime             | String | The start time (UTC) of the locations search, format:yyyy-MM-ddTHH:mm:ss |
 | endUtcTime               | String | The end time (UTC) of the locations search, format:yyyy-MM-ddTHH:mm:ss   |
 | subTenantCompanyGlobalId | String | Optionally find activity for a sub-tenant company                        |
@@ -80,11 +76,7 @@ GET /geolocations
 
 | Field      | Type          | Description                                                 |
 |------------|---------------|-------------------------------------------------------------|
-| imsi       | String        | The simcard IMSI                                            |
-| mcc        | String        | Mobile country code                                         |
-| mnc        | String        | Mobile network code                                         |
-| lac        | String        | Location area code                                          |
-| cellId     | String        | Unique number of base transceiver station (cell identifier) |
+| imsi       | String        | The SIM card IMSI                                           |
 | lat        | Double        | Latitude                                                    |
 | lon        | Double        | Longitude                                                   |
 | range      | Integer       | Range                                                       |
