@@ -8,10 +8,10 @@ To call API for subtnenant, you should add query parameter: <br>
 **Where MLT was implemented:**
 
 * [Sim cards](../simcards-api/)
-* [Sim cards groups](/api/simcard-groups/)
-* [Sim cards diagnostics](/api/sim-card-diagnostics/)
-* [Operator Profiles](/api/operator-profiles/)
-* [Tags](/api/simcard-tags/)
+* [Sim cards groups](../simcard-groups/)
+* [Sim cards diagnostics](../sim-card-diagnostics/)
+* [Operator Profiles](../operator-profiles/)
+* [Tags](../simcard-tags/)
 * [Triggers]()
 <!-- * [Invite owner](api/invite-owner/) -->
 
@@ -30,7 +30,7 @@ To call API for subtnenant, you should add query parameter: <br>
 
 **Response payload**
 
-Response is array of subtenants [Company](/docs/general-information/data-types#company) objects
+Response is array of subtenants [Company](../../general-information/data-types#company) objects
 
 ***
 
@@ -40,7 +40,7 @@ Response is array of subtenants [Company](/docs/general-information/data-types#c
 
 **Response payload**
 
-Returns [Page](/general-information/data-types/#Page(Type))([Simcard](/general-information/data-types/#SimCard))
+Returns [Page](../../general-information/data-types/#Page(Type))([Simcard](../../general-information/data-types/#SimCard))
 
 ***
 

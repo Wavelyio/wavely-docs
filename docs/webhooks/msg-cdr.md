@@ -4,15 +4,15 @@ This webhook details the SMS usage of SIM card, such as who sent the SMS and who
 
 ## Payload
 
-| Field       | Type                                                | Description                                        |
-|-------------|-----------------------------------------------------|----------------------------------------------------|
-| caller      | String                                              | E164 MSISDN, or alphanumeric sender, e.g. *Wavely* |
-| called      | String                                              | E164 MSISDN, e.g. *+4593709603*                    |
-| fromNetwork | [Network](/general-information/data-types/#network) | The mobile-originating network                     |
-| toNetwork   | [Network](/general-information/data-types/#network) | The mobile-terminating network                     |
-| icc         | String                                              | The SIM-card identifier                            |
-| imsi        | String                                              | International mobile subscriber identity           |
-| usageDate   | ISO 8601 DateTime                                   |                                                    |
+| Field       | Type                                                     | Description                                        |
+|-------------|----------------------------------------------------------|----------------------------------------------------|
+| caller      | String                                                   | E164 MSISDN, or alphanumeric sender, e.g. *Wavely* |
+| called      | String                                                   | E164 MSISDN, e.g. *+4593709603*                    |
+| fromNetwork | [Network](../../general-information/data-types/#network) | The mobile-originating network                     |
+| toNetwork   | [Network](../../general-information/data-types/#network) | The mobile-terminating network                     |
+| icc         | String                                                   | The SIM-card identifier                            |
+| imsi        | String                                                   | International mobile subscriber identity           |
+| usageDate   | ISO 8601 DateTime                                        |                                                    |
 
 **Example**
 

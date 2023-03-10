@@ -29,7 +29,7 @@ Get all current sim card groups.
 
 **Response Payload**
 
-List([SimCardGroup](/api/simcard-groups/#simcardgroup))
+List([SimCardGroup](../simcard-groups/#simcardgroup))
 
 ## Endpoint: Get sim card group by name
 
@@ -47,7 +47,7 @@ Get sim card groups by their name.
 
 **Response Payload**
 
-List([SimCardGroup](/api/simcard-groups/#simcardgroup))
+List([SimCardGroup](../simcard-groups/#simcardgroup))
 
 ## Endpoint: Get sim card group by id
 
@@ -59,7 +59,7 @@ Get sim card group by its id.
 
 **Response Payload**
 
-[SimCardGroup](/api/simcard-groups/#simcardgroup)
+[SimCardGroup](../simcard-groups/#simcardgroup)
 
 ## Endpoint: Delete sim card group by id
 

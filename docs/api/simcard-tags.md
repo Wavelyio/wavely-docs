@@ -20,13 +20,13 @@ A sim card can have multiple tags at a time unlike sim card groups.
 | updatedDate  | String | ISO 8601 datetime format |
 
 ### DetailedSimCardTag
-| Field          | Type                                                      | Description              |
-|----------------|-----------------------------------------------------------|--------------------------|
-| globalId       | String                                                    | id of the tag            |
-| tag            | String                                                    | Name of the tag          |
-| createdDate    | String                                                    | ISO 8601 datetime format |
-| updatedDate    | String                                                    | ISO 8601 datetime format |
-| taggedSimCards | List([SimCard](/general-information/data-types/#simcard)) | List of tagged sim cards |
+| Field          | Type                                                           | Description              |
+|----------------|----------------------------------------------------------------|--------------------------|
+| globalId       | String                                                         | id of the tag            |
+| tag            | String                                                         | Name of the tag          |
+| createdDate    | String                                                         | ISO 8601 datetime format |
+| updatedDate    | String                                                         | ISO 8601 datetime format |
+| taggedSimCards | List([SimCard](../../general-information/data-types/#simcard)) | List of tagged sim cards |
 
 ## Endpoint: Get sim card tags
 
@@ -38,7 +38,7 @@ Get all current sim card tags.
 
 **Response Payload**
 
-[Page](/general-information/data-types/#page)([SimCardTag](/api/simcard-tags/#simcardtag))
+[Page](../../general-information/data-types/#page)([SimCardTag](../simcard-tags/#simcardtag))
 
 ## Endpoint: Create new sim card tag
 
@@ -57,7 +57,7 @@ Create a new sim card tag
 
 **Response Payload**
 
-[SimCardTag](/api/simcard-tags/#simcardtag)
+[SimCardTag](../simcard-tags/#simcardtag)
 
 ## Endpoint: Get sim card tag
 
@@ -69,7 +69,7 @@ Get sim card tag by its id.
 
 **Response Payload**
 
-[DetailedSimCardTag](/api/simcard-tags/#detailedsimcardtag)
+[DetailedSimCardTag](../simcard-tags/#detailedsimcardtag)
 
 ## Endpoint: Update sim card tag
 
