@@ -15,10 +15,10 @@ Get the data usage of a company in a month, as a total value in bytes.
 
 **Request Query Parameters**
 
-| Field        | Type    | Description                              | Required |
-| ------------ | ------- | -----------------------------------------| -------- |
-| year         | Integer | Year to see data usage in                | Yes      |
-| month        | String  | Month, in text, to see consumption for   | Yes      |
+| Field | Type    | Description                            | Required |
+|-------|---------|----------------------------------------|----------|
+| year  | Integer | Year to see data usage in              | Yes      |
+| month | String  | Month, in text, to see consumption for | Yes      |
 
 **Response Payload**
 
@@ -34,10 +34,10 @@ Get the data usage of a company in a month, grouped by SIM card groups.
 
 **Response Payload**
 
-| Field        | Type    | Description                              | Required |
-| ------------ | ------- | -----------------------------------------| -------- |
-| year         | Integer | Year to see data usage in                | Yes      |
-| month        | String  | Month, in text, to see consumption for   | Yes      |
+| Field | Type    | Description                            | Required |
+|-------|---------|----------------------------------------|----------|
+| year  | Integer | Year to see data usage in              | Yes      |
+| month | String  | Month, in text, to see consumption for | Yes      |
 
 List([DataUsageBySimCardCollections](/general-information/data-types/#datausagebysimcardcollections))
 
@@ -50,7 +50,7 @@ List([DataUsageBySimCardCollections](/general-information/data-types/#datausageb
 **Response Payload**
 
 | Field        | Type    | Description                                                  | Required |
-| ------------ | ------- | ------------------------------------------------------------ | ---------|
+|--------------|---------|--------------------------------------------------------------|----------|
 | collectionId | UUID    | Unique ID for the SIM card collection we want data usage for | Yes      |
 | year         | Integer | Year to see data usage in                                    | Yes      |
 | month        | String  | Month, in text, to see consumption for                       | Yes      |

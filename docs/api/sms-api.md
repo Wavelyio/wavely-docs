@@ -21,11 +21,11 @@ POST /sms
 
 **Request Payload**
 
-Field        | Type          | Description
------------- | ------------- | ------------
-sendTo | String | E164 MSISDN, e.g. *+4593709603*
-sendFrom | String | An alphanumeric sender e.g. 'Wavely' or an E164 MSISDN, e.g. *+4593709603*
-plainText | String | The SMS itself
+| Field     | Type   | Description                                                                |
+|-----------|--------|----------------------------------------------------------------------------|
+| sendTo    | String | E164 MSISDN, e.g. *+4593709603*                                            |
+| sendFrom  | String | An alphanumeric sender e.g. 'Wavely' or an E164 MSISDN, e.g. *+4593709603* |
+| plainText | String | The SMS itself                                                             |
 
 **Example**
 
@@ -39,10 +39,10 @@ plainText | String | The SMS itself
 
 **Response Payload**
 
-Field        | Type          | Description
------------- | ------------- | ------------
-operatorMessageId | String | The generated unique ID of the SMS
-smsCount | Integer | How many SMS were sent
+| Field             | Type    | Description                        |
+|-------------------|---------|------------------------------------|
+| operatorMessageId | String  | The generated unique ID of the SMS |
+| smsCount          | Integer | How many SMS were sent             |
 
 !!! tip
     The `smsCount` is determined by the number of characters sent divided by 160, rounded up.
@@ -50,6 +50,6 @@ smsCount | Integer | How many SMS were sent
 
 **Error Responses**
 
-HTTP Status Code        | Reason(s)        |
------------------------ | ---------------- |
-403 | You are using a sender you are not permitted to use
+| HTTP Status Code | Reason(s)                                           |
+|------------------|-----------------------------------------------------|
+| 403              | You are using a sender you are not permitted to use |

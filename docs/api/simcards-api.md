@@ -18,7 +18,7 @@ To retrieve the remaining pages simply change the page parameter of the query to
 **Request Query Parameters**
 
 | Field        | Type    | Description                | Required |
-| ------------ | ------- | -------------------------- | -------- |
+|--------------|---------|----------------------------|----------|
 | page         | Integer | Page number for pagination | No       |
 | size         | Integer | Page size                  | No       |
 | iccFilter    | String  | Filter for ICC             | No       |
@@ -42,16 +42,16 @@ Queries the system for one SIM card, by ICC.
 
 **Response Payload**
 
-Field        	| Type          												| Description
------------- 	| ------------- 												| ------------
-icc 			| String 														| The ICC of the SIM card
-msisdn 			| String 														| E164 MSISDN, e.g. *+4593709603*
-state 			| [ImsiStates](/general-information/data-types/#imsistates) 	| The current state of the SIM card
-pin1 			| String 														| Primary pin code for the sim card
-pin2 			| String 														| Secondary pin code for the sim card
-puk1 			| String 														| Primary puk code for the sim card
-puk2 			| String 														| Secondary puk code for the sim card
-networkSpeed 	| [NetworkSpeed](/general-information/data-types/#networkspeed) | Network speed property of the sim card
+| Field        | Type                                                          | Description                            |
+|--------------|---------------------------------------------------------------|----------------------------------------|
+| icc          | String                                                        | The ICC of the SIM card                |
+| msisdn       | String                                                        | E164 MSISDN, e.g. *+4593709603*        |
+| state        | [ImsiStates](/general-information/data-types/#imsistates)     | The current state of the SIM card      |
+| pin1         | String                                                        | Primary pin code for the sim card      |
+| pin2         | String                                                        | Secondary pin code for the sim card    |
+| puk1         | String                                                        | Primary puk code for the sim card      |
+| puk2         | String                                                        | Secondary puk code for the sim card    |
+| networkSpeed | [NetworkSpeed](/general-information/data-types/#networkspeed) | Network speed property of the sim card |
 
 ## Endpoint: Get status of single SIM card
 
@@ -63,14 +63,14 @@ Provides some additional details about a single SIM card.
 
 **Response Payload**
 
-Field        		| Type          															| Description
------------- 		| ------------- 															| ------------
-icc 				| String 																	| The ICC of the SIM card
-msisdn 				| String 																	| E164 MSISDN, e.g. *+4593709603*
-state 				| [ImsiStates](/general-information/data-types/#imsistates) 				| The current state of the SIM card
-pendingState 		| [ImsiStates](/general-information/data-types/#imsistates) 				| The state the SIM card is about to change to
-operatorProfileName | String 																	| Name of the operator profile assigned to the SIM card
-dataSessionState 	| [DataSessionStates](/general-information/data-types/#datasessionstates) 	| Information on the current data state of the SIM card
+| Field               | Type                                                                    | Description                                           |
+|---------------------|-------------------------------------------------------------------------|-------------------------------------------------------|
+| icc                 | String                                                                  | The ICC of the SIM card                               |
+| msisdn              | String                                                                  | E164 MSISDN, e.g. *+4593709603*                       |
+| state               | [ImsiStates](/general-information/data-types/#imsistates)               | The current state of the SIM card                     |
+| pendingState        | [ImsiStates](/general-information/data-types/#imsistates)               | The state the SIM card is about to change to          |
+| operatorProfileName | String                                                                  | Name of the operator profile assigned to the SIM card |
+| dataSessionState    | [DataSessionStates](/general-information/data-types/#datasessionstates) | Information on the current data state of the SIM card |
 
 ## Endpoint: Apply action to sim card
 
@@ -82,10 +82,10 @@ Apply an action to the specified SIM card, for example "activate SIM card" or "s
 
 **Request Payload**
 
-Field        	| Type          													| Description
------------- 	| ------------- 													| ------------
-simCardAction 	| [SimCardActions](/general-information/data-types/#simcardactions) | The action to apply to the SIM card
-networkSpeed 	| [NetworkSpeed](/general-information/data-types/#networkspeed) 	| The network speed to apply to the sim card
+| Field         | Type                                                              | Description                                |
+|---------------|-------------------------------------------------------------------|--------------------------------------------|
+| simCardAction | [SimCardActions](/general-information/data-types/#simcardactions) | The action to apply to the SIM card        |
+| networkSpeed  | [NetworkSpeed](/general-information/data-types/#networkspeed)     | The network speed to apply to the sim card |
 
 **Example**
 ```json
@@ -126,10 +126,9 @@ Update the operator profile for a single sim card
 
 **Request Payload**
 
-Field        		| Type          | Description
------------- 		| ------------- | ------------
-operatorProfileId 	| Long 			| The operator profile to apply
-
+| Field              | Type  | Description                   |
+|--------------------|-------|-------------------------------|
+| operatorProfileId  | Long  | The operator profile to apply |
 
 ## Endpoint: Remove sim card from its sim card group if present
 

@@ -5,41 +5,40 @@ This is the API for retrieving Voice Service SIP peers
 
 ### SIPPeer
 
-Field               | Type                                       
-------------------- | -------------------------------------------
-customerId          | Integer                                    
-disabled            | Boolean                                    
-name                | String                                     
-context             | String                                      
-deny                | String                                       
-permit              | String                                       
-secret              | String                                       
-transport           | String                                       
-host                | String                                       
-nat                 | String                                       
-peerType            | String                                       
-defaultIp           | String                                       
-dtmfmode            | String                                       
-insecure            | String                                       
-qualify             | String                                       
-disallow            | String                                       
-allow               | String                                       
-fullContact         | String                                       
-ipAddress           | String                                       
-port                | String                                       
-defaultUser         | String                                       
-directMedia         | String                                       
-outboundProxy       | String                                       
-rtpTimeout          | Integer                                      
-rtpHoldTimeout      | Integer                                     
-disallow            | String                                       
-lastms              | Integer                                      
-regServer           | String                                       
-regSeconds          | Integer                                      
-userAgent           | String                                       
-callbackExtension   | String                                       
-createdDate         | String                                     
-
+| Field             | Type    |
+|-------------------|---------|
+| customerId        | Integer |
+| disabled          | Boolean |
+| name              | String  |
+| context           | String  |
+| deny              | String  |
+| permit            | String  |
+| secret            | String  |
+| transport         | String  |
+| host              | String  |
+| nat               | String  |
+| peerType          | String  |
+| defaultIp         | String  |
+| dtmfmode          | String  |
+| insecure          | String  |
+| qualify           | String  |
+| disallow          | String  |
+| allow             | String  |
+| fullContact       | String  |
+| ipAddress         | String  |
+| port              | String  |
+| defaultUser       | String  |
+| directMedia       | String  |
+| outboundProxy     | String  |
+| rtpTimeout        | Integer |
+| rtpHoldTimeout    | Integer |
+| disallow          | String  |
+| lastms            | Integer |
+| regServer         | String  |
+| regSeconds        | Integer |
+| userAgent         | String  |
+| callbackExtension | String  |
+| createdDate       | String  |
 
 ## Endpoint: Get phone numbers
 

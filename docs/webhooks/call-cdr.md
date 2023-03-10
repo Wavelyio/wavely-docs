@@ -4,16 +4,16 @@ This webhook details the call usage of sim card, i.e. between who and for how lo
 
 ## Payload
 
-Field        | Type          | Description
------------- | ------------- | ------------
-duration | Number | The call duration, in seconds
-caller | String | E164 MSISDN, e.g. *+4593709603*
-called | String | E164 MSISDN, e.g. *+4593709603*
-fromNetwork | [Network](/general-information/data-types/#network) | The mobile-originating network
-toNetwork | [Network](/general-information/data-types/#network) | The mobile-terminating network
-icc | String | The SIM-card identifier
-imsi | String | International mobile subscriber identity
-usageDate | ISO 8601 DateTime |
+| Field       | Type                                                | Description                              |
+|-------------|-----------------------------------------------------|------------------------------------------|
+| duration    | Number                                              | The call duration, in seconds            |
+| caller      | String                                              | E164 MSISDN, e.g. *+4593709603*          |
+| called      | String                                              | E164 MSISDN, e.g. *+4593709603*          |
+| fromNetwork | [Network](/general-information/data-types/#network) | The mobile-originating network           |
+| toNetwork   | [Network](/general-information/data-types/#network) | The mobile-terminating network           |
+| icc         | String                                              | The SIM-card identifier                  |
+| imsi        | String                                              | International mobile subscriber identity |
+| usageDate   | ISO 8601 DateTime                                   |                                          |
 
 **Example**
 

@@ -12,21 +12,21 @@ A sim card can have multiple tags at a time unlike sim card groups.
 ## API objects
 
 ### SimCardTag
-Field        	| Type          | Description
------------- 	| ------------- | ------------
-globalId 		| String        | id of the tag
-tag 	        | String        | Name of the tag
-createdDate 	| String        | ISO 8601 datetime format
-updatedDate 	| String        | ISO 8601 datetime format
+| Field        | Type   | Description              |
+|--------------|--------|--------------------------|
+| globalId     | String | id of the tag            |
+| tag          | String | Name of the tag          |
+| createdDate  | String | ISO 8601 datetime format |
+| updatedDate  | String | ISO 8601 datetime format |
 
 ### DetailedSimCardTag
-Field        	| Type                                                      | Description
------------- 	| -------------                                             | ------------
-globalId 		| String                                                    | id of the tag
-tag 	        | String                                                    | Name of the tag
-createdDate 	| String                                                    | ISO 8601 datetime format
-updatedDate 	| String                                                    | ISO 8601 datetime format
-taggedSimCards 	| List([SimCard](/general-information/data-types/#simcard)) | List of tagged sim cards
+| Field          | Type                                                      | Description              |
+|----------------|-----------------------------------------------------------|--------------------------|
+| globalId       | String                                                    | id of the tag            |
+| tag            | String                                                    | Name of the tag          |
+| createdDate    | String                                                    | ISO 8601 datetime format |
+| updatedDate    | String                                                    | ISO 8601 datetime format |
+| taggedSimCards | List([SimCard](/general-information/data-types/#simcard)) | List of tagged sim cards |
 
 ## Endpoint: Get sim card tags
 
@@ -50,9 +50,9 @@ Create a new sim card tag
 
 **Request Payload**
 
-Field        	| Type          | Description           |
------------- 	| ------------- | ------------          |
-tag 		    | String        | Name of the new tag   |
+| Field | Type   | Description         |
+|-------|--------|---------------------|
+| tag   | String | Name of the new tag |
 
 
 **Response Payload**
@@ -81,10 +81,9 @@ Update metadata for a sim card tag.
 
 **Request Payload**
 
-Field        	| Type          | Description
------------- 	| ------------- | ------------
-newName 		| String        | New name of the tag. This corresponds to the "tag" property of the tag
-
+| Field   | Type   | Description                                                            |
+|---------|--------|------------------------------------------------------------------------|
+| newName | String | New name of the tag. This corresponds to the "tag" property of the tag |
 
 ## Endpoint: Delete sim card tag
 
@@ -104,7 +103,7 @@ Tag and untag sim cards for a specific sim card.
 
 **Request Payload**
 
-Field        	    | Type          | Description
------------- 	    | ------------- | ------------
-simCardsToAdd 	    | List(String)  | List of icc numbers for sim cards to tag.
-simCardsToRemove    | List(String)  | List of icc numbers for sim cards to untag.
+| Field            | Type         | Description                                 |
+|------------------|--------------|---------------------------------------------|
+| simCardsToAdd    | List(String) | List of icc numbers for sim cards to tag.   |
+| simCardsToRemove | List(String) | List of icc numbers for sim cards to untag. |

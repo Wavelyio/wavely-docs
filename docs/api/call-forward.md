@@ -9,12 +9,12 @@ This is the API for call forwarding management.
 ## API Objects
 
 ### CallForwardingRule
-Field               | Type                  | Description
-------------------- | --------------------- | -----------------------------------------------
-sourceMsisdn        | String                | Source msisdn of the call forward rule
-targetMsisdn        | String                | Target msisdn of the call forward rule
-anonymousCallerId   | Boolean               | Enable anonymous caller id when forwarding call
-createdDate         | ISO 8601 DateTime UTC | Date when rule is created
+| Field             | Type                  | Description                                     |
+|-------------------|-----------------------|-------------------------------------------------|
+| sourceMsisdn      | String                | Source msisdn of the call forward rule          |
+| targetMsisdn      | String                | Target msisdn of the call forward rule          |
+| anonymousCallerId | Boolean               | Enable anonymous caller id when forwarding call |
+| createdDate       | ISO 8601 DateTime UTC | Date when rule is created                       |
 
 ## Endpoint: Get call forwarding rules
 
@@ -57,9 +57,9 @@ Get call forwarding rule by source msisdn.
 
 **Path parameter**
 
-Field           | Type          | Description
-------------    | ------------  | ------------
-msisdn          | String        | Msisdn to lookup
+| Field  | Type   | Description      |
+|--------|--------|------------------|
+| msisdn | String | Msisdn to lookup |
 
 **Response Payload**
 
@@ -94,11 +94,11 @@ Create new call forwarding rule.
 
 **Request Payload**
 
-Field             | Type          | Description
-------------      | ------------  | ------------
-sourceMsisdn      | String        | The msisdn to be forwarded
-targetMsisdn      | String        | The msisdn to receive the forward
-anonymousCallerId | Boolean       | If caller id should be hidden on callee phone 
+| Field             | Type    | Description                                   |
+|-------------------|---------|-----------------------------------------------|
+| sourceMsisdn      | String  | The msisdn to be forwarded                    |
+| targetMsisdn      | String  | The msisdn to receive the forward             |
+| anonymousCallerId | Boolean | If caller id should be hidden on callee phone |
 
 **Example**
 

@@ -7,11 +7,11 @@ Deliver SMS from MAP to HTTP/HTTPS.
     
 ## Payload
 
-Field        | Type          | Description
------------- | ------------- | ------------
-fromMsisdn | String | E164 MSISDN, e.g. *+4593709603*
-toMsisdn | String | E164 MSISDN, e.g. *+4593709603*
-messageText | String |
+| Field       | Type   | Description                     |
+|-------------|--------|---------------------------------|
+| fromMsisdn  | String | E164 MSISDN, e.g. *+4593709603* |
+| toMsisdn    | String | E164 MSISDN, e.g. *+4593709603* |
+| messageText | String |                                 |
 
 **Example**
 
