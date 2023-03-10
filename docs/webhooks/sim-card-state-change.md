@@ -6,11 +6,11 @@ For example, a user activates or suspends the SIM card.
 
 ## Payload
 
-| Field           | Type                                                                  | Description |
-|-----------------|-----------------------------------------------------------------------|-------------|
-| icc             | String                                                                |             |
-| imsiState       | [ImsiState](/general-information/data-types/#imsistates)              |             |
-| imsiStateReason | [ImsiStateReasons](/general-information/data-types/#imsistatereasons) |             |
+| Field           | Type                                                                       | Description |
+|-----------------|----------------------------------------------------------------------------|-------------|
+| icc             | String                                                                     |             |
+| imsiState       | [ImsiState](../../general-information/data-types/#imsistates)              |             |
+| imsiStateReason | [ImsiStateReasons](../../general-information/data-types/#imsistatereasons) |             |
 
 **Example**
 

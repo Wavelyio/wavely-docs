@@ -37,13 +37,13 @@ Representation of company
 
 Simple representation of a single SIM card in our system.
 
-| Field            | Type                                                                   |
-|------------------|------------------------------------------------------------------------|
-| icc              | String                                                                 |
-| msisdn           | String                                                                 |
-| state            | [ImsiStates](/general-information/data-types#imsistates)               |
-| dataSessionState | [DataSessionStates](/general-information/data-types#datasessionstates) |
-| networkSpeed     | [NetworkSpeed](/general-information/data-types#networkspeed)           |
+| Field            | Type                                                  |
+|------------------|-------------------------------------------------------|
+| icc              | String                                                |
+| msisdn           | String                                                |
+| state            | [ImsiStates](../data-types#imsistates)                |
+| dataSessionState | [DataSessionStates](../data-types#datasessionstates)  |
+| networkSpeed     | [NetworkSpeed](../data-types#networkspeed)            |
 
 ## ImsiStates
 
@@ -201,30 +201,30 @@ Defines what is enabled in a profile.
 
 Simple representation of an invoice
 
-| Field         | Type                                                                     |
-|---------------|--------------------------------------------------------------------------|
-| invoiceNumber | Long                                                                     |
-| startDate     | ISO 8601 Date                                                            |
-| endDate       | ISO 8601 Date                                                            |
-| currencyCode  | String                                                                   |
-| invoiceLines  | List([InvoiceLine](/general-information/data-types#BasicInvoiceLineDTO)) |
+| Field         | Type                                                   |
+|---------------|--------------------------------------------------------|
+| invoiceNumber | Long                                                   |
+| startDate     | ISO 8601 Date                                          |
+| endDate       | ISO 8601 Date                                          |
+| currencyCode  | String                                                 |
+| invoiceLines  | List([InvoiceLine](../data-types#BasicInvoiceLineDTO)) |
 
 ## BasicInvoiceLine
 
 Simple representation of an invoice line
 
-| Field                 | Type                                                         |
-|-----------------------|--------------------------------------------------------------|
-| quantity              | Number                                                       |
-| fromType              | [BillableType](/general-information/data-types#BillableType) |
-| toType                | [BillableType](/general-information/data-types#BillableType) |
-| fromCountry           | [CountryCode](/general-information/data-types#CountryCode)   |
-| toCountry             | [CountryCode](/general-information/data-types#CountryCode)   |
-| direction             | [Directions](/general-information/data-types#Directions)     |
-| productName           | String                                                       |
-| chargeableName        | String                                                       |
-| chargeablePackageName | String                                                       |
-| description           | String                                                       |
+| Field                 | Type                                       |
+|-----------------------|--------------------------------------------|
+| quantity              | Number                                     |
+| fromType              | [BillableType](../data-types#BillableType) |
+| toType                | [BillableType](../data-types#BillableType) |
+| fromCountry           | [CountryCode](../data-types#CountryCode)   |
+| toCountry             | [CountryCode](../data-types#CountryCode)   |
+| direction             | [Directions](../data-types#Directions)     |
+| productName           | String                                     |
+| chargeableName        | String                                     |
+| chargeablePackageName | String                                     |
+| description           | String                                     |
 
 
 ## DataUsageByCompany

@@ -6,17 +6,17 @@ Indicates that a SIM card has been assigned to your account. Triggers for each a
 
 **Response Payload**
 
-| Field       | Type                                                          | Description                                                                                  |
-|-------------|---------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| icc         | String                                                        | The ICC of the SIM card                                                                      |
-| msisdn      | String                                                        | E164 MSISDN, e.g. *+4593709603*                                                              |
-| state       | [ImsiStates](/general-information/data-types/#imsistates)     | The current state of the SIM card                                                            |
-| pin1        | String                                                        |                                                                                              |
-| pin2        | String                                                        |                                                                                              |
-| puk1        | String                                                        |                                                                                              |
-| puk2        | String                                                        |                                                                                              |
-| simCardType | [SimCardTypes](/general-information/data-types/#simcardtypes) | The type of the SIM card                                                                     |
-| matchingId  | String                                                        | A SIM card with type ESIM will have this value, which is needed for downloading ESIM profile |
+| Field       | Type                                                               | Description                                                                                  |
+|-------------|--------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| icc         | String                                                             | The ICC of the SIM card                                                                      |
+| msisdn      | String                                                             | E164 MSISDN, e.g. *+4593709603*                                                              |
+| state       | [ImsiStates](../../general-information/data-types/#imsistates)     | The current state of the SIM card                                                            |
+| pin1        | String                                                             |                                                                                              |
+| pin2        | String                                                             |                                                                                              |
+| puk1        | String                                                             |                                                                                              |
+| puk2        | String                                                             |                                                                                              |
+| simCardType | [SimCardTypes](../../general-information/data-types/#simcardtypes) | The type of the SIM card                                                                     |
+| matchingId  | String                                                             | A SIM card with type ESIM will have this value, which is needed for downloading ESIM profile |
 
 **Example**
 

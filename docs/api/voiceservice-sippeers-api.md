@@ -50,7 +50,7 @@ Get all SIP peers configured for company
 
 **Response Payload**
 
-List([SIPPeer](/api/voiceservice-sippeers-api/#sippeer))
+List([SIPPeer](../voiceservice-sippeers-api/#sippeer))
 
 **Example response**
 
