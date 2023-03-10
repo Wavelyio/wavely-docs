@@ -30,7 +30,7 @@ To retrieve the remaining pages simply change the page parameter of the query to
 
 **Response Payload**
 
-[Page](/general-information/data-types/#Page(Type))([Simcard](/general-information/data-types/#SimCard))
+[Page](../general-information/data-types/#page(type))([Simcard](../../general-information/data-types/#simcard))
 
 ## Endpoint: Get single sim card
 
