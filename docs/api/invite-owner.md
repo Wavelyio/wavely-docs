@@ -22,7 +22,7 @@ Getting list of companies to select
 
 **Response payload**
 
-Returns [Page](../../general-information/data-types/#Page(Type))([Company](../../general-information/data-types/#Company))
+Returns [Page](../../general-information/data-types/#page(type))([Company](../../general-information/data-types/#company))
 
 ***
 
@@ -34,7 +34,7 @@ Returns [Page](../../general-information/data-types/#Page(Type))([Company](../..
 
 **Response payload** 
 
-Returns [Company](../../general-information/data-types/#Company)
+Returns [Company](../../general-information/data-types/#company)
 
 ***
 

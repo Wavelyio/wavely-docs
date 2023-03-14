@@ -207,7 +207,7 @@ Simple representation of an invoice
 | startDate     | ISO 8601 Date                                          |
 | endDate       | ISO 8601 Date                                          |
 | currencyCode  | String                                                 |
-| invoiceLines  | List([InvoiceLine](../data-types#BasicInvoiceLineDTO)) |
+| invoiceLines  | List([InvoiceLine](../data-types#basicinvoicelinedto)) |
 
 ## BasicInvoiceLine
 
@@ -216,11 +216,11 @@ Simple representation of an invoice line
 | Field                 | Type                                       |
 |-----------------------|--------------------------------------------|
 | quantity              | Number                                     |
-| fromType              | [BillableType](../data-types#BillableType) |
-| toType                | [BillableType](../data-types#BillableType) |
-| fromCountry           | [CountryCode](../data-types#CountryCode)   |
-| toCountry             | [CountryCode](../data-types#CountryCode)   |
-| direction             | [Directions](../data-types#Directions)     |
+| fromType              | [BillableType](../data-types#billabletype) |
+| toType                | [BillableType](../data-types#billabletype) |
+| fromCountry           | [CountryCode](../data-types#countrycode)   |
+| toCountry             | [CountryCode](../data-types#countrycode)   |
+| direction             | [Directions](../data-types#directions)     |
 | productName           | String                                     |
 | chargeableName        | String                                     |
 | chargeablePackageName | String                                     |
