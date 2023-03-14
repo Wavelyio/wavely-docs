@@ -39,5 +39,3 @@ Create new customer in Asterisk
   "createdDate": "2020-12-12T22:33:44"
 }
 ```
-
-
