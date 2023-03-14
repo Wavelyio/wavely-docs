@@ -27,14 +27,14 @@ This is the API for operator profile management.
 | Field                  | Type                                    | Description                                            |
 |------------------------|-----------------------------------------|--------------------------------------------------------|
 | simcardCount           | Long                                    | The number of sim cards that use this operator profile |
-| companyOperatorProfile | [Profile](../operator-profiles#Profile) | Profile meta data                                      |
+| companyOperatorProfile | [Profile](../operator-profiles#profile) | Profile meta data                                      |
 
 ### FullOperatorProfile
 
 | Field                  | Type                                                                                                              | Description                                                                                 |
 |------------------------|-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | simcardCount           | Long                                                                                                              | The number of sim cards that use this operator profile                                      |
-| companyOperatorProfile | [Profile](../operator-profiles#Profile)                                                                           | Profile meta data                                                                           |
+| companyOperatorProfile | [Profile](../operator-profiles#profile)                                                                           | Profile meta data                                                                           |
 | config                 | Map(String, List([ConnectivityCapabilityType](../../general-information/data-types#connectivitycapabilitytypes))) | The "String" key represents the alpha2 country code where the list of services are enabled. |
 
 ## Endpoint: Get Operator profiles

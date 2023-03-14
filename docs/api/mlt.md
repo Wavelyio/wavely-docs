@@ -40,7 +40,7 @@ Response is array of subtenants [Company](../../general-information/data-types#c
 
 **Response payload**
 
-Returns [Page](../../general-information/data-types/#Page(Type))([Simcard](../../general-information/data-types/#SimCard))
+Returns [Page](../../general-information/data-types/#page(type))([Simcard](../../general-information/data-types/#simcard))
 
 ***
 

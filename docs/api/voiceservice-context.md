@@ -111,4 +111,3 @@ Remove phone number from a specific context
 | Field            | Type         | Description                                      |
 |------------------|--------------|--------------------------------------------------|
 | phoneNumbersList | List(String) | List of phone numbers to remove from the context |
-
