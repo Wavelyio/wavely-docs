@@ -17,7 +17,7 @@ This webhook details the call usage of SIM card, i.e. between who and for how lo
 
 **Example**
 
-!!! danger
+!!! info
 	As shown in the examples, information on both networks will never be available. 
     Depending on the direction of the call, either the originating network or the destination network will be present.
     In the case of the caller being known the originating network will be present and otherwise the destination network.
