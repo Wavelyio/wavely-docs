@@ -1,5 +1,5 @@
-# Data Usage
-This is the API for querying data usage. We currently expose the following actions:
+# Company Data Usage
+This is the API for querying company data usage. We currently expose the following actions:
 
 * Get data usage as a total for a company in a month
 * Get data usage for a company in a month, grouped by SIM card collections

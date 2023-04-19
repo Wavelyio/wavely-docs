@@ -34,7 +34,7 @@ nav:
       - 'SIM card groups': 'api/simcard-groups.md'
       - 'SIM card tags': 'api/simcard-tag.md'
       - 'Call Forwarding': 'api/call-forwarding.md'
-      - 'Data Usage API': 'api/data-usage.md'
+      - 'Company Data Usage': 'api/company-data-usage.md'
       - 'Geolocation': 'api/geolocation.md'
       # This should be refactored after external APIs will be known
       # - Invite Owner API: 'api/invite-owner.md'
