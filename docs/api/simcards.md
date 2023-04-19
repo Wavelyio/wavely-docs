@@ -1,4 +1,4 @@
-# SIM card API
+# SIM cards
 This is the API for SIM card management. We currently expose the following actions:
 
 * Get SIM cards
@@ -30,9 +30,9 @@ To retrieve the remaining pages simply change the page parameter of the query to
 
 **Response Payload**
 
-[Page](../../general-information/data-types/#page(type))([Simcard](../../general-information/data-types/#simcard))
+[Page](../../general-information/data-types/#page(type))([SimCard](../../general-information/data-types/#simcard))
 
-## Endpoint: Get single sim card
+## Endpoint: Get single SIM card
 
 **Description**
 
@@ -47,11 +47,11 @@ Queries the system for one SIM card, by ICC.
 | icc          | String                                                             | The ICC of the SIM card                |
 | msisdn       | String                                                             | E164 MSISDN, e.g. *+4593709603*        |
 | state        | [ImsiStates](../../general-information/data-types/#imsistates)     | The current state of the SIM card      |
-| pin1         | String                                                             | Primary pin code for the sim card      |
-| pin2         | String                                                             | Secondary pin code for the sim card    |
-| puk1         | String                                                             | Primary puk code for the sim card      |
-| puk2         | String                                                             | Secondary puk code for the sim card    |
-| networkSpeed | [NetworkSpeed](../../general-information/data-types/#networkspeed) | Network speed property of the sim card |
+| pin1         | String                                                             | Primary pin code for the SIM card      |
+| pin2         | String                                                             | Secondary pin code for the SIM card    |
+| puk1         | String                                                             | Primary puk code for the SIM card      |
+| puk2         | String                                                             | Secondary puk code for the SIM card    |
+| networkSpeed | [NetworkSpeed](../../general-information/data-types/#networkspeed) | Network speed property of the SIM card |
 
 ## Endpoint: Get status of single SIM card
 
@@ -72,7 +72,7 @@ Provides some additional details about a single SIM card.
 | operatorProfileName | String                                                                       | Name of the operator profile assigned to the SIM card |
 | dataSessionState    | [DataSessionStates](../../general-information/data-types/#datasessionstates) | Information on the current data state of the SIM card |
 
-## Endpoint: Apply action to sim card
+## Endpoint: Apply action to SIM card
 
 **Description**
 
@@ -85,7 +85,7 @@ Apply an action to the specified SIM card, for example "activate SIM card" or "s
 | Field         | Type                                                                   | Description                                |
 |---------------|------------------------------------------------------------------------|--------------------------------------------|
 | simCardAction | [SimCardActions](../../general-information/data-types/#simcardactions) | The action to apply to the SIM card        |
-| networkSpeed  | [NetworkSpeed](../../general-information/data-types/#networkspeed)     | The network speed to apply to the sim card |
+| networkSpeed  | [NetworkSpeed](../../general-information/data-types/#networkspeed)     | The network speed to apply to the SIM card |
 
 **Example**
 ```json
@@ -116,11 +116,11 @@ Apply an action to the specified SIM card, for example "activate SIM card" or "s
 }
 ```
 
-## Endpoint: Update operator profile for sim card
+## Endpoint: Update operator profile for SIM card
 
 **Description**
 
-Update the operator profile for a single sim card
+Update the operator profile for a single SIM card
 
 **Endpoint:** `PUT /simcards/{icc}/operatorprofiles`
 
@@ -130,10 +130,10 @@ Update the operator profile for a single sim card
 |--------------------|-------|-------------------------------|
 | operatorProfileId  | Long  | The operator profile to apply |
 
-## Endpoint: Remove sim card from its sim card group if present
+## Endpoint: Remove SIM card from its SIM card group if present
 
 **Description**
 
-Remove the sim card group relation for the sim card
+Remove the SIM card group relation for the SIM card
 
 **Endpoint:** `DELETE /simcards/{icc}/simcardgroup`

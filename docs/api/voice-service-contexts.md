@@ -9,11 +9,11 @@ This is the API for voice service contexts management.
 
 ### Context
 
-| Field            | Type                                                  | Description                    |
-|------------------|-------------------------------------------------------|--------------------------------|
-| name             | String                                                | Name of context                |
-| createdDate      | ISO 8601 DateTime UTC                                 | Date when context is created   |
-| extensionDTOList | List([Extension](../voiceservice-context/#extension)) | List of extensions for context |
+| Field            | Type                                                    | Description                    |
+|------------------|---------------------------------------------------------|--------------------------------|
+| name             | String                                                  | Name of context                |
+| createdDate      | ISO 8601 DateTime UTC                                   | Date when context is created   |
+| extensionDTOList | List([Extension](../voice-service-contexts/#extension)) | List of extensions for context |
 
 ### Extension
 
@@ -36,7 +36,7 @@ Get all contexts
 
 **Response Payload**
 
-List([Context](../voiceservice-context/#context))
+List([Context](../voice-service-contexts/#context))
 
 **Example response**
 

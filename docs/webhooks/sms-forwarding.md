@@ -1,4 +1,4 @@
-# SMS forwarding
+# SMS Forwarding
 
 Deliver SMS from MAP to HTTP/HTTPS.
 

@@ -1,4 +1,4 @@
-# Customers
+# Voice Service Customers
 This is the API to add your sub company in Asterisk
 
 ## API objects
@@ -28,7 +28,7 @@ Create new customer in Asterisk
 
 **Response Payload**
 
-[Customer](../voiceservice-customers/#customers)
+[Customer](../voice-service-customers/#customers)
 
 **Example response**
 

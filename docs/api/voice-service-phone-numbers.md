@@ -1,4 +1,4 @@
-# Phone numbers in Voice Service
+# Voice Service Phone numbers
 This is the API for phone numbers management in Voice Service
 
 * Get all phone numbers
@@ -25,7 +25,7 @@ Get all phone numbers of company
 
 **Response Payload**
 
-List([PhoneNumber](../voiceservice-phone-numbers-api/#phonenumber))
+List([PhoneNumber](../voice-service-phone-numbers/#phonenumber))
 
 **Example response**
 
@@ -68,7 +68,7 @@ Add phone number to company or sub tenant customer
 
 **Response payload**
 
-[PhoneNumber](../voiceservice-phone-numbers-api/#phonenumber)
+[PhoneNumber](../voice-service-phone-numbers/#phonenumber)
 
 **Response example**
 

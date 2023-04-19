@@ -1,13 +1,13 @@
-# Sim card tag API
-This is the API for operator sim card tag management.
-A sim card can have multiple tags at a time unlike sim card groups. 
+# SIM card tag
+This is the API for operator SIM card tag management.
+A SIM card can have multiple tags at a time unlike SIM card groups.
 
-* Get sim card tags
-* Create sim card tag
-* Get sim card tag
-* Update sim card tag
-* Delete sim card tag
-* Update tagged sim cards for tag
+* Get SIM card tags
+* Create SIM card tag
+* Get SIM card tag
+* Update SIM card tag
+* Delete SIM card tag
+* Update tagged SIM cards for tag
 
 ## API objects
 
@@ -26,13 +26,13 @@ A sim card can have multiple tags at a time unlike sim card groups.
 | tag            | String                                                         | Name of the tag          |
 | createdDate    | String                                                         | ISO 8601 datetime format |
 | updatedDate    | String                                                         | ISO 8601 datetime format |
-| taggedSimCards | List([SimCard](../../general-information/data-types/#simcard)) | List of tagged sim cards |
+| taggedSimCards | List([SimCard](../../general-information/data-types/#simcard)) | List of tagged SIM cards |
 
-## Endpoint: Get sim card tags
+## Endpoint: Get SIM card tags
 
 **Description**
 
-Get all current sim card tags.
+Get all current SIM card tags.
 
 **Endpoint:** `GET /simcardtags`
 
@@ -40,11 +40,11 @@ Get all current sim card tags.
 
 [Page](../../general-information/data-types/#page)([SimCardTag](../simcard-tags/#simcardtag))
 
-## Endpoint: Create new sim card tag
+## Endpoint: Create new SIM card tag
 
 **Description**
 
-Create a new sim card tag
+Create a new SIM card tag
 
 **Endpoint:** `POST /simcardtags`
 
@@ -59,11 +59,11 @@ Create a new sim card tag
 
 [SimCardTag](../simcard-tags/#simcardtag)
 
-## Endpoint: Get sim card tag
+## Endpoint: Get SIM card tag
 
 **Description**
 
-Get sim card tag by its id.
+Get SIM card tag by its id.
 
 **Endpoint:** `GET /simcardtags/{globalId}`
 
@@ -71,11 +71,11 @@ Get sim card tag by its id.
 
 [DetailedSimCardTag](../simcard-tags/#detailedsimcardtag)
 
-## Endpoint: Update sim card tag
+## Endpoint: Update SIM card tag
 
 **Description**
 
-Update metadata for a sim card tag.
+Update metadata for a SIM card tag.
 
 **Endpoint:** `PATCH /simcardtags/{globalId}`
 
@@ -85,19 +85,19 @@ Update metadata for a sim card tag.
 |---------|--------|------------------------------------------------------------------------|
 | newName | String | New name of the tag. This corresponds to the "tag" property of the tag |
 
-## Endpoint: Delete sim card tag
+## Endpoint: Delete SIM card tag
 
 **Description**
 
-Delete sim card tag by id. This will also remove the tag from all sim cards that had that tag.
+Delete SIM card tag by id. This will also remove the tag from all SIM cards that had that tag.
 
 **Endpoint:** `DELETE /simcardtags/{globalId}`
 
-## Endpoint: Update tagged sim cards for tag
+## Endpoint: Update tagged SIM cards for tag
 
 **Description**
 
-Tag and untag sim cards for a specific sim card.
+Tag and untag SIM cards for a specific SIM card.
 
 **Endpoint:** `PATCH /simcardtags/{globalId}/simcards`
 
@@ -105,5 +105,5 @@ Tag and untag sim cards for a specific sim card.
 
 | Field            | Type         | Description                                 |
 |------------------|--------------|---------------------------------------------|
-| simCardsToAdd    | List(String) | List of icc numbers for sim cards to tag.   |
-| simCardsToRemove | List(String) | List of icc numbers for sim cards to untag. |
+| simCardsToAdd    | List(String) | List of icc numbers for SIM cards to tag.   |
+| simCardsToRemove | List(String) | List of icc numbers for SIM cards to untag. |
