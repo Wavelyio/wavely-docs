@@ -1,6 +1,6 @@
 # Call CDR
 
-This webhook details the call usage of sim card, i.e. between who and for how long the call lasted.
+This webhook details the call usage of SIM card, i.e. between who and for how long the call lasted.
 
 ## Payload
 

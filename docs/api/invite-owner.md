@@ -3,7 +3,7 @@ Introducing API calls which exist in invite owner section
 
 * Get companies 
 * Get single company info 
-* Get simcards count of company
+* Get SIM cards count of company
 * Get accounts of company
 * Get invites of company
 * Get contracts of company
@@ -38,7 +38,7 @@ Returns [Company](../../general-information/data-types/#company)
 
 ***
 
-## Get simcards count of company
+## Get SIM cards count of company
 
 **Endpoint:** `GET admin/companies/${companyGlobalId}/simcards/count`
 <br>
