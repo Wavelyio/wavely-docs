@@ -1,5 +1,5 @@
-# SIM card groups
-This is the API for operator SIM card group management.
+# SIM card groups (collections)
+This is the API for operator SIM card group management (called collections on the portal).
 A SIM card can be part of only one group at a time.
 
 * Get SIM card groups

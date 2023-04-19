@@ -31,7 +31,7 @@ nav:
       - 'Operator profiles': 'api/operator-profiles.md'
       - 'SIM card diagnostics': 'api/simcard-diagnostics.md'
       - 'SIM card usage': 'api/simcard-usage.md'
-      - 'SIM card groups': 'api/simcard-groups.md'
+      - 'SIM card groups (collections)': 'api/simcard-groups.md'
       - 'SIM card tags': 'api/simcard-tag.md'
       - 'Call Forwarding': 'api/call-forwarding.md'
       - 'Company Data Usage': 'api/company-data-usage.md'
