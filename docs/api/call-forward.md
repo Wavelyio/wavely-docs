@@ -1,4 +1,4 @@
-# Callforwarding
+# Call forwarding
 This is the API for call forwarding management.
 
 * Get all call forward rules

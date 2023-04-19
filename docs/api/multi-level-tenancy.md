@@ -1,8 +1,8 @@
-#Multi Level Tenancy API
+# Multi Level Tenancy
 
-MLT has brought several unic endpoints, but in general, it uses same endoints.
+MLT has brought several unique endpoints, but in general, it uses same endpoints.
 <br>
-To call API for subtnenant, you should add query parameter: <br>
+To call API for subtenant, you should add query parameter: <br>
 **subTenantCompanyGlobalId**=`global id of subtenant company`
 
 **Where MLT was implemented:**

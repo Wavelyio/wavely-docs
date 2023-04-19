@@ -1,4 +1,4 @@
-# SIM card tag API
+# SIM card tag
 This is the API for operator SIM card tag management.
 A SIM card can have multiple tags at a time unlike SIM card groups.
 

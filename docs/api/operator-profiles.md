@@ -1,4 +1,4 @@
-# Operator profiles API
+# Operator profiles
 This is the API for operator profile management.
 
 * Get Operator profiles

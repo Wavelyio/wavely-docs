@@ -1,4 +1,4 @@
-# Data Usage API
+# Data Usage
 This is the API for querying data usage. We currently expose the following actions:
 
 * Get data usage as a total for a company in a month

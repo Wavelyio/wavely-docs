@@ -1,4 +1,4 @@
-# Geolocation API
+# Geolocation
 Using this API, you are able to get geographical location of SIM cards.
 
 ## Endpoint: Get latest company location

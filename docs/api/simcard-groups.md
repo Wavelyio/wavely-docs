@@ -1,4 +1,4 @@
-# SIM card groups API
+# SIM card groups
 This is the API for operator SIM card group management.
 A SIM card can be part of only one group at a time.
 
