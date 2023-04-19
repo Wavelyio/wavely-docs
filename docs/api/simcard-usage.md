@@ -68,7 +68,7 @@ Data usage for a given **month** in a given **year** can be accessed by using th
 ```
 
 !!! tip
-Keep in mind that the response is given as a list of usages and not returned as a regular top level JSON object.
+    Keep in mind that the response is given as a list of usages and not returned as a regular top level JSON object.
 
 ## Message usage for a SIM card
 
@@ -92,9 +92,8 @@ Message usage for a given **month** in a given **year** can be accessed by using
 
 **Example response**
 
-!!! warning ""
-The example is generated to express as many scenarios as possible, therefore not necessarily a possible occurrence for
-an actual SIM card.
+!!! warning
+    The example is generated to express as many scenarios as possible, therefore not necessarily a possible occurrence for an actual SIM card.
 
 ```json
 [
@@ -158,7 +157,7 @@ SMPP usage for a given **month** in a given **year** can be accessed by using th
 
 **Example response**
 
-!!! warning ""
+!!! warning
     the example is generated to express as many scenarios as possible, therefore not necessarily a possible occurrence for an actual SIM card.
 
 ```json
@@ -200,7 +199,7 @@ SMPP usage for a given **month** in a given **year** can be accessed by using th
 ```
 
 !!! tip
-Keep in mind that the response is given as a list of usages and not returned as a regular top level JSON object.
+    Keep in mind that the response is given as a list of usages and not returned as a regular top level JSON object.
 
 ## Call usage for a SIM card
 
@@ -255,7 +254,7 @@ Call usage for a given **month** in a given **year** can be accessed by using th
 ```
 
 !!! tip
-Keep in mind that the response is given as a list of usages and not returned as a regular top level JSON object.
+    Keep in mind that the response is given as a list of usages and not returned as a regular top level JSON object.
 
 ## Total usage for a SIM card
 

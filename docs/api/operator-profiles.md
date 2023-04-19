@@ -1,4 +1,4 @@
-# Operator profiles API
+# Operator profiles
 This is the API for operator profile management.
 
 * Get Operator profiles
@@ -26,14 +26,14 @@ This is the API for operator profile management.
 
 | Field                  | Type                                    | Description                                            |
 |------------------------|-----------------------------------------|--------------------------------------------------------|
-| simcardCount           | Long                                    | The number of sim cards that use this operator profile |
+| simcardCount           | Long                                    | The number of SIM cards that use this operator profile |
 | companyOperatorProfile | [Profile](../operator-profiles#profile) | Profile meta data                                      |
 
 ### FullOperatorProfile
 
 | Field                  | Type                                                                                                              | Description                                                                                 |
 |------------------------|-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| simcardCount           | Long                                                                                                              | The number of sim cards that use this operator profile                                      |
+| simcardCount           | Long                                                                                                              | The number of SIM cards that use this operator profile                                      |
 | companyOperatorProfile | [Profile](../operator-profiles#profile)                                                                           | Profile meta data                                                                           |
 | config                 | Map(String, List([ConnectivityCapabilityType](../../general-information/data-types#connectivitycapabilitytypes))) | The "String" key represents the alpha2 country code where the list of services are enabled. |
 
@@ -85,7 +85,7 @@ Create a new operator profile
 
 | Field         | Type                                                                                                              | Description                                                                                 |
 |---------------|-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| name          | String                                                                                                            | The number of sim cards that use this operator profile                                      |
+| name          | String                                                                                                            | The number of SIM cards that use this operator profile                                      |
 | description   | String                                                                                                            | Profile meta data                                                                           |
 | actionMapping | [OperatorProfileActionMapping](../../general-information/data-types#operatorprofileactionmapping)                 | The "String" key represents the alpha2 country code where the list of services are enabled. |
 | config        | Map(String, List([ConnectivityCapabilityType](../../general-information/data-types#connectivitycapabilitytypes))) | The "String" key represents the alpha2 country code where the list of services are enabled. |
@@ -106,7 +106,7 @@ Clone an existing operator profile with some changes applied at creation.
 
 | Field        | Type                                                                                                              | Description                                               |
 |--------------|-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| name         | String                                                                                                            | The number of sim cards that use this operator profile    |
+| name         | String                                                                                                            | The number of SIM cards that use this operator profile    |
 | removeConfig | Map(String, List([ConnectivityCapabilityType](../../general-information/data-types#connectivitycapabilitytypes))) | Configurations to remove from the cloned operator profile |
 | addConfig    | Map(String, List([ConnectivityCapabilityType](../../general-information/data-types#connectivitycapabilitytypes))) | Configurations to add to the cloned operator profile      |
 
@@ -141,7 +141,7 @@ List([SlimmedOperatorProfile](../operator-profiles/#slimmedoperatorprofile))
 **Description**
 
 Delete an operator profile if it exists. 
-An operator profile can only be deleted if it is not currently in use by any sim cards.
+An operator profile can only be deleted if it is not currently in use by any SIM cards.
 
 **Endpoint:** `DELETE /operatorprofiles/{operatorProfileId}`
 

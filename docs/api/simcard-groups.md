@@ -1,29 +1,29 @@
-# Sim card groups API
-This is the API for operator sim card group management.
-A sim card can be part of only one group at a time.
+# SIM card groups (collections)
+This is the API for operator SIM card group management (called collections on the portal).
+A SIM card can be part of only one group at a time.
 
-* Get sim card groups
-* Get sim card groups by name
-* Get sim card group by id
-* Delete sim card group by id
-* Add sim cards to group
-* Remove sim card from group
+* Get SIM card groups
+* Get SIM card groups by name
+* Get SIM card group by id
+* Delete SIM card group by id
+* Add SIM cards to group
+* Remove SOM card from group
 
 ## API objects
 
 ### SimCardGroup
 | Field        | Type    | Description                               |
 |--------------|---------|-------------------------------------------|
-| globalId     | String  | id of the sim card group                  |
+| globalId     | String  | id of the SIM card group                  |
 | name         | String  | Name of the group                         |
 | createdDate  | String  | ISO 8601 datetime format                  |
-| simCardCount | Integer | Number of sim cards assigned to the group |
+| simCardCount | Integer | Number of SIM cards assigned to the group |
 
-## Endpoint: Get sim card groups
+## Endpoint: Get SIM card groups
 
 **Description**
 
-Get all current sim card groups.
+Get all current SIM card groups.
 
 **Endpoint:** `GET /simcardgroups`
 
@@ -31,11 +31,11 @@ Get all current sim card groups.
 
 List([SimCardGroup](../simcard-groups/#simcardgroup))
 
-## Endpoint: Get sim card group by name
+## Endpoint: Get SIM card group by name
 
 **Description**
 
-Get sim card groups by their name.
+Get SIM card groups by their name.
 
 **Endpoint:** `GET /simcardgroups`
 
@@ -49,11 +49,11 @@ Get sim card groups by their name.
 
 List([SimCardGroup](../simcard-groups/#simcardgroup))
 
-## Endpoint: Get sim card group by id
+## Endpoint: Get SIM card group by id
 
 **Description**
 
-Get sim card group by its id.
+Get SIM card group by its id.
 
 **Endpoint:** `GET /simcardgroups/{simCardGroupGlobalId}`
 
@@ -61,19 +61,19 @@ Get sim card group by its id.
 
 [SimCardGroup](../simcard-groups/#simcardgroup)
 
-## Endpoint: Delete sim card group by id
+## Endpoint: Delete SIM card group by id
 
 **Description**
 
-Delete sim card group by id
+Delete SIM card group by id
 
 **Endpoint:** `DELETE /simcardgroups/{simCardGroupGlobalId}`
 
-## Endpoint: Add sim card to group
+## Endpoint: Add SIM card to group
 
 **Description**
 
-Add a collection of sim cards to a sim card group. Moving them if they already belong to a different group.
+Add a collection of SIM cards to a SIM card group. Moving them if they already belong to a different group.
 
 **Endpoint:** `POST /simcardgroups/{simCardGroupGlobalId}/simcards`
 
@@ -81,12 +81,12 @@ Add a collection of sim cards to a sim card group. Moving them if they already b
 
 | Field   | Type         | Description                                            |
 |---------|--------------|--------------------------------------------------------|
-| iccList | List(String) | List of icc numbers for sim cards to add to the group. |
+| iccList | List(String) | List of icc numbers for SIM cards to add to the group. |
 
-## Endpoint: Remove sim card from group
+## Endpoint: Remove SIM card from group
 
 **Description**
 
-Remove a sim card from a sim card group
+Remove a SIM card from a SIM card group
 
 **Endpoint:** `DELETE /simcardgroups/{simCardGroupGlobalId}/simcards/{icc}`

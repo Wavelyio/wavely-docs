@@ -177,11 +177,11 @@ Enumeration, may have the following values:
 
 ## CompanyOperatorProfileActionMapping
 
-Determines whether a profile is used for certain actions. E.g. when activating sim cards.
+Determines whether a profile is used for certain actions. E.g. when activating SIM cards.
 
 | Value    | Description                                                                           |
 |----------|---------------------------------------------------------------------------------------|
-| ACTIVATE | Determines the "default" operator profile used when activating sim cards              |
+| ACTIVATE | Determines the "default" operator profile used when activating SIM cards              |
 | SUSPEND  | Determines the profile used when suspend is used. This is controlled by the platform. |
 
 ## ConnectivityCapabilityTypes
