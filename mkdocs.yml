@@ -23,7 +23,7 @@ nav:
       - 'Call CDR': 'webhooks/call-cdr.md'
       - 'Data CDR': 'webhooks/data-cdr.md'
       - 'Message CDR': 'webhooks/msg-cdr.md'
-      - 'SMS forwarding': 'webhooks/sms-forwarding.md'
+      - 'SMS Forwarding': 'webhooks/sms-forwarding.md'
       - 'SIM card state change': 'webhooks/sim-card-state-change.md'
   - 'API specification':
       - SMS: 'api/sms.md'
@@ -33,7 +33,7 @@ nav:
       - 'SIM card usage': 'api/simcard-usage.md'
       - 'SIM card groups': 'api/simcard-groups.md'
       - 'SIM card tags': 'api/simcard-tag.md'
-      - 'Call forwarding': 'api/call-forward.md'
+      - 'Call Forwarding': 'api/call-forwarding.md'
       - 'Data Usage API': 'api/data-usage.md'
       - 'Geolocation': 'api/geolocation.md'
       # This should be refactored after external APIs will be known

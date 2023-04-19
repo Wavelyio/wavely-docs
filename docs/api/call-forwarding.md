@@ -1,4 +1,4 @@
-# Call forwarding
+# Call Forwarding
 This is the API for call forwarding management.
 
 * Get all call forward rules
@@ -26,7 +26,7 @@ Get all call forwarding rules
 
 **Response Payload**
 
-List([CallForwardingRule](../call-forward/#callforwardingrule))
+List([CallForwardingRule](../call-forwarding/#callforwardingrule))
 
 **Example response**
 
@@ -47,7 +47,7 @@ List([CallForwardingRule](../call-forward/#callforwardingrule))
 ]
 ```
 
-## Endpoint: Get callforwarding rule by msisdn
+## Endpoint: Get call forwarding rule by msisdn
 
 **Description**
 
@@ -63,7 +63,7 @@ Get call forwarding rule by source msisdn.
 
 **Response Payload**
 
-[CallForwardingRule](../call-forward/#callforwardingrule)
+[CallForwardingRule](../call-forwarding/#callforwardingrule)
 
 **Example response**
 
