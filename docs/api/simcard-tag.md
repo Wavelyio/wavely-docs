@@ -38,7 +38,7 @@ Get all current SIM card tags.
 
 **Response Payload**
 
-[Page](../../general-information/data-types/#page)([SimCardTag](../simcard-tags/#simcardtag))
+[Page](../../general-information/data-types/#page)([SimCardTag](../simcard-tag/#simcardtag))
 
 ## Endpoint: Create new SIM card tag
 
@@ -57,7 +57,7 @@ Create a new SIM card tag
 
 **Response Payload**
 
-[SimCardTag](../simcard-tags/#simcardtag)
+[SimCardTag](../simcard-tag/#simcardtag)
 
 ## Endpoint: Get SIM card tag
 
@@ -69,7 +69,7 @@ Get SIM card tag by its id.
 
 **Response Payload**
 
-[DetailedSimCardTag](../simcard-tags/#detailedsimcardtag)
+[DetailedSimCardTag](../simcard-tag/#detailedsimcardtag)
 
 ## Endpoint: Update SIM card tag
 

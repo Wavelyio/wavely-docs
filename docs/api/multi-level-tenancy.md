@@ -11,7 +11,7 @@ To call API for subtenant, you should add query parameter: <br>
 * [SIM card groups](../simcard-groups/)
 * [SIM card diagnostics](../sim-card-diagnostics/)
 * [Operator Profiles](../operator-profiles/)
-* [Tags](../simcard-tags/)
+* [Tags](../simcard-tag/)
 * [Triggers]()
 <!-- * [Invite owner](api/invite-owner/) -->
 
