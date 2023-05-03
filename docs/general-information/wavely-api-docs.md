@@ -37,7 +37,7 @@ Authorization: Basic N2RlZmViM2ItZjAzYS00Y2Q4LWEzYzItZmVhNDVhMjVhYmU0OnRveXFkQ0F
 
 Go to your account and go to your _Advanced_ settings, to create an API key. See below:
 
-![add-api-key](../img/webhooks/add-api-key.png)
+![add-api-key](/img/webhooks/add-api-key.png)
 
 # Contact
 

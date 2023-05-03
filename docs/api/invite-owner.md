@@ -22,7 +22,7 @@ Getting list of companies to select
 
 **Response payload**
 
-Returns [Page](../../general-information/data-types/#page(type))([Company](../../general-information/data-types/#company))
+Returns [Page](/general-information/data-types#page(type))([Company](/general-information/data-types#company))
 
 ***
 
@@ -34,7 +34,7 @@ Returns [Page](../../general-information/data-types/#page(type))([Company](../..
 
 **Response payload** 
 
-Returns [Company](../../general-information/data-types/#company)
+Returns [Company](/general-information/data-types#company)
 
 ***
 
@@ -59,7 +59,7 @@ Get account for find owner one and load his data to form
 
 **Response payload**
 
-returns Array of ([User](../../general-information/data-types/#useraccount))
+Returns Array of ([User](/general-information/data-types#useraccount))
 
 ***
 
@@ -72,7 +72,7 @@ Getting invites
 
 **Response payload**
 
-returns Array of ([Invite](../../general-information/data-types/#invite))
+Returns Array of ([Invite](/general-information/data-types#invite))
 
 ***
 
@@ -85,7 +85,7 @@ Get account for find owner one and load his data to form
 
 **Response payload**
 
-returns Array of ([Contract](../../general-information/data-types/#contract))
+Returns Array of ([Contract](/general-information/data-types#contract))
 
 ***
 
@@ -97,7 +97,7 @@ returns Array of ([Contract](../../general-information/data-types/#contract))
 
 **Response payload**
 
-returns 
+Returns 
 
 ***
 
@@ -109,7 +109,7 @@ returns
 
 **Response payload**
 
-returns 
+Returns 
 
 ***
 
@@ -122,7 +122,7 @@ returns
 
 **Response payload**
 
-returns deleted [Invite](../../general-information/data-types/#invite) 
+Returns deleted [Invite](/general-information/data-types#invite) 
 
 ***
 

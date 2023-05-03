@@ -78,17 +78,17 @@ Message usage for a given **month** in a given **year** can be accessed by using
 
 **Response structure and types**
 
-| Field           | Type                                                          | Description                                                       |
-|-----------------|---------------------------------------------------------------|-------------------------------------------------------------------|
-| icc             | String                                                        | The unique identifier for the SIM card generating <br> the usage. |
-| year            | Number                                                        | Year is given in the ISO 8601 format for example 2019.            |
-| month           | Number                                                        | Month is represented as a number for example 'april = 4'          |
-| usageDate       | ISO 8601 DateTime                                             | In UTC time.                                                      |
-| caller          | String                                                        | Regular string and not necessarily a valid number.                |
-| called          | String                                                        | E164 MSISDN, e.g. *+4593709603*                                   |
-| fromCountryCode | String                                                        | Alpha-2 code                                                      |
-| toCountryCode   | String                                                        | Alpha-2 code                                                      |
-| direction       | [Directions](../../general-information/data-types#directions) |                                                                   |
+| Field           | Type                                                     | Description                                                       |
+|-----------------|----------------------------------------------------------|-------------------------------------------------------------------|
+| icc             | String                                                   | The unique identifier for the SIM card generating <br> the usage. |
+| year            | Number                                                   | Year is given in the ISO 8601 format for example 2019.            |
+| month           | Number                                                   | Month is represented as a number for example 'april = 4'          |
+| usageDate       | ISO 8601 DateTime                                        | In UTC time.                                                      |
+| caller          | String                                                   | Regular string and not necessarily a valid number.                |
+| called          | String                                                   | E164 MSISDN, e.g. *+4593709603*                                   |
+| fromCountryCode | String                                                   | Alpha-2 code                                                      |
+| toCountryCode   | String                                                   | Alpha-2 code                                                      |
+| direction       | [Directions](/general-information/data-types#directions) |                                                                   |
 
 **Example response**
 
@@ -143,17 +143,17 @@ SMPP usage for a given **month** in a given **year** can be accessed by using th
 
 **Response structure and types**
 
-| Field           | Type                                                          | Description                                                       |
-|-----------------|---------------------------------------------------------------|-------------------------------------------------------------------|
-| icc             | String                                                        | The unique identifier for the SIM card generating <br> the usage. |
-| year            | Number                                                        | Year is given in the ISO 8601 format for example 2019.            |
-| month           | Number                                                        | Month is represented as a number for example 'april = 4'          |
-| usageDate       | ISO 8601 DateTime                                             | In UTC time.                                                      |
-| caller          | String                                                        | Regular string and not necessarily a valid number.                |
-| called          | String                                                        | Regular string and not necessarily a valid number.                |
-| fromCountryCode | String                                                        | Alpha-2 code                                                      |
-| toCountryCode   | String                                                        | Alpha-2 code                                                      |
-| direction       | [Directions](../../general-information/data-types#directions) |                                                                   |
+| Field           | Type                                                     | Description                                                       |
+|-----------------|----------------------------------------------------------|-------------------------------------------------------------------|
+| icc             | String                                                   | The unique identifier for the SIM card generating <br> the usage. |
+| year            | Number                                                   | Year is given in the ISO 8601 format for example 2019.            |
+| month           | Number                                                   | Month is represented as a number for example 'april = 4'          |
+| usageDate       | ISO 8601 DateTime                                        | In UTC time.                                                      |
+| caller          | String                                                   | Regular string and not necessarily a valid number.                |
+| called          | String                                                   | Regular string and not necessarily a valid number.                |
+| fromCountryCode | String                                                   | Alpha-2 code                                                      |
+| toCountryCode   | String                                                   | Alpha-2 code                                                      |
+| direction       | [Directions](/general-information/data-types#directions) |                                                                   |
 
 **Example response**
 
@@ -209,18 +209,18 @@ Call usage for a given **month** in a given **year** can be accessed by using th
 
 **Response structure and types**
 
-| Field           | Type                                                          | Description                                                                                                                            |
-|-----------------|---------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| icc             | String                                                        | The unique identifier for the SIM card generating <br> the usage.                                                                      |
-| year            | Number                                                        | Year is given in the ISO 8601 format for example 2019.                                                                                 |
-| month           | Number                                                        | Month is represented as a number for example 'april = 4'                                                                               |
-| usageDate       | ISO 8601 DateTime                                             | In UTC time.                                                                                                                           |
-| caller          | String                                                        | E164 MSISDN, e.g. *+4593709603*                                                                                                        |
-| called          | String                                                        | E164 MSISDN, e.g. *+4593709603*                                                                                                        |
-| duration        | Number                                                        | Duration of the call measured in seconds, the result <br> disregards network connection time. i.e. Only the billed <br> call duration. |
-| fromCountryCode | String                                                        | Alpha-2 code                                                                                                                           |
-| toCountryCode   | String                                                        | Alpha-2 code                                                                                                                           |
-| direction       | [Directions](../../general-information/data-types#directions) |                                                                                                                                        |
+| Field           | Type                                                     | Description                                                                                                                            |
+|-----------------|----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| icc             | String                                                   | The unique identifier for the SIM card generating <br> the usage.                                                                      |
+| year            | Number                                                   | Year is given in the ISO 8601 format for example 2019.                                                                                 |
+| month           | Number                                                   | Month is represented as a number for example 'april = 4'                                                                               |
+| usageDate       | ISO 8601 DateTime                                        | In UTC time.                                                                                                                           |
+| caller          | String                                                   | E164 MSISDN, e.g. *+4593709603*                                                                                                        |
+| called          | String                                                   | E164 MSISDN, e.g. *+4593709603*                                                                                                        |
+| duration        | Number                                                   | Duration of the call measured in seconds, the result <br> disregards network connection time. i.e. Only the billed <br> call duration. |
+| fromCountryCode | String                                                   | Alpha-2 code                                                                                                                           |
+| toCountryCode   | String                                                   | Alpha-2 code                                                                                                                           |
+| direction       | [Directions](/general-information/data-types#directions) |                                                                                                                                        |
 
 **Example response**
 

@@ -7,17 +7,17 @@ To call API for subtenant, you should add query parameter: <br>
 
 **Where MLT was implemented:**
 
-* [SIM cards](../simcards-api/)
-* [SIM card groups](../simcard-groups/)
-* [SIM card diagnostics](../sim-card-diagnostics/)
-* [Operator Profiles](../operator-profiles/)
-* [Tags](../simcard-tags/)
+* [SIM cards](/api/simcards)
+* [SIM card groups](/api/simcard-groups)
+* [SIM card diagnostics](/api/simcard-diagnostics)
+* [Operator Profiles](/api/operator-profiles)
+* [Tags](/api/simcard-tag)
 * [Triggers]()
 <!-- * [Invite owner](api/invite-owner/) -->
 
 ***
 
-**Beside that,** there are endpoints for:
+**Besides that,** there are endpoints for:
  
 * Get subtenants of company
 * Get SIM cards of tenant itself and subtenants
@@ -30,7 +30,7 @@ To call API for subtenant, you should add query parameter: <br>
 
 **Response payload**
 
-Response is array of subtenants [Company](../../general-information/data-types#company) objects
+Response is array of subtenants [Company](/general-information/data-types#company) objects
 
 ***
 
@@ -40,7 +40,7 @@ Response is array of subtenants [Company](../../general-information/data-types#c
 
 **Response payload**
 
-Returns [Page](../../general-information/data-types/#page(type))([SimCard](../../general-information/data-types/#simcard))
+Returns [Page](/general-information/data-types#page(type))([SimCard](/general-information/data-types/#simcard))
 
 ***
 

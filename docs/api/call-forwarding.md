@@ -26,7 +26,7 @@ Get all call forwarding rules
 
 **Response Payload**
 
-List([CallForwardingRule](../call-forwarding/#callforwardingrule))
+List([CallForwardingRule](#callforwardingrule))
 
 **Example response**
 
@@ -63,7 +63,7 @@ Get call forwarding rule by source msisdn.
 
 **Response Payload**
 
-[CallForwardingRule](../call-forwarding/#callforwardingrule)
+[CallForwardingRule](#callforwardingrule)
 
 **Example response**
 

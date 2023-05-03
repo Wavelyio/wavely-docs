@@ -28,7 +28,7 @@ Create new customer in Asterisk
 
 **Response Payload**
 
-[Customer](../voice-service-customers/#customers)
+[Customer](#customer)
 
 **Example response**
 

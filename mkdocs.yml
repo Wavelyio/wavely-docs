@@ -1,10 +1,10 @@
 site_name: Wavely Docs
-site_url: https://platform.wavely.io
+site_url: https://docs.wavely.io
 site_description: The Wavely Platform
 site_author: Wavely Team
 
 theme:
-  name: readthedocs
+  name: material
 
 markdown_extensions:
   - admonition
