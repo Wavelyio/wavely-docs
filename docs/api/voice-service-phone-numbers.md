@@ -25,7 +25,7 @@ Get all phone numbers of company
 
 **Response Payload**
 
-List([PhoneNumber](../voice-service-phone-numbers/#phonenumber))
+List([PhoneNumber](#phonenumber))
 
 **Example response**
 
@@ -68,7 +68,7 @@ Add phone number to company or sub tenant customer
 
 **Response payload**
 
-[PhoneNumber](../voice-service-phone-numbers/#phonenumber)
+[PhoneNumber](#phonenumber)
 
 **Response example**
 

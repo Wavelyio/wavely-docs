@@ -14,7 +14,7 @@ A SIM card can be part of only one group at a time.
 ### SimCardGroup
 | Field        | Type    | Description                               |
 |--------------|---------|-------------------------------------------|
-| globalId     | String  | id of the SIM card group                  |
+| globalId     | String  | Id of the SIM card group                  |
 | name         | String  | Name of the group                         |
 | createdDate  | String  | ISO 8601 datetime format                  |
 | simCardCount | Integer | Number of SIM cards assigned to the group |
@@ -29,7 +29,7 @@ Get all current SIM card groups.
 
 **Response Payload**
 
-List([SimCardGroup](../simcard-groups/#simcardgroup))
+List([SimCardGroup](#simcardgroup))
 
 ## Endpoint: Get SIM card group by name
 
@@ -47,7 +47,7 @@ Get SIM card groups by their name.
 
 **Response Payload**
 
-List([SimCardGroup](../simcard-groups/#simcardgroup))
+List([SimCardGroup](#simcardgroup))
 
 ## Endpoint: Get SIM card group by id
 
@@ -59,7 +59,7 @@ Get SIM card group by its id.
 
 **Response Payload**
 
-[SimCardGroup](../simcard-groups/#simcardgroup)
+[SimCardGroup](#simcardgroup)
 
 ## Endpoint: Delete SIM card group by id
 
