@@ -1,11 +1,11 @@
 # Geolocation
 Using this API, you are able to get geographical location of SIM cards.
 
-## Endpoint: Get latest company location
+## Endpoint: Get latest location of a SIM
 
 **Description**
 
-Get the latest location of the company SIM card.
+Get the latest location of a SIM from the specified account.
 
 **Endpoint**
 
@@ -40,11 +40,11 @@ GET /geolocations/latest
 | createdAt  | LocalDateTime | Date and time of location creation                          |
 | lastUpdate | LocalDateTime | Date and time of last location update                       |
 
-## Endpoint: Get all company locations
+## Endpoint: Get SIM card location history
 
 **Description**
 
-Get all SIM card locations of the company.
+Get all SIM card locations between the specified start time and end time.
 
 **Endpoint**
 
