@@ -82,8 +82,8 @@ Apply an action to the specified SIM card, for example "activate SIM card" or "s
 
 **Request Payload**
 
-| Field        | Type                                                             | Description                                |
-|--------------|------------------------------------------------------------------|--------------------------------------------|
+| Field         | Type                                                             | Description                                |
+|---------------|------------------------------------------------------------------|--------------------------------------------|
 | simCardAction | [SimCardActions](/general-information/data-types#simcardactions) | The action to apply to the SIM card        |
 
 **Example**
