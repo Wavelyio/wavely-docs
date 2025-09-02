@@ -85,7 +85,6 @@ Apply an action to the specified SIM card, for example "activate SIM card" or "s
 | Field         | Type                                                             | Description                                |
 |---------------|------------------------------------------------------------------|--------------------------------------------|
 | simCardAction | [SimCardActions](/general-information/data-types#simcardactions) | The action to apply to the SIM card        |
-| networkSpeed  | [NetworkSpeed](/general-information/data-types#networkspeed)     | The network speed to apply to the SIM card |
 
 **Example**
 ```json
@@ -93,26 +92,10 @@ Apply an action to the specified SIM card, for example "activate SIM card" or "s
 	"simCardAction": "ACTIVATE"
 }
 ```
-```json
-{
-	"simCardAction": "THROTTLE",
-	"networkSpeed": "MBIT_1"
-}
-```
-```json
-{
-	"simCardAction": "ACTIVATE",
-	"networkSpeed": "MBIT_5"
-}
-```
+
 ```json
 {
 	"simCardAction": "SUSPEND"
-}
-```
-```json
-{
-	"simCardAction": "UNTHROTTLE"
 }
 ```
 
